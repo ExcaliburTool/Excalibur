@@ -1,8 +1,14 @@
 # Excalibur
-Under construction
+
+## Benchmarks
+See `excalibur/benchmarks/github` and `excalibur/benchmarks/sporq`
+
+In each file,
+the input example is between `input` and `output`;
+the output examples are specified after `output` and separated by `~`
 
 ## Proofs
 See `appendix.pdf`
 
-## Spotted Typos
-* n at line 591 is any subtree, not limited to terminals
+## Found Issues
+* n at line 591 of the submitted paper is any subtree, i.e., not limited to terminals
