@@ -1,0 +1,545 @@
+{
+  "$schema" : "https://json.schemastore.org/sarif-2.1.0.json",
+  "version" : "2.1.0",
+  "runs" : [ {
+    "tool" : {
+      "driver" : {
+        "name" : "CodeQL",
+        "organization" : "GitHub",
+        "semanticVersion" : "2.12.5",
+        "rules" : [ {
+          "id" : "java/example/override",
+          "name" : "java/example/override",
+          "shortDescription" : {
+            "text" : "Override"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "id" : "java/example/override",
+            "kind" : "problem",
+            "name" : "Override",
+            "problem.severity" : "warning"
+          }
+        } ]
+      },
+      "extensions" : [ {
+        "name" : "legacy-upgrades",
+        "semanticVersion" : "0.0.0",
+        "locations" : [ {
+          "uri" : "file:///opt/homebrew/Caskroom/codeql/2.12.5/codeql/legacy-upgrades/",
+          "description" : {
+            "text" : "The QL pack root directory."
+          }
+        }, {
+          "uri" : "file:///opt/homebrew/Caskroom/codeql/2.12.5/codeql/legacy-upgrades/qlpack.yml",
+          "description" : {
+            "text" : "The QL pack definition file."
+          }
+        } ]
+      }, {
+        "name" : "getting-started/codeql-extra-queries-java",
+        "semanticVersion" : "0.0.0+9688a33f8a7790e1160da629a5cf79ee7cd635f2",
+        "locations" : [ {
+          "uri" : "file:///Users/sissel/repository/JavaSyntaxTool/codeql/",
+          "description" : {
+            "text" : "The QL pack root directory."
+          }
+        }, {
+          "uri" : "file:///Users/sissel/repository/JavaSyntaxTool/codeql/qlpack.yml",
+          "description" : {
+            "text" : "The QL pack definition file."
+          }
+        } ]
+      } ]
+    },
+    "artifacts" : [ {
+      "location" : {
+        "uri" : "src/main/java/DangerousFuncs.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 0
+      }
+    }, {
+      "location" : {
+        "uri" : "file:/modules/java.base/java/lang/Runnable.class",
+        "index" : 1
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/EqualsNotCheckingConversion.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 2
+      }
+    }, {
+      "location" : {
+        "uri" : "file:/modules/java.base/java/lang/Object.class",
+        "index" : 3
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/MissingOverride.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 4
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/SuperEqualsMethodInvocationFilter.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 5
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/TestThreadStop.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 6
+      }
+    }, {
+      "location" : {
+        "uri" : "file:/modules/java.base/java/lang/Thread.class",
+        "index" : 7
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/ThreadLocalWithInitial.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 8
+      }
+    }, {
+      "location" : {
+        "uri" : "file:/modules/java.base/java/lang/ThreadLocal.class",
+        "index" : 9
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/ToStringReturningNullProcessor.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 10
+      }
+    } ],
+    "results" : [ {
+      "ruleId" : "java/example/override",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/override",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "overrides [run](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/DangerousFuncs.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 4,
+            "startColumn" : 25,
+            "endColumn" : 28
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "6f91746f3a2519e4:1",
+        "primaryLocationStartColumnFingerprint" : "12"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/Runnable.class",
+            "index" : 1
+          }
+        },
+        "message" : {
+          "text" : "run"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/override",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/override",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "overrides [equals](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EqualsNotCheckingConversion.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 2
+          },
+          "region" : {
+            "startLine" : 6,
+            "startColumn" : 20,
+            "endColumn" : 26
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "59042330a5400ebd:1",
+        "primaryLocationStartColumnFingerprint" : "15"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/Object.class",
+            "index" : 3
+          }
+        },
+        "message" : {
+          "text" : "equals"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/override",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/override",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "overrides [equals](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EqualsNotCheckingConversion.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 2
+          },
+          "region" : {
+            "startLine" : 12,
+            "startColumn" : 20,
+            "endColumn" : 26
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "5a88bd3091e42fa0:1",
+        "primaryLocationStartColumnFingerprint" : "15"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/Object.class",
+            "index" : 3
+          }
+        },
+        "message" : {
+          "text" : "equals"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/override",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/override",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "overrides [equals](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EqualsNotCheckingConversion.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 2
+          },
+          "region" : {
+            "startLine" : 21,
+            "startColumn" : 20,
+            "endColumn" : 26
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "2b541a325bd6f7f5:1",
+        "primaryLocationStartColumnFingerprint" : "15"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/Object.class",
+            "index" : 3
+          }
+        },
+        "message" : {
+          "text" : "equals"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/override",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/override",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "overrides [fly](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MissingOverride.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 4
+          },
+          "region" : {
+            "startLine" : 6,
+            "startColumn" : 17,
+            "endColumn" : 20
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "c1c1a8d5137cfdec:1",
+        "primaryLocationStartColumnFingerprint" : "12"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MissingOverride.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 4
+          },
+          "region" : {
+            "startLine" : 2,
+            "startColumn" : 17,
+            "endColumn" : 20
+          }
+        },
+        "message" : {
+          "text" : "fly"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/override",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/override",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "overrides [fly](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MissingOverride.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 4
+          },
+          "region" : {
+            "startLine" : 13,
+            "startColumn" : 17,
+            "endColumn" : 20
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "120403463b298c32:1",
+        "primaryLocationStartColumnFingerprint" : "12"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MissingOverride.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 4
+          },
+          "region" : {
+            "startLine" : 2,
+            "startColumn" : 17,
+            "endColumn" : 20
+          }
+        },
+        "message" : {
+          "text" : "fly"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/override",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/override",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "overrides [test](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/SuperEqualsMethodInvocationFilter.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 5
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 17,
+            "endColumn" : 21
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "aa996e879598316f:1",
+        "primaryLocationStartColumnFingerprint" : "12"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/SuperEqualsMethodInvocationFilter.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 5
+          },
+          "region" : {
+            "startLine" : 2,
+            "startColumn" : 17,
+            "endColumn" : 21
+          }
+        },
+        "message" : {
+          "text" : "test"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/override",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/override",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "overrides [run](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestThreadStop.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 6
+          },
+          "region" : {
+            "startLine" : 3,
+            "startColumn" : 17,
+            "endColumn" : 20
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "a219a705eeebe5c0:1",
+        "primaryLocationStartColumnFingerprint" : "12"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/Thread.class",
+            "index" : 7
+          }
+        },
+        "message" : {
+          "text" : "run"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/override",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/override",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "overrides [initialValue](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ThreadLocalWithInitial.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 8
+          },
+          "region" : {
+            "startLine" : 11,
+            "startColumn" : 40,
+            "endColumn" : 52
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "9b8eead2bc6f736:1",
+        "primaryLocationStartColumnFingerprint" : "23"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/ThreadLocal.class",
+            "index" : 9
+          }
+        },
+        "message" : {
+          "text" : "initialValue"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/override",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/override",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "overrides [toString](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ToStringReturningNullProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 10
+          },
+          "region" : {
+            "startLine" : 6,
+            "startColumn" : 19,
+            "endColumn" : 27
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "d827cf0db168a384:1",
+        "primaryLocationStartColumnFingerprint" : "14"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/Object.class",
+            "index" : 3
+          }
+        },
+        "message" : {
+          "text" : "toString"
+        }
+      } ]
+    } ],
+    "columnKind" : "utf16CodeUnits",
+    "properties" : {
+      "semmle.formatSpecifier" : "sarifv2.1.0"
+    }
+  } ]
+}

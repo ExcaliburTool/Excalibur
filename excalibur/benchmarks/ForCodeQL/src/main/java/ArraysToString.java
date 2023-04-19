@@ -1,0 +1,12 @@
+import java.util.Arrays;
+
+public class ArraysToString {
+    public void test(){
+        int[] list1 = new int[3];
+        boolean[] list2 = new boolean[4];
+        System.out.println(list1.toString());        // bad practice
+        System.out.println(list2.toString());        // bad practice
+        System.out.println(Arrays.toString(list1));   // good practice
+        System.out.println(Arrays.toString(list2));   // good practice
+    }
+}

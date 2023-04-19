@@ -1,0 +1,5646 @@
+{
+  "$schema" : "https://json.schemastore.org/sarif-2.1.0.json",
+  "version" : "2.1.0",
+  "runs" : [ {
+    "tool" : {
+      "driver" : {
+        "name" : "CodeQL",
+        "organization" : "GitHub",
+        "semanticVersion" : "2.12.5",
+        "rules" : [ {
+          "id" : "java/example/invocation",
+          "name" : "java/example/invocation",
+          "shortDescription" : {
+            "text" : "Invocation"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "id" : "java/example/invocation",
+            "kind" : "problem",
+            "name" : "Invocation",
+            "problem.severity" : "warning"
+          }
+        } ]
+      },
+      "extensions" : [ {
+        "name" : "legacy-upgrades",
+        "semanticVersion" : "0.0.0",
+        "locations" : [ {
+          "uri" : "file:///opt/homebrew/Caskroom/codeql/2.12.5/codeql/legacy-upgrades/",
+          "description" : {
+            "text" : "The QL pack root directory."
+          }
+        }, {
+          "uri" : "file:///opt/homebrew/Caskroom/codeql/2.12.5/codeql/legacy-upgrades/qlpack.yml",
+          "description" : {
+            "text" : "The QL pack definition file."
+          }
+        } ]
+      }, {
+        "name" : "getting-started/codeql-extra-queries-java",
+        "semanticVersion" : "0.0.0+9688a33f8a7790e1160da629a5cf79ee7cd635f2",
+        "locations" : [ {
+          "uri" : "file:///Users/sissel/repository/JavaSyntaxTool/codeql/",
+          "description" : {
+            "text" : "The QL pack root directory."
+          }
+        }, {
+          "uri" : "file:///Users/sissel/repository/JavaSyntaxTool/codeql/qlpack.yml",
+          "description" : {
+            "text" : "The QL pack definition file."
+          }
+        } ]
+      } ]
+    },
+    "artifacts" : [ {
+      "location" : {
+        "uri" : "src/main/java/ArrayHashCodeAndToStringProcessor.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 0
+      }
+    }, {
+      "location" : {
+        "uri" : "file:/modules/java.base/java/lang/Object.class",
+        "index" : 1
+      }
+    }, {
+      "location" : {
+        "uri" : "file:/modules/java.base/java/util/Arrays.class",
+        "index" : 2
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/ArraysToString.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 3
+      }
+    }, {
+      "location" : {
+        "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+        "index" : 4
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/BigDecimalDoubleConstructorProcessor.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 5
+      }
+    }, {
+      "location" : {
+        "uri" : "file:/modules/java.base/java/math/BigDecimal.class",
+        "index" : 6
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/BooleanExpression.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 7
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/ByteCompareInt.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 8
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/CollectionEmptyCheck.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 9
+      }
+    }, {
+      "location" : {
+        "uri" : "file:/modules/java.base/java/util/ArrayList.class",
+        "index" : 10
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/CollectionsEmptyConstantsProcessor.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 11
+      }
+    }, {
+      "location" : {
+        "uri" : "file:/modules/java.base/java/util/Collections.class",
+        "index" : 12
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/ComparizonModifier.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 13
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/ConvertVariableAccessName.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 14
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/DangerousFuncs.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 15
+      }
+    }, {
+      "location" : {
+        "uri" : "file:/modules/java.base/java/lang/Thread.class",
+        "index" : 16
+      }
+    }, {
+      "location" : {
+        "uri" : "file:/modules/java.base/java/lang/Throwable.class",
+        "index" : 17
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/DeadStoreProcessor.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 18
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/EmptyStringCheck.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 19
+      }
+    }, {
+      "location" : {
+        "uri" : "file:/modules/java.base/java/lang/String.class",
+        "index" : 20
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/EqualsNotCheckingConversion.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 21
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/EqualsOnAtomicClassProcessor.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 22
+      }
+    }, {
+      "location" : {
+        "uri" : "file:/modules/java.base/java/util/concurrent/atomic/AtomicInteger.class",
+        "index" : 23
+      }
+    }, {
+      "location" : {
+        "uri" : "file:/modules/java.base/java/lang/Integer.class",
+        "index" : 24
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/FieldModifier.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 25
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/InnerClassStatic.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 26
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/IsJunit4TestAnnotation.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 27
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/LoopHeadElement.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 28
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/MissingOverride.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 29
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/MutualRecursive.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 30
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/ObjectsEqualsInvocationFilter.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 31
+      }
+    }, {
+      "location" : {
+        "uri" : "file:/modules/java.base/java/util/Objects.class",
+        "index" : 32
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/RedundantFieldInitialization.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 33
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/StaticAccessThroughInstance.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 34
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/StringBuilderDirectUse.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 35
+      }
+    }, {
+      "location" : {
+        "uri" : "file:/modules/java.base/java/lang/StringBuilder.class",
+        "index" : 36
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/StringCompare.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 37
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/SuperEqualsMethodInvocationFilter.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 38
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/TestConstConditions.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 39
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/TestThreadStop.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 40
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/UnsafeCasts.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 41
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/UnusedLocals.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 42
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/UtilityClassWithPublicConstructorProcessor.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 43
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/VariableModifier.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 44
+      }
+    } ],
+    "results" : [ {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [toString](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ArrayHashCodeAndToStringProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 6,
+            "startColumn" : 26,
+            "endColumn" : 41
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "c30bef244856028:1",
+        "primaryLocationStartColumnFingerprint" : "17"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/Object.class",
+            "index" : 1
+          }
+        },
+        "message" : {
+          "text" : "toString"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [hashCode](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ArrayHashCodeAndToStringProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 7,
+            "startColumn" : 24,
+            "endColumn" : 39
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "20e295177a92ec89:1",
+        "primaryLocationStartColumnFingerprint" : "15"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/Object.class",
+            "index" : 1
+          }
+        },
+        "message" : {
+          "text" : "hashCode"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [toString](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ArrayHashCodeAndToStringProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 8,
+            "startColumn" : 26,
+            "endColumn" : 47
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "9b6a3ea53e13c1e3:1",
+        "primaryLocationStartColumnFingerprint" : "17"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/util/Arrays.class",
+            "index" : 2
+          }
+        },
+        "message" : {
+          "text" : "toString"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [hashCode](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ArrayHashCodeAndToStringProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 24,
+            "endColumn" : 45
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "2c7ac2363e305695:1",
+        "primaryLocationStartColumnFingerprint" : "15"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/util/Arrays.class",
+            "index" : 2
+          }
+        },
+        "message" : {
+          "text" : "hashCode"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ArraysToString.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 7,
+            "startColumn" : 9,
+            "endColumn" : 45
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "f2a742538a061b72:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [toString](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ArraysToString.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 7,
+            "startColumn" : 28,
+            "endColumn" : 44
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "f2a742538a061b72:1",
+        "primaryLocationStartColumnFingerprint" : "19"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/Object.class",
+            "index" : 1
+          }
+        },
+        "message" : {
+          "text" : "toString"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ArraysToString.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 8,
+            "startColumn" : 9,
+            "endColumn" : 45
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "8760fa09503783ec:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [toString](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ArraysToString.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 8,
+            "startColumn" : 28,
+            "endColumn" : 44
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "8760fa09503783ec:1",
+        "primaryLocationStartColumnFingerprint" : "19"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/Object.class",
+            "index" : 1
+          }
+        },
+        "message" : {
+          "text" : "toString"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ArraysToString.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 9,
+            "endColumn" : 51
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "bb906d15c403c822:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [toString](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ArraysToString.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 28,
+            "endColumn" : 50
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "bb906d15c403c822:1",
+        "primaryLocationStartColumnFingerprint" : "19"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/util/Arrays.class",
+            "index" : 2
+          }
+        },
+        "message" : {
+          "text" : "toString"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ArraysToString.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 10,
+            "startColumn" : 9,
+            "endColumn" : 51
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "f86860a6281ded7e:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [toString](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ArraysToString.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 10,
+            "startColumn" : 28,
+            "endColumn" : 50
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "f86860a6281ded7e:1",
+        "primaryLocationStartColumnFingerprint" : "19"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/util/Arrays.class",
+            "index" : 2
+          }
+        },
+        "message" : {
+          "text" : "toString"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [valueOf](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/BigDecimalDoubleConstructorProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 5
+          },
+          "region" : {
+            "startLine" : 10,
+            "startColumn" : 26,
+            "endColumn" : 47
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "48a886f9c0295a9a:1",
+        "primaryLocationStartColumnFingerprint" : "17"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/math/BigDecimal.class",
+            "index" : 6
+          }
+        },
+        "message" : {
+          "text" : "valueOf"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [valueOf](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/BigDecimalDoubleConstructorProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 5
+          },
+          "region" : {
+            "startLine" : 11,
+            "startColumn" : 26,
+            "endColumn" : 49
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "1c46d3414c864bf4:1",
+        "primaryLocationStartColumnFingerprint" : "17"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/math/BigDecimal.class",
+            "index" : 6
+          }
+        },
+        "message" : {
+          "text" : "valueOf"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/BooleanExpression.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 7
+          },
+          "region" : {
+            "startLine" : 7,
+            "startColumn" : 13,
+            "endColumn" : 68
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "9e50a88230af7843:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/BooleanExpression.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 7
+          },
+          "region" : {
+            "startLine" : 10,
+            "startColumn" : 13,
+            "endColumn" : 72
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "985013e8886a9166:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/BooleanExpression.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 7
+          },
+          "region" : {
+            "startLine" : 13,
+            "startColumn" : 13,
+            "endColumn" : 68
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "6eed345353b0faec:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/BooleanExpression.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 7
+          },
+          "region" : {
+            "startLine" : 16,
+            "startColumn" : 13,
+            "endColumn" : 72
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "e3fe8aff850f4479:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/BooleanExpression.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 7
+          },
+          "region" : {
+            "startLine" : 19,
+            "startColumn" : 13,
+            "endColumn" : 72
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "5e2e5fe828b91586:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/BooleanExpression.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 7
+          },
+          "region" : {
+            "startLine" : 22,
+            "startColumn" : 13,
+            "endColumn" : 72
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "ce54d4956466223:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/BooleanExpression.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 7
+          },
+          "region" : {
+            "startLine" : 25,
+            "startColumn" : 13,
+            "endColumn" : 72
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "e16a381e44c96821:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ByteCompareInt.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 8
+          },
+          "region" : {
+            "startLine" : 5,
+            "startColumn" : 9,
+            "endColumn" : 35
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "365bf5d1104cf2b:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ByteCompareInt.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 8
+          },
+          "region" : {
+            "startLine" : 6,
+            "startColumn" : 9,
+            "endColumn" : 34
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "f0c7d742028c9a68:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ByteCompareInt.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 8
+          },
+          "region" : {
+            "startLine" : 8,
+            "startColumn" : 9,
+            "endColumn" : 38
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "8676a9f93b763c73:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ByteCompareInt.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 8
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 9,
+            "endColumn" : 38
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "b606b330940573f4:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ByteCompareInt.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 8
+          },
+          "region" : {
+            "startLine" : 10,
+            "startColumn" : 9,
+            "endColumn" : 36
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "9008614f8da5454e:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ByteCompareInt.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 8
+          },
+          "region" : {
+            "startLine" : 11,
+            "startColumn" : 9,
+            "endColumn" : 35
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "f468d7ce57667019:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [add](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/CollectionEmptyCheck.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 9
+          },
+          "region" : {
+            "startLine" : 7,
+            "startColumn" : 9,
+            "endColumn" : 17
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "13e7d1037966522e:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/util/ArrayList.class",
+            "index" : 10
+          }
+        },
+        "message" : {
+          "text" : "add"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [add](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/CollectionEmptyCheck.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 9
+          },
+          "region" : {
+            "startLine" : 8,
+            "startColumn" : 9,
+            "endColumn" : 17
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "b1455d3c36fba566:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/util/ArrayList.class",
+            "index" : 10
+          }
+        },
+        "message" : {
+          "text" : "add"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [add](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/CollectionEmptyCheck.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 9
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 9,
+            "endColumn" : 17
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "31ca8f2937a8c88c:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/util/ArrayList.class",
+            "index" : 10
+          }
+        },
+        "message" : {
+          "text" : "add"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [isEmpty](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/CollectionEmptyCheck.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 9
+          },
+          "region" : {
+            "startLine" : 10,
+            "startColumn" : 13,
+            "endColumn" : 24
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "6ca353b15463f960:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/util/ArrayList.class",
+            "index" : 10
+          }
+        },
+        "message" : {
+          "text" : "isEmpty"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/CollectionEmptyCheck.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 9
+          },
+          "region" : {
+            "startLine" : 11,
+            "startColumn" : 13,
+            "endColumn" : 39
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "b18be19762ac5c94:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [add](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/CollectionEmptyCheck.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 9
+          },
+          "region" : {
+            "startLine" : 13,
+            "startColumn" : 9,
+            "endColumn" : 17
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "d5b5260d529f27ef:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/util/ArrayList.class",
+            "index" : 10
+          }
+        },
+        "message" : {
+          "text" : "add"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [size](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/CollectionEmptyCheck.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 9
+          },
+          "region" : {
+            "startLine" : 14,
+            "startColumn" : 13,
+            "endColumn" : 21
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "878b7827718ad75a:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/util/ArrayList.class",
+            "index" : 10
+          }
+        },
+        "message" : {
+          "text" : "size"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/CollectionEmptyCheck.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 9
+          },
+          "region" : {
+            "startLine" : 15,
+            "startColumn" : 13,
+            "endColumn" : 39
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "c1237e365cd55900:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [size](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/CollectionEmptyCheck.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 9
+          },
+          "region" : {
+            "startLine" : 17,
+            "startColumn" : 13,
+            "endColumn" : 21
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "61dfe121112c5c41:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/util/ArrayList.class",
+            "index" : 10
+          }
+        },
+        "message" : {
+          "text" : "size"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/CollectionEmptyCheck.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 9
+          },
+          "region" : {
+            "startLine" : 18,
+            "startColumn" : 13,
+            "endColumn" : 38
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "564586b9a48f1638:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/CollectionEmptyCheck.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 9
+          },
+          "region" : {
+            "startLine" : 20,
+            "startColumn" : 9,
+            "endColumn" : 42
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "b77e13db65b700ac:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [size](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/CollectionEmptyCheck.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 9
+          },
+          "region" : {
+            "startLine" : 20,
+            "startColumn" : 28,
+            "endColumn" : 36
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "b77e13db65b700ac:1",
+        "primaryLocationStartColumnFingerprint" : "19"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/util/ArrayList.class",
+            "index" : 10
+          }
+        },
+        "message" : {
+          "text" : "size"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [emptyList](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/CollectionsEmptyConstantsProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 11
+          },
+          "region" : {
+            "startLine" : 11,
+            "startColumn" : 37,
+            "endColumn" : 60
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "a6f8e929ad1f4d5a:1",
+        "primaryLocationStartColumnFingerprint" : "28"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/util/Collections.class",
+            "index" : 12
+          }
+        },
+        "message" : {
+          "text" : "emptyList"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [emptyMap](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/CollectionsEmptyConstantsProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 11
+          },
+          "region" : {
+            "startLine" : 12,
+            "startColumn" : 44,
+            "endColumn" : 66
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "8177afcff846d34d:1",
+        "primaryLocationStartColumnFingerprint" : "35"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/util/Collections.class",
+            "index" : 12
+          }
+        },
+        "message" : {
+          "text" : "emptyMap"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [emptySet](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/CollectionsEmptyConstantsProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 11
+          },
+          "region" : {
+            "startLine" : 13,
+            "startColumn" : 36,
+            "endColumn" : 58
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "303f7f2348b588ca:1",
+        "primaryLocationStartColumnFingerprint" : "27"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/util/Collections.class",
+            "index" : 12
+          }
+        },
+        "message" : {
+          "text" : "emptySet"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ComparizonModifier.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 13
+          },
+          "region" : {
+            "startLine" : 7,
+            "startColumn" : 13,
+            "endColumn" : 68
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "bb1874f3d37cf4b7:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ComparizonModifier.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 13
+          },
+          "region" : {
+            "startLine" : 10,
+            "startColumn" : 13,
+            "endColumn" : 69
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "6cbec7a0b0fe3c97:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ComparizonModifier.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 13
+          },
+          "region" : {
+            "startLine" : 13,
+            "startColumn" : 13,
+            "endColumn" : 68
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "ddcfb926d6feb4a9:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ComparizonModifier.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 13
+          },
+          "region" : {
+            "startLine" : 17,
+            "startColumn" : 13,
+            "endColumn" : 72
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "e3fe8aff850f4479:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ComparizonModifier.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 13
+          },
+          "region" : {
+            "startLine" : 20,
+            "startColumn" : 13,
+            "endColumn" : 72
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "5e2e5fe828b91586:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ComparizonModifier.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 13
+          },
+          "region" : {
+            "startLine" : 23,
+            "startColumn" : 13,
+            "endColumn" : 72
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "ce54d4956466223:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ComparizonModifier.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 13
+          },
+          "region" : {
+            "startLine" : 26,
+            "startColumn" : 13,
+            "endColumn" : 72
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "e16a381e44c96821:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [<obinit>](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ConvertVariableAccessName.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 14
+          },
+          "region" : {
+            "startLine" : 5,
+            "startColumn" : 14,
+            "endColumn" : 39
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "6e564fb0a33daadd:1",
+        "primaryLocationStartColumnFingerprint" : "13"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ConvertVariableAccessName.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 14
+          },
+          "region" : {
+            "startLine" : 5,
+            "startColumn" : 14,
+            "endColumn" : 39
+          }
+        },
+        "message" : {
+          "text" : "<obinit>"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [add](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ConvertVariableAccessName.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 14
+          },
+          "region" : {
+            "startLine" : 15,
+            "startColumn" : 9,
+            "endColumn" : 18
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "602242150b431b41:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/util/ArrayList.class",
+            "index" : 10
+          }
+        },
+        "message" : {
+          "text" : "add"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/DangerousFuncs.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 15
+          },
+          "region" : {
+            "startLine" : 6,
+            "startColumn" : 21,
+            "endColumn" : 55
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "f237e5c5cf379607:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [sleep](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/DangerousFuncs.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 15
+          },
+          "region" : {
+            "startLine" : 7,
+            "startColumn" : 21,
+            "endColumn" : 39
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "e819f3eb08891946:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/Thread.class",
+            "index" : 16
+          }
+        },
+        "message" : {
+          "text" : "sleep"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/DangerousFuncs.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 15
+          },
+          "region" : {
+            "startLine" : 8,
+            "startColumn" : 21,
+            "endColumn" : 51
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "f03c0a1a85c17c06:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [stop](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/DangerousFuncs.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 15
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 21,
+            "endColumn" : 50
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "f07564784119d169:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/Thread.class",
+            "index" : 16
+          }
+        },
+        "message" : {
+          "text" : "stop"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [currentThread](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/DangerousFuncs.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 15
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 21,
+            "endColumn" : 43
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "f07564784119d169:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/Thread.class",
+            "index" : 16
+          }
+        },
+        "message" : {
+          "text" : "currentThread"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [printStackTrace](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/DangerousFuncs.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 15
+          },
+          "region" : {
+            "startLine" : 11,
+            "startColumn" : 21,
+            "endColumn" : 40
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "167d2961312a6a59:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/Throwable.class",
+            "index" : 17
+          }
+        },
+        "message" : {
+          "text" : "printStackTrace"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [start](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/DangerousFuncs.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 15
+          },
+          "region" : {
+            "startLine" : 15,
+            "startColumn" : 9,
+            "endColumn" : 18
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "4d77c1dd0f4cb975:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/Thread.class",
+            "index" : 16
+          }
+        },
+        "message" : {
+          "text" : "start"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [sleep](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/DangerousFuncs.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 15
+          },
+          "region" : {
+            "startLine" : 16,
+            "startColumn" : 9,
+            "endColumn" : 27
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "d5fe820c6c8ed1bf:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/Thread.class",
+            "index" : 16
+          }
+        },
+        "message" : {
+          "text" : "sleep"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [stop](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/DangerousFuncs.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 15
+          },
+          "region" : {
+            "startLine" : 17,
+            "startColumn" : 9,
+            "endColumn" : 17
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "144bb8d4d1c3a41:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/Thread.class",
+            "index" : 16
+          }
+        },
+        "message" : {
+          "text" : "stop"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/DeadStoreProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 18
+          },
+          "region" : {
+            "startLine" : 8,
+            "startColumn" : 9,
+            "endColumn" : 30
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "b0e381aff9ca145e:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [equals](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EmptyStringCheck.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 19
+          },
+          "region" : {
+            "startLine" : 4,
+            "startColumn" : 13,
+            "endColumn" : 25
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "6483d24be77c9a85:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/String.class",
+            "index" : 20
+          }
+        },
+        "message" : {
+          "text" : "equals"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [equals](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EmptyStringCheck.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 19
+          },
+          "region" : {
+            "startLine" : 5,
+            "startColumn" : 13,
+            "endColumn" : 30
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "511b81fa6b5206c1:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/String.class",
+            "index" : 20
+          }
+        },
+        "message" : {
+          "text" : "equals"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [equals](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EmptyStringCheck.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 19
+          },
+          "region" : {
+            "startLine" : 7,
+            "startColumn" : 16,
+            "endColumn" : 28
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "4e119d23ae4921a5:1",
+        "primaryLocationStartColumnFingerprint" : "7"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/String.class",
+            "index" : 20
+          }
+        },
+        "message" : {
+          "text" : "equals"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [getClass](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EqualsNotCheckingConversion.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 21
+          },
+          "region" : {
+            "startLine" : 13,
+            "startColumn" : 28,
+            "endColumn" : 38
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "f4bc7255e39248a6:1",
+        "primaryLocationStartColumnFingerprint" : "19"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/Object.class",
+            "index" : 1
+          }
+        },
+        "message" : {
+          "text" : "getClass"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [getClass](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EqualsNotCheckingConversion.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 21
+          },
+          "region" : {
+            "startLine" : 13,
+            "startColumn" : 42,
+            "endColumn" : 56
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "f4bc7255e39248a6:1",
+        "primaryLocationStartColumnFingerprint" : "33"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/Object.class",
+            "index" : 1
+          }
+        },
+        "message" : {
+          "text" : "getClass"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [equals](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EqualsOnAtomicClassProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 22
+          },
+          "region" : {
+            "startLine" : 7,
+            "startColumn" : 27,
+            "endColumn" : 46
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "b246802091fa612d:1",
+        "primaryLocationStartColumnFingerprint" : "18"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/Object.class",
+            "index" : 1
+          }
+        },
+        "message" : {
+          "text" : "equals"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [equals](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EqualsOnAtomicClassProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 22
+          },
+          "region" : {
+            "startLine" : 8,
+            "startColumn" : 19,
+            "endColumn" : 38
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "2600bd45f3257e41:1",
+        "primaryLocationStartColumnFingerprint" : "10"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/Object.class",
+            "index" : 1
+          }
+        },
+        "message" : {
+          "text" : "equals"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [get](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EqualsOnAtomicClassProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 22
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 19,
+            "endColumn" : 30
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "dbf4b21c72f01372:1",
+        "primaryLocationStartColumnFingerprint" : "10"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/util/concurrent/atomic/AtomicInteger.class",
+            "index" : 23
+          }
+        },
+        "message" : {
+          "text" : "get"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [get](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EqualsOnAtomicClassProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 22
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 34,
+            "endColumn" : 45
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "dbf4b21c72f01372:1",
+        "primaryLocationStartColumnFingerprint" : "25"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/util/concurrent/atomic/AtomicInteger.class",
+            "index" : 23
+          }
+        },
+        "message" : {
+          "text" : "get"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [equals](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EqualsOnAtomicClassProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 22
+          },
+          "region" : {
+            "startLine" : 12,
+            "startColumn" : 19,
+            "endColumn" : 30
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "7d967e5132e0c57c:1",
+        "primaryLocationStartColumnFingerprint" : "10"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/Integer.class",
+            "index" : 24
+          }
+        },
+        "message" : {
+          "text" : "equals"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [<obinit>](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/FieldModifier.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 25
+          },
+          "region" : {
+            "startLine" : 1,
+            "startColumn" : 14,
+            "endColumn" : 27
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "ffeeaae3a64394d:1",
+        "primaryLocationStartColumnFingerprint" : "13"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/FieldModifier.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 25
+          },
+          "region" : {
+            "startLine" : 1,
+            "startColumn" : 14,
+            "endColumn" : 27
+          }
+        },
+        "message" : {
+          "text" : "<obinit>"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/InnerClassStatic.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 26
+          },
+          "region" : {
+            "startLine" : 4,
+            "startColumn" : 13,
+            "endColumn" : 40
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "c49cc65930b88329:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/IsJunit4TestAnnotation.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 27
+          },
+          "region" : {
+            "startLine" : 6,
+            "startColumn" : 9,
+            "endColumn" : 33
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "a5c99d71f3f0cb1:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/IsJunit4TestAnnotation.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 27
+          },
+          "region" : {
+            "startLine" : 11,
+            "startColumn" : 9,
+            "endColumn" : 33
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "88c9847ad6c37e65:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/IsJunit4TestAnnotation.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 27
+          },
+          "region" : {
+            "startLine" : 16,
+            "startColumn" : 9,
+            "endColumn" : 33
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "a03bffb38318a90d:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/IsJunit4TestAnnotation.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 27
+          },
+          "region" : {
+            "startLine" : 21,
+            "startColumn" : 9,
+            "endColumn" : 33
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "366948862ee85952:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/IsJunit4TestAnnotation.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 27
+          },
+          "region" : {
+            "startLine" : 26,
+            "startColumn" : 9,
+            "endColumn" : 33
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "ba813a33d4d19e1e:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/LoopHeadElement.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 28
+          },
+          "region" : {
+            "startLine" : 8,
+            "startColumn" : 17,
+            "endColumn" : 38
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "5ac7d4df424c9235:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/LoopHeadElement.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 28
+          },
+          "region" : {
+            "startLine" : 14,
+            "startColumn" : 13,
+            "endColumn" : 34
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "e59842523daa44ef:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/LoopHeadElement.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 28
+          },
+          "region" : {
+            "startLine" : 18,
+            "startColumn" : 13,
+            "endColumn" : 34
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "ab6da53fc9e47827:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MissingOverride.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 29
+          },
+          "region" : {
+            "startLine" : 7,
+            "startColumn" : 9,
+            "endColumn" : 32
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "3de872cabe34ce3b:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MissingOverride.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 29
+          },
+          "region" : {
+            "startLine" : 14,
+            "startColumn" : 9,
+            "endColumn" : 32
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "394a7679d60d6078:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 30
+          },
+          "region" : {
+            "startLine" : 3,
+            "startColumn" : 9,
+            "endColumn" : 33
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "1514bd3b4b869781:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [f](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 30
+          },
+          "region" : {
+            "startLine" : 3,
+            "startColumn" : 28,
+            "endColumn" : 32
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "1514bd3b4b869781:1",
+        "primaryLocationStartColumnFingerprint" : "19"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 30
+          },
+          "region" : {
+            "startLine" : 6,
+            "startColumn" : 23,
+            "endColumn" : 24
+          }
+        },
+        "message" : {
+          "text" : "f"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [g](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 30
+          },
+          "region" : {
+            "startLine" : 10,
+            "startColumn" : 20,
+            "endColumn" : 28
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "86e772edbf79ff94:1",
+        "primaryLocationStartColumnFingerprint" : "7"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 30
+          },
+          "region" : {
+            "startLine" : 14,
+            "startColumn" : 23,
+            "endColumn" : 24
+          }
+        },
+        "message" : {
+          "text" : "g"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [f](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 30
+          },
+          "region" : {
+            "startLine" : 18,
+            "startColumn" : 20,
+            "endColumn" : 28
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "7ab26c7ee922ba70:1",
+        "primaryLocationStartColumnFingerprint" : "7"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 30
+          },
+          "region" : {
+            "startLine" : 6,
+            "startColumn" : 23,
+            "endColumn" : 24
+          }
+        },
+        "message" : {
+          "text" : "f"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [v](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 30
+          },
+          "region" : {
+            "startLine" : 24,
+            "startColumn" : 16,
+            "endColumn" : 39
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "99539e6d1197ec93:1",
+        "primaryLocationStartColumnFingerprint" : "7"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 30
+          },
+          "region" : {
+            "startLine" : 27,
+            "startColumn" : 12,
+            "endColumn" : 13
+          }
+        },
+        "message" : {
+          "text" : "v"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [u](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 30
+          },
+          "region" : {
+            "startLine" : 29,
+            "startColumn" : 16,
+            "endColumn" : 39
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "a0a7c4a03340162d:1",
+        "primaryLocationStartColumnFingerprint" : "7"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 30
+          },
+          "region" : {
+            "startLine" : 22,
+            "startColumn" : 12,
+            "endColumn" : 13
+          }
+        },
+        "message" : {
+          "text" : "u"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [equals](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ObjectsEqualsInvocationFilter.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 31
+          },
+          "region" : {
+            "startLine" : 8,
+            "startColumn" : 9,
+            "endColumn" : 29
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "535449b0ddbea9cb:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/util/Objects.class",
+            "index" : 32
+          }
+        },
+        "message" : {
+          "text" : "equals"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [equals](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ObjectsEqualsInvocationFilter.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 31
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 9,
+            "endColumn" : 29
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "497fca1b38d4ed99:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/util/Objects.class",
+            "index" : 32
+          }
+        },
+        "message" : {
+          "text" : "equals"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ObjectsEqualsInvocationFilter.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 31
+          },
+          "region" : {
+            "startLine" : 10,
+            "startColumn" : 9,
+            "endColumn" : 48
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "ed0d5af2c85d10e2:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [toString](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ObjectsEqualsInvocationFilter.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 31
+          },
+          "region" : {
+            "startLine" : 10,
+            "startColumn" : 28,
+            "endColumn" : 47
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "ed0d5af2c85d10e2:1",
+        "primaryLocationStartColumnFingerprint" : "19"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/util/Objects.class",
+            "index" : 32
+          }
+        },
+        "message" : {
+          "text" : "toString"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [<obinit>](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/RedundantFieldInitialization.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 33
+          },
+          "region" : {
+            "startLine" : 1,
+            "startColumn" : 14,
+            "endColumn" : 42
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "68b172ec14633236:1",
+        "primaryLocationStartColumnFingerprint" : "13"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/RedundantFieldInitialization.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 33
+          },
+          "region" : {
+            "startLine" : 1,
+            "startColumn" : 14,
+            "endColumn" : 42
+          }
+        },
+        "message" : {
+          "text" : "<obinit>"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [test](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StaticAccessThroughInstance.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 34
+          },
+          "region" : {
+            "startLine" : 4,
+            "startColumn" : 9,
+            "endColumn" : 19
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "ec667fe77f1df51b:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StaticAccessThroughInstance.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 34
+          },
+          "region" : {
+            "startLine" : 12,
+            "startColumn" : 24,
+            "endColumn" : 28
+          }
+        },
+        "message" : {
+          "text" : "test"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [test](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StaticAccessThroughInstance.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 34
+          },
+          "region" : {
+            "startLine" : 5,
+            "startColumn" : 9,
+            "endColumn" : 20
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "df38a82620a17d5f:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StaticAccessThroughInstance.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 34
+          },
+          "region" : {
+            "startLine" : 12,
+            "startColumn" : 24,
+            "endColumn" : 28
+          }
+        },
+        "message" : {
+          "text" : "test"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [test](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StaticAccessThroughInstance.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 34
+          },
+          "region" : {
+            "startLine" : 7,
+            "startColumn" : 9,
+            "endColumn" : 20
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "2e73fca72843f509:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StaticAccessThroughInstance.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 34
+          },
+          "region" : {
+            "startLine" : 18,
+            "startColumn" : 17,
+            "endColumn" : 21
+          }
+        },
+        "message" : {
+          "text" : "test"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StaticAccessThroughInstance.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 34
+          },
+          "region" : {
+            "startLine" : 13,
+            "startColumn" : 9,
+            "endColumn" : 33
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "a66d5c46afdec742:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [substring](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringBuilderDirectUse.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 35
+          },
+          "region" : {
+            "startLine" : 7,
+            "startColumn" : 9,
+            "endColumn" : 35
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "19879ac88417cda9:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/String.class",
+            "index" : 20
+          }
+        },
+        "message" : {
+          "text" : "substring"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [toString](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringBuilderDirectUse.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 35
+          },
+          "region" : {
+            "startLine" : 7,
+            "startColumn" : 9,
+            "endColumn" : 22
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "19879ac88417cda9:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/StringBuilder.class",
+            "index" : 36
+          }
+        },
+        "message" : {
+          "text" : "toString"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [length](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringBuilderDirectUse.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 35
+          },
+          "region" : {
+            "startLine" : 8,
+            "startColumn" : 9,
+            "endColumn" : 31
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "fb3fb34db91898b0:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/String.class",
+            "index" : 20
+          }
+        },
+        "message" : {
+          "text" : "length"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [toString](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringBuilderDirectUse.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 35
+          },
+          "region" : {
+            "startLine" : 8,
+            "startColumn" : 9,
+            "endColumn" : 22
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "fb3fb34db91898b0:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/StringBuilder.class",
+            "index" : 36
+          }
+        },
+        "message" : {
+          "text" : "toString"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [length](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringBuilderDirectUse.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 35
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 9,
+            "endColumn" : 30
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "53d86afdc2fb5fa7:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/String.class",
+            "index" : 20
+          }
+        },
+        "message" : {
+          "text" : "length"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [toString](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringBuilderDirectUse.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 35
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 9,
+            "endColumn" : 21
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "53d86afdc2fb5fa7:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/String.class",
+            "index" : 20
+          }
+        },
+        "message" : {
+          "text" : "toString"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [toLowerCase](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringBuilderDirectUse.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 35
+          },
+          "region" : {
+            "startLine" : 10,
+            "startColumn" : 9,
+            "endColumn" : 47
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "68ecad2fc1299647:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/String.class",
+            "index" : 20
+          }
+        },
+        "message" : {
+          "text" : "toLowerCase"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [toString](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringBuilderDirectUse.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 35
+          },
+          "region" : {
+            "startLine" : 10,
+            "startColumn" : 9,
+            "endColumn" : 22
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "68ecad2fc1299647:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/StringBuilder.class",
+            "index" : 36
+          }
+        },
+        "message" : {
+          "text" : "toString"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 37
+          },
+          "region" : {
+            "startLine" : 5,
+            "startColumn" : 27,
+            "endColumn" : 62
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "7c6a47fad5e5962a:1",
+        "primaryLocationStartColumnFingerprint" : "18"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 37
+          },
+          "region" : {
+            "startLine" : 6,
+            "startColumn" : 27,
+            "endColumn" : 61
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "1edd1da81a1b3e16:1",
+        "primaryLocationStartColumnFingerprint" : "18"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 37
+          },
+          "region" : {
+            "startLine" : 7,
+            "startColumn" : 27,
+            "endColumn" : 61
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "6810f50dfe1b8470:1",
+        "primaryLocationStartColumnFingerprint" : "18"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [equals](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 37
+          },
+          "region" : {
+            "startLine" : 8,
+            "startColumn" : 13,
+            "endColumn" : 30
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "4c1522c1c7592e04:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/String.class",
+            "index" : 20
+          }
+        },
+        "message" : {
+          "text" : "equals"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 37
+          },
+          "region" : {
+            "startLine" : 8,
+            "startColumn" : 32,
+            "endColumn" : 71
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "4c1522c1c7592e04:1",
+        "primaryLocationStartColumnFingerprint" : "23"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [substring](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 37
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 21,
+            "endColumn" : 41
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "1c0a075a9bf48357:1",
+        "primaryLocationStartColumnFingerprint" : "12"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/String.class",
+            "index" : 20
+          }
+        },
+        "message" : {
+          "text" : "substring"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 37
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 43,
+            "endColumn" : 93
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "1c0a075a9bf48357:1",
+        "primaryLocationStartColumnFingerprint" : "34"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [equals](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/SuperEqualsMethodInvocationFilter.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 38
+          },
+          "region" : {
+            "startLine" : 4,
+            "startColumn" : 9,
+            "endColumn" : 31
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "7f01b5f3a48e616c:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/Object.class",
+            "index" : 1
+          }
+        },
+        "message" : {
+          "text" : "equals"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [test](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/SuperEqualsMethodInvocationFilter.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 38
+          },
+          "region" : {
+            "startLine" : 10,
+            "startColumn" : 9,
+            "endColumn" : 21
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "b976dfb181410058:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/SuperEqualsMethodInvocationFilter.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 38
+          },
+          "region" : {
+            "startLine" : 2,
+            "startColumn" : 17,
+            "endColumn" : 21
+          }
+        },
+        "message" : {
+          "text" : "test"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [equals](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/SuperEqualsMethodInvocationFilter.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 38
+          },
+          "region" : {
+            "startLine" : 11,
+            "startColumn" : 9,
+            "endColumn" : 35
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "d30a75d875e35571:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/Object.class",
+            "index" : 1
+          }
+        },
+        "message" : {
+          "text" : "equals"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestConstConditions.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 39
+          },
+          "region" : {
+            "startLine" : 4,
+            "startColumn" : 13,
+            "endColumn" : 47
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "2757f6608fb4062e:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [sleep](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestThreadStop.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 10,
+            "startColumn" : 17,
+            "endColumn" : 27
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "2d6ff988c3ddc1d1:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/Thread.class",
+            "index" : 16
+          }
+        },
+        "message" : {
+          "text" : "sleep"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestThreadStop.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 11,
+            "startColumn" : 17,
+            "endColumn" : 69
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "a4deff8db204b458:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [getName](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestThreadStop.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 11,
+            "startColumn" : 36,
+            "endColumn" : 68
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "a4deff8db204b458:1",
+        "primaryLocationStartColumnFingerprint" : "19"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/Thread.class",
+            "index" : 16
+          }
+        },
+        "message" : {
+          "text" : "getName"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [currentThread](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestThreadStop.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 11,
+            "startColumn" : 36,
+            "endColumn" : 58
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "a4deff8db204b458:1",
+        "primaryLocationStartColumnFingerprint" : "19"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/Thread.class",
+            "index" : 16
+          }
+        },
+        "message" : {
+          "text" : "currentThread"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestThreadStop.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 12,
+            "startColumn" : 44,
+            "endColumn" : 65
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "e0786dc48a0eb4df:1",
+        "primaryLocationStartColumnFingerprint" : "31"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestThreadStop.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 13,
+            "startColumn" : 13,
+            "endColumn" : 34
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "953eb85cec327230:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [start](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestThreadStop.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 23,
+            "startColumn" : 9,
+            "endColumn" : 19
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "1ef62b95279aa10a:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/Thread.class",
+            "index" : 16
+          }
+        },
+        "message" : {
+          "text" : "start"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [start](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestThreadStop.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 24,
+            "startColumn" : 9,
+            "endColumn" : 19
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "8a8f2057dcbbf15f:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/Thread.class",
+            "index" : 16
+          }
+        },
+        "message" : {
+          "text" : "start"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [stop](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestThreadStop.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 26,
+            "startColumn" : 9,
+            "endColumn" : 18
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "8b431e1ff6b28f7e:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/Thread.class",
+            "index" : 16
+          }
+        },
+        "message" : {
+          "text" : "stop"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestThreadStop.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 40
+          },
+          "region" : {
+            "startLine" : 27,
+            "startColumn" : 9,
+            "endColumn" : 51
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "9469306e20005bc5:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/UnsafeCasts.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 41
+          },
+          "region" : {
+            "startLine" : 5,
+            "startColumn" : 9,
+            "endColumn" : 30
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "ad57dd84a8bf2a6e:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/UnusedLocals.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 42
+          },
+          "region" : {
+            "startLine" : 7,
+            "startColumn" : 9,
+            "endColumn" : 30
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "d77271a5dfbc6adb:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 4
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [<obinit>](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/UtilityClassWithPublicConstructorProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 43
+          },
+          "region" : {
+            "startLine" : 10,
+            "startColumn" : 12,
+            "endColumn" : 27
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "ca33ed6d1fe4e325:1",
+        "primaryLocationStartColumnFingerprint" : "7"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/UtilityClassWithPublicConstructorProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 43
+          },
+          "region" : {
+            "startLine" : 7,
+            "startColumn" : 7,
+            "endColumn" : 22
+          }
+        },
+        "message" : {
+          "text" : "<obinit>"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [<obinit>](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/VariableModifier.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 44
+          },
+          "region" : {
+            "startLine" : 1,
+            "startColumn" : 14,
+            "endColumn" : 30
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "2c0627aa7fd5d470:1",
+        "primaryLocationStartColumnFingerprint" : "13"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/VariableModifier.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 44
+          },
+          "region" : {
+            "startLine" : 1,
+            "startColumn" : 14,
+            "endColumn" : 30
+          }
+        },
+        "message" : {
+          "text" : "<obinit>"
+        }
+      } ]
+    } ],
+    "columnKind" : "utf16CodeUnits",
+    "properties" : {
+      "semmle.formatSpecifier" : "sarifv2.1.0"
+    }
+  } ]
+}

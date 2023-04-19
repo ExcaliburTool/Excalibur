@@ -1,0 +1,8 @@
+bqrs/
+csv/
+!db/relationDB/csv/
+bench/*
+for_sporq/
+logs/
+ql/.cache
+upload.sh

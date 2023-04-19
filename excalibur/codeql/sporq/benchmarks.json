@@ -1,0 +1,313 @@
+{
+  "databases": {
+    "tomcat": {
+      "name": "tomcatDB",
+      "filterPath": "java/org/apache/catalina/core/"
+    },
+    "relation": {
+      "name": "relationDB",
+      "filterPath": "JavaSyntaxTool/benchmarks/ForCodeQL/"
+    },
+    "JCSprout": {
+      "name": "JCSproutDB",
+      "filterPath": "main/java/com/crossoverjie/"
+    }
+  },
+  "benchmarks": {
+    "test0": {
+      "maxHop": 2,
+      "db": "tomcat",
+      "target": "AddExpr"
+    },
+    "test1": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "AddExpr"
+    },
+    "test2": {
+      "maxHop": 2,
+      "db": "JCSprout",
+      "target": "AddExpr"
+    },
+    "test3": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "PrimitivePlusString"
+    },
+    "test4": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "StringParent"
+    },
+    "test5": {
+      "maxHop": 2,
+      "db": "JCSprout",
+      "target": "StringParent"
+    },
+    "test6": {
+      "maxHop": 2,
+      "db": "JCSprout",
+      "target": "PrimitivePlusString"
+    },
+    "test7": {
+      "maxHop": 2,
+      "db": "tomcat",
+      "target": "PrimitivePlusString"
+    },
+    "test8": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "Temp"
+    },
+    "byte-compare-int": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "ByteCompareInt"
+    },
+    "const-conds": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "ConstConds"
+    },
+    "const-void-funcs" : {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "ConstVoidFuncs"
+    },
+    "dangerous-funcs": {
+       "maxHop": 2,
+       "db": "relation",
+       "target": "DangerousFuncs"
+    },
+    "eq-bool-consts": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "EqBoolConsts"
+    },
+    "float-conversion": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "FloatConversion"
+    },
+    "mutual-recursive": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "MutualRecursive"
+    },
+    "string-compare": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "StringCompare"
+    },
+    "unsafe-casts": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "UnsafeCasts"
+    },
+    "use-break": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "UseBreak"
+    },
+    "unused-locals": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "UnusedLocals"
+    },
+    "arguments-method": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "ArgumentsMethod"
+    },
+    "array-hash-code-and-to-string-processor": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "ArrayHashCodeAndToStringProcessor"
+    },
+    "arrays-to-string": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "ArraysToString"
+    },
+    "big-decimal-double-constructor-processor": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "BigDecimalDoubleConstructor"
+    },
+    "boolean-expression": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "BooleanExpression"
+    },
+    "collection-empty-check": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "CollectionEmptyCheck"
+    },
+    "collections-empty-constants-processor": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "CollectionsEmptyConstantsProcessor"
+    },
+    "compare-to-return-value-processor": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "CompareToReturnValueProcessor"
+    },
+    "comparizon-modifier": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "ComparisonModifier"
+    },
+    "convert-overload-method": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "ConvertOverloadMethod"
+    },
+    "assignment-null": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "AssignmentNull"
+    },
+    "convert-variable-access-name": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "ConvertVariableAccessName"
+    },
+    "convert-variable-name": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "ConvertVariableName"
+    },
+    "dead-store-processor": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "DeadStoreProcessor"
+    },
+    "empty-string-check": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "EmptyStringCheck"
+    },
+    "equals-not-checking-conversion": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "EqualsNotCheckingConversion"
+    },
+    "equals-on-atomic-class-processor": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "EqualsOnAtomicClassProcessor"
+    },
+    "field-modifier": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "FieldModifier"
+    },
+    "loop-head-element": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "LoopHeadElement"
+    },
+    "inner-class-static": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "InnerClassStatic"
+    },
+    "is-junit4-test-annotation": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "IsJunit4TestAnnotation"
+    },
+    "is-null-condition": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "IsNullCondition"
+    },
+    "math-on-float-processor": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "MathOnFloatProcessor"
+    },
+    "missing-override": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "MissingOverride"
+    },
+    "objects-equals-invocation-filter": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "ObjectsEqualsInvocationFilter"
+    },
+    "primitive-to-string": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "PrimitiveToString"
+    },
+    "primitive-type-equals-binary-operator-filter": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "PrimitiveTypeEqualsBinaryOperatorFilter"
+    },
+    "protected-member-in-final-type": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "ProtectedMemberInFinalType"
+    },
+    "redundant-field-initialization": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "RedundantFieldInitialization"
+    },
+    "return-modifier": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "ReturnModifier"
+    },
+    "serial-version-uid-processor": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "SerialVersionUidProcessor"
+    },
+    "static-access-through-instance": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "StaticAccessThroughInstance"
+    },
+    "string-builder-direct-use": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "StringBuilderDirectUse"
+    },
+    "super-equals-method-invocation-filter": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "SuperEqualsMethodInvocationFilter"
+    },
+    "target-modifier": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "TargetModifier"
+    },
+    "thread-local-with-initial": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "ThreadLocalWithInitial"
+    },
+    "to-string-returning-null-processor": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "ToStringReturningNullProcessor"
+    },
+    "utility-class-with-public-constructor-processor": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "UtilityClassWithPublicConstructorProcessor"
+    },
+    "variable-modifier": {
+      "maxHop": 2,
+      "db": "relation",
+      "target": "VariableModifier"
+    }
+  }
+}

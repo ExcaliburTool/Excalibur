@@ -1,0 +1,2127 @@
+{
+  "$schema" : "https://json.schemastore.org/sarif-2.1.0.json",
+  "version" : "2.1.0",
+  "runs" : [ {
+    "tool" : {
+      "driver" : {
+        "name" : "CodeQL",
+        "organization" : "GitHub",
+        "semanticVersion" : "2.12.5",
+        "rules" : [ {
+          "id" : "java/example/taintflow_para",
+          "name" : "java/example/taintflow_para",
+          "shortDescription" : {
+            "text" : "Taintflow_para"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "id" : "java/example/taintflow_para",
+            "kind" : "problem",
+            "name" : "Taintflow_para",
+            "problem.severity" : "warning"
+          }
+        } ]
+      },
+      "extensions" : [ {
+        "name" : "legacy-upgrades",
+        "semanticVersion" : "0.0.0",
+        "locations" : [ {
+          "uri" : "file:///opt/homebrew/Caskroom/codeql/2.12.5/codeql/legacy-upgrades/",
+          "description" : {
+            "text" : "The QL pack root directory."
+          }
+        }, {
+          "uri" : "file:///opt/homebrew/Caskroom/codeql/2.12.5/codeql/legacy-upgrades/qlpack.yml",
+          "description" : {
+            "text" : "The QL pack definition file."
+          }
+        } ]
+      }, {
+        "name" : "getting-started/codeql-extra-queries-java",
+        "semanticVersion" : "0.0.0+9688a33f8a7790e1160da629a5cf79ee7cd635f2",
+        "locations" : [ {
+          "uri" : "file:///Users/sissel/repository/JavaSyntaxTool/codeql/",
+          "description" : {
+            "text" : "The QL pack root directory."
+          }
+        }, {
+          "uri" : "file:///Users/sissel/repository/JavaSyntaxTool/codeql/qlpack.yml",
+          "description" : {
+            "text" : "The QL pack definition file."
+          }
+        } ]
+      } ]
+    },
+    "artifacts" : [ {
+      "location" : {
+        "uri" : "src/main/java/ArgumentsMethod.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 0
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/CompareToReturnValueProcessor.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 1
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/ConvertVariableAccessName.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 2
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/EqualsNotCheckingConversion.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 3
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/FieldModifier.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 4
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/LoopHeadElement.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 5
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/MutualRecursive.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 6
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/TestCompareByteInt.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 7
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/TestDataFlow.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 8
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/TestEqBooleanConsts.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 9
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/TestStringCompare.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 10
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/TestUnusedLocals.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 11
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/TestUseBreak.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 12
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/UtilityClassWithPublicConstructorProcessor.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 13
+      }
+    } ],
+    "results" : [ {
+      "ruleId" : "java/example/taintflow_para",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/taintflow_para",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "taints [x](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ArgumentsMethod.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 5,
+            "startColumn" : 28,
+            "endColumn" : 33
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "1e8368bee1f3227e:1",
+        "primaryLocationStartColumnFingerprint" : "23"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ArgumentsMethod.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 6,
+            "startColumn" : 16,
+            "endColumn" : 17
+          }
+        },
+        "message" : {
+          "text" : "x"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/taintflow_para",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/taintflow_para",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "taints [y](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ArgumentsMethod.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 5,
+            "startColumn" : 35,
+            "endColumn" : 40
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "1e8368bee1f3227e:1",
+        "primaryLocationStartColumnFingerprint" : "30"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ArgumentsMethod.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 6,
+            "startColumn" : 19,
+            "endColumn" : 20
+          }
+        },
+        "message" : {
+          "text" : "y"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/taintflow_para",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/taintflow_para",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "taints [... > ...](1)\ntaints [a](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/CompareToReturnValueProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 1
+          },
+          "region" : {
+            "startLine" : 8,
+            "startColumn" : 27,
+            "endColumn" : 32
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "27060b4cb08f922:1",
+        "primaryLocationStartColumnFingerprint" : "22"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/CompareToReturnValueProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 1
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 13,
+            "endColumn" : 18
+          }
+        },
+        "message" : {
+          "text" : "... > ..."
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/CompareToReturnValueProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 1
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 13,
+            "endColumn" : 14
+          }
+        },
+        "message" : {
+          "text" : "a"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/taintflow_para",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/taintflow_para",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "taints [i](1)\ntaints [...=...](2)\ntaints [i](3)\ntaints [...=...](4)\ntaints [i](5)\ntaints [...=...](6)\ntaints [i](7)\ntaints [...=...](8)\ntaints [i](9)\ntaints [...=...](10)\ntaints [i](11)\ntaints [...=...](12)\ntaints [i](13)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ConvertVariableAccessName.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 2
+          },
+          "region" : {
+            "startLine" : 14,
+            "startColumn" : 27,
+            "endColumn" : 32
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "b3f91f0ef947d223:1",
+        "primaryLocationStartColumnFingerprint" : "22"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ConvertVariableAccessName.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 2
+          },
+          "region" : {
+            "startLine" : 15,
+            "startColumn" : 16,
+            "endColumn" : 17
+          }
+        },
+        "message" : {
+          "text" : "i"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ConvertVariableAccessName.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 2
+          },
+          "region" : {
+            "startLine" : 16,
+            "startColumn" : 9,
+            "endColumn" : 17
+          }
+        },
+        "message" : {
+          "text" : "...=..."
+        }
+      }, {
+        "id" : 3,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ConvertVariableAccessName.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 2
+          },
+          "region" : {
+            "startLine" : 16,
+            "startColumn" : 16,
+            "endColumn" : 17
+          }
+        },
+        "message" : {
+          "text" : "i"
+        }
+      }, {
+        "id" : 4,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ConvertVariableAccessName.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 2
+          },
+          "region" : {
+            "startLine" : 17,
+            "startColumn" : 9,
+            "endColumn" : 18
+          }
+        },
+        "message" : {
+          "text" : "...=..."
+        }
+      }, {
+        "id" : 5,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ConvertVariableAccessName.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 2
+          },
+          "region" : {
+            "startLine" : 17,
+            "startColumn" : 17,
+            "endColumn" : 18
+          }
+        },
+        "message" : {
+          "text" : "i"
+        }
+      }, {
+        "id" : 6,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ConvertVariableAccessName.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 2
+          },
+          "region" : {
+            "startLine" : 18,
+            "startColumn" : 9,
+            "endColumn" : 17
+          }
+        },
+        "message" : {
+          "text" : "...=..."
+        }
+      }, {
+        "id" : 7,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ConvertVariableAccessName.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 2
+          },
+          "region" : {
+            "startLine" : 18,
+            "startColumn" : 16,
+            "endColumn" : 17
+          }
+        },
+        "message" : {
+          "text" : "i"
+        }
+      }, {
+        "id" : 8,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ConvertVariableAccessName.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 2
+          },
+          "region" : {
+            "startLine" : 19,
+            "startColumn" : 9,
+            "endColumn" : 18
+          }
+        },
+        "message" : {
+          "text" : "...=..."
+        }
+      }, {
+        "id" : 9,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ConvertVariableAccessName.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 2
+          },
+          "region" : {
+            "startLine" : 19,
+            "startColumn" : 17,
+            "endColumn" : 18
+          }
+        },
+        "message" : {
+          "text" : "i"
+        }
+      }, {
+        "id" : 10,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ConvertVariableAccessName.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 2
+          },
+          "region" : {
+            "startLine" : 20,
+            "startColumn" : 9,
+            "endColumn" : 16
+          }
+        },
+        "message" : {
+          "text" : "...=..."
+        }
+      }, {
+        "id" : 11,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ConvertVariableAccessName.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 2
+          },
+          "region" : {
+            "startLine" : 20,
+            "startColumn" : 15,
+            "endColumn" : 16
+          }
+        },
+        "message" : {
+          "text" : "i"
+        }
+      }, {
+        "id" : 12,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ConvertVariableAccessName.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 2
+          },
+          "region" : {
+            "startLine" : 21,
+            "startColumn" : 9,
+            "endColumn" : 16
+          }
+        },
+        "message" : {
+          "text" : "...=..."
+        }
+      }, {
+        "id" : 13,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ConvertVariableAccessName.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 2
+          },
+          "region" : {
+            "startLine" : 21,
+            "startColumn" : 15,
+            "endColumn" : 16
+          }
+        },
+        "message" : {
+          "text" : "i"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/taintflow_para",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/taintflow_para",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "taints [(...)...](1)\ntaints [obj](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EqualsNotCheckingConversion.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 6,
+            "startColumn" : 27,
+            "endColumn" : 37
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "59042330a5400ebd:1",
+        "primaryLocationStartColumnFingerprint" : "22"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EqualsNotCheckingConversion.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 7,
+            "startColumn" : 24,
+            "endColumn" : 32
+          }
+        },
+        "message" : {
+          "text" : "(...)..."
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EqualsNotCheckingConversion.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 7,
+            "startColumn" : 29,
+            "endColumn" : 32
+          }
+        },
+        "message" : {
+          "text" : "obj"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/taintflow_para",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/taintflow_para",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "taints [... || ...](1)\ntaints [... == ...](2)\ntaints [obj](3)\ntaints [obj](4)\ntaints [(...)...](5)\ntaints [obj](6)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EqualsNotCheckingConversion.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 12,
+            "startColumn" : 27,
+            "endColumn" : 37
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "5a88bd3091e42fa0:1",
+        "primaryLocationStartColumnFingerprint" : "22"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EqualsNotCheckingConversion.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 13,
+            "startColumn" : 13,
+            "endColumn" : 56
+          }
+        },
+        "message" : {
+          "text" : "... || ..."
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EqualsNotCheckingConversion.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 13,
+            "startColumn" : 13,
+            "endColumn" : 24
+          }
+        },
+        "message" : {
+          "text" : "... == ..."
+        }
+      }, {
+        "id" : 3,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EqualsNotCheckingConversion.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 13,
+            "startColumn" : 13,
+            "endColumn" : 16
+          }
+        },
+        "message" : {
+          "text" : "obj"
+        }
+      }, {
+        "id" : 4,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EqualsNotCheckingConversion.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 13,
+            "startColumn" : 42,
+            "endColumn" : 45
+          }
+        },
+        "message" : {
+          "text" : "obj"
+        }
+      }, {
+        "id" : 5,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EqualsNotCheckingConversion.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 16,
+            "startColumn" : 24,
+            "endColumn" : 32
+          }
+        },
+        "message" : {
+          "text" : "(...)..."
+        }
+      }, {
+        "id" : 6,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EqualsNotCheckingConversion.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 16,
+            "startColumn" : 29,
+            "endColumn" : 32
+          }
+        },
+        "message" : {
+          "text" : "obj"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/taintflow_para",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/taintflow_para",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "taints [... || ...](1)\ntaints [... == ...](2)\ntaints [obj](3)\ntaints [obj](4)\ntaints [(...)...](5)\ntaints [obj](6)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EqualsNotCheckingConversion.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 21,
+            "startColumn" : 27,
+            "endColumn" : 37
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "2b541a325bd6f7f5:1",
+        "primaryLocationStartColumnFingerprint" : "22"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EqualsNotCheckingConversion.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 22,
+            "startColumn" : 13,
+            "endColumn" : 51
+          }
+        },
+        "message" : {
+          "text" : "... || ..."
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EqualsNotCheckingConversion.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 22,
+            "startColumn" : 13,
+            "endColumn" : 24
+          }
+        },
+        "message" : {
+          "text" : "... == ..."
+        }
+      }, {
+        "id" : 3,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EqualsNotCheckingConversion.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 22,
+            "startColumn" : 13,
+            "endColumn" : 16
+          }
+        },
+        "message" : {
+          "text" : "obj"
+        }
+      }, {
+        "id" : 4,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EqualsNotCheckingConversion.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 22,
+            "startColumn" : 30,
+            "endColumn" : 33
+          }
+        },
+        "message" : {
+          "text" : "obj"
+        }
+      }, {
+        "id" : 5,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EqualsNotCheckingConversion.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 25,
+            "startColumn" : 24,
+            "endColumn" : 34
+          }
+        },
+        "message" : {
+          "text" : "(...)..."
+        }
+      }, {
+        "id" : 6,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EqualsNotCheckingConversion.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 25,
+            "startColumn" : 31,
+            "endColumn" : 34
+          }
+        },
+        "message" : {
+          "text" : "obj"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/taintflow_para",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/taintflow_para",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "taints [...=...](1)\ntaints [x](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/FieldModifier.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 4
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 10,
+            "endColumn" : 15
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "8fcfd0a34ec8198a:1",
+        "primaryLocationStartColumnFingerprint" : "5"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/FieldModifier.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 4
+          },
+          "region" : {
+            "startLine" : 10,
+            "startColumn" : 9,
+            "endColumn" : 14
+          }
+        },
+        "message" : {
+          "text" : "...=..."
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/FieldModifier.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 4
+          },
+          "region" : {
+            "startLine" : 10,
+            "startColumn" : 13,
+            "endColumn" : 14
+          }
+        },
+        "message" : {
+          "text" : "x"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/taintflow_para",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/taintflow_para",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "taints [args](1)\ntaints [y](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/LoopHeadElement.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 5
+          },
+          "region" : {
+            "startLine" : 5,
+            "startColumn" : 29,
+            "endColumn" : 42
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "9c3c3efb2249cbf:1",
+        "primaryLocationStartColumnFingerprint" : "24"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/LoopHeadElement.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 5
+          },
+          "region" : {
+            "startLine" : 17,
+            "startColumn" : 21,
+            "endColumn" : 25
+          }
+        },
+        "message" : {
+          "text" : "args"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/LoopHeadElement.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 5
+          },
+          "region" : {
+            "startLine" : 18,
+            "startColumn" : 32,
+            "endColumn" : 33
+          }
+        },
+        "message" : {
+          "text" : "y"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/taintflow_para",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/taintflow_para",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "taints [... == ...](1)\ntaints [n](2)\ntaints [n](3)\ntaints [n](4)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 6
+          },
+          "region" : {
+            "startLine" : 27,
+            "startColumn" : 14,
+            "endColumn" : 19
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "7c2e9fe38da95b17:1",
+        "primaryLocationStartColumnFingerprint" : "9"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 6
+          },
+          "region" : {
+            "startLine" : 28,
+            "startColumn" : 13,
+            "endColumn" : 19
+          }
+        },
+        "message" : {
+          "text" : "... == ..."
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 6
+          },
+          "region" : {
+            "startLine" : 28,
+            "startColumn" : 13,
+            "endColumn" : 14
+          }
+        },
+        "message" : {
+          "text" : "n"
+        }
+      }, {
+        "id" : 3,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 6
+          },
+          "region" : {
+            "startLine" : 29,
+            "startColumn" : 18,
+            "endColumn" : 19
+          }
+        },
+        "message" : {
+          "text" : "n"
+        }
+      }, {
+        "id" : 4,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 6
+          },
+          "region" : {
+            "startLine" : 29,
+            "startColumn" : 37,
+            "endColumn" : 38
+          }
+        },
+        "message" : {
+          "text" : "n"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/taintflow_para",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/taintflow_para",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "taints [acc](1)\ntaints [acc](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 6
+          },
+          "region" : {
+            "startLine" : 27,
+            "startColumn" : 21,
+            "endColumn" : 31
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "7c2e9fe38da95b17:1",
+        "primaryLocationStartColumnFingerprint" : "16"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 6
+          },
+          "region" : {
+            "startLine" : 28,
+            "startColumn" : 28,
+            "endColumn" : 31
+          }
+        },
+        "message" : {
+          "text" : "acc"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 6
+          },
+          "region" : {
+            "startLine" : 29,
+            "startColumn" : 25,
+            "endColumn" : 28
+          }
+        },
+        "message" : {
+          "text" : "acc"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/taintflow_para",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/taintflow_para",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "taints [... == ...](1)\ntaints [n](2)\ntaints [n](3)\ntaints [n](4)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 6
+          },
+          "region" : {
+            "startLine" : 22,
+            "startColumn" : 14,
+            "endColumn" : 19
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "e498b8a1782c6e17:1",
+        "primaryLocationStartColumnFingerprint" : "9"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 6
+          },
+          "region" : {
+            "startLine" : 23,
+            "startColumn" : 13,
+            "endColumn" : 19
+          }
+        },
+        "message" : {
+          "text" : "... == ..."
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 6
+          },
+          "region" : {
+            "startLine" : 23,
+            "startColumn" : 13,
+            "endColumn" : 14
+          }
+        },
+        "message" : {
+          "text" : "n"
+        }
+      }, {
+        "id" : 3,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 6
+          },
+          "region" : {
+            "startLine" : 24,
+            "startColumn" : 18,
+            "endColumn" : 19
+          }
+        },
+        "message" : {
+          "text" : "n"
+        }
+      }, {
+        "id" : 4,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 6
+          },
+          "region" : {
+            "startLine" : 24,
+            "startColumn" : 37,
+            "endColumn" : 38
+          }
+        },
+        "message" : {
+          "text" : "n"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/taintflow_para",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/taintflow_para",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "taints [acc](1)\ntaints [acc](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 6
+          },
+          "region" : {
+            "startLine" : 22,
+            "startColumn" : 21,
+            "endColumn" : 31
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "e498b8a1782c6e17:1",
+        "primaryLocationStartColumnFingerprint" : "16"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 6
+          },
+          "region" : {
+            "startLine" : 23,
+            "startColumn" : 28,
+            "endColumn" : 31
+          }
+        },
+        "message" : {
+          "text" : "acc"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 6
+          },
+          "region" : {
+            "startLine" : 24,
+            "startColumn" : 25,
+            "endColumn" : 28
+          }
+        },
+        "message" : {
+          "text" : "acc"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/taintflow_para",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/taintflow_para",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "taints [... == ...](1)\ntaints [n](2)\ntaints [n](3)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 6
+          },
+          "region" : {
+            "startLine" : 6,
+            "startColumn" : 25,
+            "endColumn" : 30
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "8a7a89dda95bcb74:1",
+        "primaryLocationStartColumnFingerprint" : "20"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 6
+          },
+          "region" : {
+            "startLine" : 7,
+            "startColumn" : 13,
+            "endColumn" : 19
+          }
+        },
+        "message" : {
+          "text" : "... == ..."
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 6
+          },
+          "region" : {
+            "startLine" : 7,
+            "startColumn" : 13,
+            "endColumn" : 14
+          }
+        },
+        "message" : {
+          "text" : "n"
+        }
+      }, {
+        "id" : 3,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 6
+          },
+          "region" : {
+            "startLine" : 10,
+            "startColumn" : 22,
+            "endColumn" : 23
+          }
+        },
+        "message" : {
+          "text" : "n"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/taintflow_para",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/taintflow_para",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "taints [... == ...](1)\ntaints [n](2)\ntaints [n](3)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 6
+          },
+          "region" : {
+            "startLine" : 14,
+            "startColumn" : 25,
+            "endColumn" : 30
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "fcc64b68f40808b6:1",
+        "primaryLocationStartColumnFingerprint" : "20"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 6
+          },
+          "region" : {
+            "startLine" : 15,
+            "startColumn" : 13,
+            "endColumn" : 19
+          }
+        },
+        "message" : {
+          "text" : "... == ..."
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 6
+          },
+          "region" : {
+            "startLine" : 15,
+            "startColumn" : 13,
+            "endColumn" : 14
+          }
+        },
+        "message" : {
+          "text" : "n"
+        }
+      }, {
+        "id" : 3,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 6
+          },
+          "region" : {
+            "startLine" : 18,
+            "startColumn" : 22,
+            "endColumn" : 23
+          }
+        },
+        "message" : {
+          "text" : "n"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/taintflow_para",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/taintflow_para",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "taints [a](1)\ntaints [a](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestCompareByteInt.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 7
+          },
+          "region" : {
+            "startLine" : 2,
+            "startColumn" : 17,
+            "endColumn" : 22
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "24e469a8568ef61c:1",
+        "primaryLocationStartColumnFingerprint" : "12"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestCompareByteInt.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 7
+          },
+          "region" : {
+            "startLine" : 3,
+            "startColumn" : 16,
+            "endColumn" : 17
+          }
+        },
+        "message" : {
+          "text" : "a"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestCompareByteInt.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 7
+          },
+          "region" : {
+            "startLine" : 3,
+            "startColumn" : 26,
+            "endColumn" : 27
+          }
+        },
+        "message" : {
+          "text" : "a"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/taintflow_para",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/taintflow_para",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "taints [b](1)\ntaints [b](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestCompareByteInt.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 7
+          },
+          "region" : {
+            "startLine" : 2,
+            "startColumn" : 24,
+            "endColumn" : 30
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "24e469a8568ef61c:1",
+        "primaryLocationStartColumnFingerprint" : "19"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestCompareByteInt.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 7
+          },
+          "region" : {
+            "startLine" : 3,
+            "startColumn" : 21,
+            "endColumn" : 22
+          }
+        },
+        "message" : {
+          "text" : "b"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestCompareByteInt.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 7
+          },
+          "region" : {
+            "startLine" : 3,
+            "startColumn" : 30,
+            "endColumn" : 31
+          }
+        },
+        "message" : {
+          "text" : "b"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/taintflow_para",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/taintflow_para",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "taints [... > ...](1)\ntaints [a](2)\ntaints [a](3)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestDataFlow.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 8
+          },
+          "region" : {
+            "startLine" : 7,
+            "startColumn" : 13,
+            "endColumn" : 18
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "112268cbb17ef0ec:1",
+        "primaryLocationStartColumnFingerprint" : "8"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestDataFlow.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 8
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 13,
+            "endColumn" : 18
+          }
+        },
+        "message" : {
+          "text" : "... > ..."
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestDataFlow.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 8
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 13,
+            "endColumn" : 14
+          }
+        },
+        "message" : {
+          "text" : "a"
+        }
+      }, {
+        "id" : 3,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestDataFlow.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 8
+          },
+          "region" : {
+            "startLine" : 10,
+            "startColumn" : 17,
+            "endColumn" : 18
+          }
+        },
+        "message" : {
+          "text" : "a"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/taintflow_para",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/taintflow_para",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "taints [b](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestDataFlow.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 8
+          },
+          "region" : {
+            "startLine" : 7,
+            "startColumn" : 20,
+            "endColumn" : 25
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "112268cbb17ef0ec:1",
+        "primaryLocationStartColumnFingerprint" : "15"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestDataFlow.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 8
+          },
+          "region" : {
+            "startLine" : 12,
+            "startColumn" : 17,
+            "endColumn" : 18
+          }
+        },
+        "message" : {
+          "text" : "b"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/taintflow_para",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/taintflow_para",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "taints [... > ...](1)\ntaints [a](2)\ntaints [a](3)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestDataFlow.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 8
+          },
+          "region" : {
+            "startLine" : 2,
+            "startColumn" : 13,
+            "endColumn" : 18
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "6ae27bd76a8ec485:1",
+        "primaryLocationStartColumnFingerprint" : "8"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestDataFlow.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 8
+          },
+          "region" : {
+            "startLine" : 3,
+            "startColumn" : 17,
+            "endColumn" : 22
+          }
+        },
+        "message" : {
+          "text" : "... > ..."
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestDataFlow.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 8
+          },
+          "region" : {
+            "startLine" : 3,
+            "startColumn" : 17,
+            "endColumn" : 18
+          }
+        },
+        "message" : {
+          "text" : "a"
+        }
+      }, {
+        "id" : 3,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestDataFlow.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 8
+          },
+          "region" : {
+            "startLine" : 3,
+            "startColumn" : 25,
+            "endColumn" : 26
+          }
+        },
+        "message" : {
+          "text" : "a"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/taintflow_para",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/taintflow_para",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "taints [b](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestDataFlow.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 8
+          },
+          "region" : {
+            "startLine" : 2,
+            "startColumn" : 20,
+            "endColumn" : 25
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "6ae27bd76a8ec485:1",
+        "primaryLocationStartColumnFingerprint" : "15"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestDataFlow.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 8
+          },
+          "region" : {
+            "startLine" : 3,
+            "startColumn" : 33,
+            "endColumn" : 34
+          }
+        },
+        "message" : {
+          "text" : "b"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/taintflow_para",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/taintflow_para",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "taints [a](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestEqBooleanConsts.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 9
+          },
+          "region" : {
+            "startLine" : 2,
+            "startColumn" : 13,
+            "endColumn" : 18
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "460fd1b127c4063a:1",
+        "primaryLocationStartColumnFingerprint" : "8"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestEqBooleanConsts.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 9
+          },
+          "region" : {
+            "startLine" : 3,
+            "startColumn" : 14,
+            "endColumn" : 15
+          }
+        },
+        "message" : {
+          "text" : "a"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/taintflow_para",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/taintflow_para",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "taints [... == ...](1)\ntaints [str](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestStringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 10
+          },
+          "region" : {
+            "startLine" : 2,
+            "startColumn" : 26,
+            "endColumn" : 36
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "eebfe8cbe1daad23:1",
+        "primaryLocationStartColumnFingerprint" : "21"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestStringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 10
+          },
+          "region" : {
+            "startLine" : 3,
+            "startColumn" : 16,
+            "endColumn" : 28
+          }
+        },
+        "message" : {
+          "text" : "... == ..."
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestStringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 10
+          },
+          "region" : {
+            "startLine" : 3,
+            "startColumn" : 16,
+            "endColumn" : 19
+          }
+        },
+        "message" : {
+          "text" : "str"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/taintflow_para",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/taintflow_para",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "taints [i](1)\ntaints [i](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestUnusedLocals.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 11
+          },
+          "region" : {
+            "startLine" : 2,
+            "startColumn" : 13,
+            "endColumn" : 18
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "5b8343631b987b5b:1",
+        "primaryLocationStartColumnFingerprint" : "8"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestUnusedLocals.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 11
+          },
+          "region" : {
+            "startLine" : 5,
+            "startColumn" : 17,
+            "endColumn" : 18
+          }
+        },
+        "message" : {
+          "text" : "i"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestUnusedLocals.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 11
+          },
+          "region" : {
+            "startLine" : 5,
+            "startColumn" : 27,
+            "endColumn" : 28
+          }
+        },
+        "message" : {
+          "text" : "i"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/taintflow_para",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/taintflow_para",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "taints [a](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestUseBreak.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 12
+          },
+          "region" : {
+            "startLine" : 2,
+            "startColumn" : 13,
+            "endColumn" : 18
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "a72de6b402c851e0:1",
+        "primaryLocationStartColumnFingerprint" : "8"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestUseBreak.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 12
+          },
+          "region" : {
+            "startLine" : 6,
+            "startColumn" : 25,
+            "endColumn" : 26
+          }
+        },
+        "message" : {
+          "text" : "a"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/taintflow_para",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/taintflow_para",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "taints [x](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/UtilityClassWithPublicConstructorProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 13
+          },
+          "region" : {
+            "startLine" : 15,
+            "startColumn" : 13,
+            "endColumn" : 18
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "21f93179f1a0f471:1",
+        "primaryLocationStartColumnFingerprint" : "8"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/UtilityClassWithPublicConstructorProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 13
+          },
+          "region" : {
+            "startLine" : 15,
+            "startColumn" : 29,
+            "endColumn" : 30
+          }
+        },
+        "message" : {
+          "text" : "x"
+        }
+      } ]
+    } ],
+    "columnKind" : "utf16CodeUnits",
+    "properties" : {
+      "semmle.formatSpecifier" : "sarifv2.1.0"
+    }
+  } ]
+}

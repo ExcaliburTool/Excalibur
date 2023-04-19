@@ -1,0 +1,12 @@
+import java.util.Objects;
+
+public class ObjectsEqualsInvocationFilter {
+
+    public void test(){
+        Object x = new Object();
+        Object y = new Object();
+        Objects.equals(x, y);
+        Objects.equals(1, y);
+        System.out.println(Objects.toString(x));
+    }
+}

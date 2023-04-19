@@ -1,0 +1,368 @@
+{
+  "$schema" : "https://json.schemastore.org/sarif-2.1.0.json",
+  "version" : "2.1.0",
+  "runs" : [ {
+    "tool" : {
+      "driver" : {
+        "name" : "CodeQL",
+        "organization" : "GitHub",
+        "semanticVersion" : "2.12.5",
+        "rules" : [ {
+          "id" : "java/example/annotation_package",
+          "name" : "java/example/annotation_package",
+          "shortDescription" : {
+            "text" : "AnnotationPackage"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "id" : "java/example/annotation_package",
+            "kind" : "problem",
+            "name" : "AnnotationPackage",
+            "problem.severity" : "warning"
+          }
+        } ]
+      },
+      "extensions" : [ {
+        "name" : "legacy-upgrades",
+        "semanticVersion" : "0.0.0",
+        "locations" : [ {
+          "uri" : "file:///opt/homebrew/Caskroom/codeql/2.12.5/codeql/legacy-upgrades/",
+          "description" : {
+            "text" : "The QL pack root directory."
+          }
+        }, {
+          "uri" : "file:///opt/homebrew/Caskroom/codeql/2.12.5/codeql/legacy-upgrades/qlpack.yml",
+          "description" : {
+            "text" : "The QL pack definition file."
+          }
+        } ]
+      }, {
+        "name" : "getting-started/codeql-extra-queries-java",
+        "semanticVersion" : "0.0.0+9688a33f8a7790e1160da629a5cf79ee7cd635f2",
+        "locations" : [ {
+          "uri" : "file:///Users/sissel/repository/JavaSyntaxTool/codeql/",
+          "description" : {
+            "text" : "The QL pack root directory."
+          }
+        }, {
+          "uri" : "file:///Users/sissel/repository/JavaSyntaxTool/codeql/qlpack.yml",
+          "description" : {
+            "text" : "The QL pack definition file."
+          }
+        } ]
+      } ]
+    },
+    "artifacts" : [ {
+      "location" : {
+        "uri" : "src/main/java/IsJunit4TestAnnotation.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 0
+      }
+    }, {
+      "location" : {
+        "uri" : "file:/",
+        "index" : 1
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/MissingOverride.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 2
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/ThreadLocalWithInitial.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 3
+      }
+    } ],
+    "results" : [ {
+      "ruleId" : "java/example/annotation_package",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/annotation_package",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "from [org.junit](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/IsJunit4TestAnnotation.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 4,
+            "startColumn" : 5,
+            "endColumn" : 12
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "e2063a33a82918ef:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/",
+            "index" : 1
+          }
+        },
+        "message" : {
+          "text" : "org.junit"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/annotation_package",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/annotation_package",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "from [org.junit](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/IsJunit4TestAnnotation.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 5,
+            "endColumn" : 10
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "3d511a431da613ef:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/",
+            "index" : 1
+          }
+        },
+        "message" : {
+          "text" : "org.junit"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/annotation_package",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/annotation_package",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "from [org.junit](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/IsJunit4TestAnnotation.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 14,
+            "startColumn" : 5,
+            "endColumn" : 10
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "65eae2713b0ccdbb:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/",
+            "index" : 1
+          }
+        },
+        "message" : {
+          "text" : "org.junit"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/annotation_package",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/annotation_package",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "from [org.junit](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/IsJunit4TestAnnotation.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 19,
+            "startColumn" : 5,
+            "endColumn" : 16
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "114b9ec0c3fe0e5a:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/",
+            "index" : 1
+          }
+        },
+        "message" : {
+          "text" : "org.junit"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/annotation_package",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/annotation_package",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "from [org.junit](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/IsJunit4TestAnnotation.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 24,
+            "startColumn" : 5,
+            "endColumn" : 12
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "e157c1db1ef249fe:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/",
+            "index" : 1
+          }
+        },
+        "message" : {
+          "text" : "org.junit"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/annotation_package",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/annotation_package",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "from [java.lang](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MissingOverride.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 2
+          },
+          "region" : {
+            "startLine" : 12,
+            "startColumn" : 5,
+            "endColumn" : 14
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "822e72898ea89964:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/",
+            "index" : 1
+          }
+        },
+        "message" : {
+          "text" : "java.lang"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/annotation_package",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/annotation_package",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "from [java.lang](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ThreadLocalWithInitial.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 10,
+            "startColumn" : 17,
+            "endColumn" : 26
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "b5853332069861b4:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/",
+            "index" : 1
+          }
+        },
+        "message" : {
+          "text" : "java.lang"
+        }
+      } ]
+    } ],
+    "columnKind" : "utf16CodeUnits",
+    "properties" : {
+      "semmle.formatSpecifier" : "sarifv2.1.0"
+    }
+  } ]
+}

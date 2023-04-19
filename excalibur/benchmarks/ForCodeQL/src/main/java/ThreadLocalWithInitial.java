@@ -1,0 +1,19 @@
+import java.util.List;
+import java.util.ArrayList;
+
+public class ThreadLocalWithInitial {
+    static ThreadLocal<String> thl = new ThreadLocal<>();
+
+    public void test(){
+        ThreadLocal<List<String>> myThreadLocal =
+            new ThreadLocal<List<String>>() {
+                @Override
+                protected List<String> initialValue() {
+                    return new ArrayList<String>();
+                }
+            };
+
+        ThreadLocal<List<String>> nonTarget =
+            new ThreadLocal<List<String>>() { };
+    }
+}

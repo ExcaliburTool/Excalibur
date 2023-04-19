@@ -1,0 +1,6 @@
+logs/
+.idea/
+__pycache__/
+bench/**/*.csv
+bench/**/Rule.facts
+bench/**/temp_program.dl

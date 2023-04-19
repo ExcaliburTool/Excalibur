@@ -1,0 +1,9 @@
+{
+  "rankedNum": 5,
+  "goalNum": 4,
+  "oracle": "perfect",
+  "useTraceSet": true,
+  "random": true,
+  "timeout": 450,
+  "smallTrace": 1000
+}

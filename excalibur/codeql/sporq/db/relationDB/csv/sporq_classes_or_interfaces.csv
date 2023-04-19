@@ -1,0 +1,3023 @@
+"ID of id","nodeName","ID of parentid","ID of sourceid"
+69,"ArgumentsMethod",68,69
+79,"Object",947,79
+113,"Arrays",926,113
+116,"ArrayHashCodeAndToStringProcessor",68,116
+137,"Cloneable",947,137
+138,"Serializable",7407,138
+157,"String",947,157
+225,"ArraysToString",68,225
+284,"PrintStream",7407,284
+290,"System",947,290
+348,"AssignmentNull",68,348
+374,"Integer",947,374
+396,"Boolean",947,396
+458,"BigDecimal",19025,458
+461,"BigDecimalDoubleConstructorProcessor",68,461
+590,"BooleanExpression",68,590
+763,"ByteCompareInt",68,763
+906,"ArrayList",926,906
+909,"CollectionEmptyCheck",68,909
+925,"ArrayList<Integer>",926,906
+934,"AbstractList<Integer>",926,935
+935,"AbstractList",926,935
+938,"AbstractCollection<Integer>",926,939
+939,"AbstractCollection",926,939
+942,"Collection<Integer>",926,943
+943,"Collection",926,943
+946,"Iterable<Integer>",947,948
+948,"Iterable",947,948
+953,"List<Integer>",926,954
+954,"List",926,954
+957,"RandomAccess",926,957
+969,"Spliterator<>",926,970
+970,"Spliterator",926,970
+975,"Spliterator<T>",926,970
+978,"Spliterator<Integer>",926,970
+981,"Consumer<? super T>",982,983
+983,"Consumer",982,983
+987,"FunctionalInterface",947,987
+993,"Consumer<? super Integer>",982,983
+997,"Iterator<>",926,998
+998,"Iterator",926,998
+1002,"Iterator<T>",926,998
+1004,"Iterator<Integer>",926,998
+1005,"Stream<>",1006,1007
+1007,"Stream",1006,1007
+1011,"BaseStream<>",1006,1012
+1012,"BaseStream",1006,1012
+1015,"AutoCloseable",947,1015
+1018,"Stream<E>",1006,1007
+1019,"BaseStream<E,Stream<E>>",1006,1012
+1021,"Stream<Integer>",1006,1007
+1022,"BaseStream<Integer,Stream<Integer>>",1006,1012
+1026,"Spliterator<E>",926,970
+1038,"Collection<?>",926,943
+1039,"Iterable<?>",947,948
+1046,"Predicate<? super E>",982,1047
+1047,"Predicate",982,1047
+1053,"Predicate<? super Integer>",982,1047
+1063,"Collection<? extends E>",926,943
+1064,"Iterable<? extends E>",947,948
+1069,"Collection<? extends Integer>",926,943
+1070,"Iterable<? extends Integer>",947,948
+1085,"IntFunction<>",982,1086
+1086,"IntFunction",982,1086
+1099,"IntFunction<T[]>",982,1086
+1114,"Iterator<E>",926,998
+1139,"Collection<? extends E>",926,943
+1140,"Iterable<? extends E>",947,948
+1176,"Iterator<E>",926,998
+1181,"Collection<>",926,943
+1182,"Iterable<>",947,948
+1183,"List<>",926,954
+1186,"List<E>",926,954
+1187,"Collection<E>",926,943
+1188,"Iterable<E>",947,948
+1193,"Collection<? extends E>",926,943
+1194,"Iterable<? extends E>",947,948
+1197,"List<E>",926,954
+1198,"Collection<E>",926,943
+1199,"Iterable<E>",947,948
+1206,"List<E>",926,954
+1207,"Collection<E>",926,943
+1208,"Iterable<E>",947,948
+1221,"List<E>",926,954
+1222,"Collection<E>",926,943
+1223,"Iterable<E>",947,948
+1235,"List<E>",926,954
+1236,"Collection<E>",926,943
+1237,"Iterable<E>",947,948
+1248,"List<E>",926,954
+1249,"Collection<E>",926,943
+1250,"Iterable<E>",947,948
+1260,"List<E>",926,954
+1261,"Collection<E>",926,943
+1262,"Iterable<E>",947,948
+1271,"List<E>",926,954
+1272,"Collection<E>",926,943
+1273,"Iterable<E>",947,948
+1281,"List<E>",926,954
+1282,"Collection<E>",926,943
+1283,"Iterable<E>",947,948
+1290,"List<E>",926,954
+1291,"Collection<E>",926,943
+1292,"Iterable<E>",947,948
+1298,"List<E>",926,954
+1299,"Collection<E>",926,943
+1300,"Iterable<E>",947,948
+1305,"List<E>",926,954
+1306,"Collection<E>",926,943
+1307,"Iterable<E>",947,948
+1311,"List<E>",926,954
+1312,"Collection<E>",926,943
+1313,"Iterable<E>",947,948
+1316,"Spliterator<E>",926,970
+1324,"ListIterator<>",926,1325
+1325,"ListIterator",926,1325
+1329,"ListIterator<E>",926,1325
+1330,"Iterator<E>",926,998
+1333,"ListIterator<Integer>",926,1325
+1375,"Comparator<? super E>",926,1376
+1376,"Comparator",926,1376
+1382,"Comparator<? super Integer>",926,1376
+1386,"UnaryOperator<E>",982,1387
+1387,"UnaryOperator",982,1387
+1390,"Function<E,E>",982,1391
+1391,"Function",982,1391
+1398,"UnaryOperator<Integer>",982,1387
+1399,"Function<Integer,Integer>",982,1391
+1414,"Collection<? extends E>",926,943
+1415,"Iterable<? extends E>",947,948
+1476,"List<E>",926,954
+1477,"Collection<E>",926,943
+1478,"Iterable<E>",947,948
+1485,"ListIterator<E>",926,1325
+1486,"Iterator<E>",926,998
+1496,"Collection<? extends E>",926,943
+1497,"Iterable<? extends E>",947,948
+1548,"Comparator<? super E>",926,1376
+1554,"UnaryOperator<E>",982,1387
+1555,"Function<E,E>",982,1391
+1562,"Predicate<? super E>",982,1047
+1577,"Spliterator<E>",926,970
+1579,"Consumer<? super E>",982,983
+1586,"List<E>",926,954
+1587,"Collection<E>",926,943
+1588,"Iterable<E>",947,948
+1595,"Iterator<E>",926,998
+1598,"ListIterator<E>",926,1325
+1630,"Collection<? extends E>",926,943
+1631,"Iterable<? extends E>",947,948
+1656,"List<?>",926,954
+1882,"Collections",926,1882
+1887,"Map",926,1887
+1890,"Set",926,1890
+1893,"CollectionsEmptyConstantsProcessor",68,1893
+1909,"List<String>",926,954
+1910,"Collection<String>",926,943
+1911,"Iterable<String>",947,948
+1925,"Map<String,String>",926,1887
+1934,"Map<>",926,1887
+1942,"Set<String>",926,1890
+1951,"Set<>",926,1890
+2037,"CompareToReturnValueProcessor",68,2037
+2125,"ComparizonModifier",68,2125
+2316,"ConstConds",68,2316
+2389,"ConstVoidFuncs",68,2389
+2447,"ConvertOverloadMethod",68,2447
+2511,"ConvertVariableAccessName",2508,2511
+2701,"ConvertVariableName",68,2701
+2772,"DangerousFuncs",68,2772
+2791,"Exception",947,2791
+2797,"Thread",947,2797
+2808,"",68,2808
+2811,"Runnable",947,2811
+2875,"InterruptedException",947,2875
+2889,"Throwable",947,2889
+2914,"DeadStoreProcessor",68,2914
+3019,"EmptyStringCheck",68,3019
+3081,"EqBoolConsts",68,3081
+3188,"Animal",68,3188
+3203,"Cat",68,3203
+3238,"Dog",68,3238
+3278,"Class<? extends Dog>",947,3279
+3279,"Class",947,3279
+3282,"GenericDeclaration",9584,3282
+3283,"Type",9584,3283
+3284,"AnnotatedElement",9584,3284
+3285,"Class<?>",947,3279
+3286,"OfField<Class<?>>",3287,3288
+3288,"OfField",3287,3288
+3292,"TypeDescriptor",3287,3292
+3293,"Constable",7898,3293
+3298,"Class<? extends Object>",947,3279
+3300,"Class<>",947,3279
+3301,"OfField<>",3287,3288
+3321,"Mouse",68,3321
+3394,"AtomicInteger",32845,3394
+3397,"EqualsOnAtomicClassProcessor",68,3397
+3528,"FieldModifier",68,3528
+3530,"FMA",68,3530
+3623,"FloatConversion",68,3623
+3682,"InnerClassStatic",68,3682
+3689,"InnerClass",68,3689
+3720,"NotInnerClass",68,3720
+3734,"IsJunit4TestAnnotation",68,3734
+3742,"Before",3731,3742
+3761,"Test",3731,3761
+3798,"AfterClass",3731,3798
+3817,"Ignore",3731,3817
+3837,"IsNullCondition",68,3837
+3952,"LoopHeadElement",68,3952
+4081,"MathOnFloatProcessor",68,4081
+4176,"Flyable",68,4176
+4191,"FlyB",68,4191
+4218,"FlyC",68,4218
+4230,"Override",947,4230
+4250,"MotivatingExample",68,4250
+4331,"MutualRecursive",68,4331
+4530,"Objects",926,4530
+4533,"ObjectsEqualsInvocationFilter",68,4533
+4608,"PrimitiveToString",68,4608
+4721,"PrimitiveTypeEqualsBinaryOperatorFilter",68,4721
+4858,"ProtectedMemberInFinalType",68,4858
+4877,"NotFinalType",68,4877
+4900,"RedundantFieldInitialization",68,4900
+4931,"ReturnModifier",68,4931
+5028,"SerID1",68,5028
+5055,"SerID2",68,5055
+5082,"NoSerID",68,5082
+5093,"OtherWithSerID",68,5093
+5120,"StaticAccessThroughInstance",68,5120
+5142,"SATI",68,5142
+5158,"SATI2",68,5158
+5223,"Locale",926,5223
+5226,"StringBuilderDirectUse",68,5226
+5242,"StringBuilder",947,5242
+5321,"StringCompare",68,5321
+5459,"SuperEqualsMethodInvocationFilter",68,5459
+5494,"InvokingSuper",68,5494
+5529,"TargetModifier",68,5529
+5576,"CompareByteInt",68,5576
+5617,"TestConstConditions",68,5617
+5650,"TestDataFlow",68,5650
+5793,"TestDouble2Float",68,5793
+5826,"TestEqBooleanConsts",68,5826
+5873,"TestFloat2Int",68,5873
+5906,"TestStaticVoidMethod",68,5906
+5923,"TestStringCompare",68,5923
+5952,"TestThreadStop",68,5952
+6134,"Item",68,6134
+6136,"Buyable",68,6136
+6140,"Readable",68,6140
+6142,"Book",68,6142
+6157,"Novel",68,6157
+6170,"TestUnusedLocals",68,6170
+6227,"TestUseBreak",68,6227
+6346,"ThreadLocal<String>",947,6347
+6347,"ThreadLocal",947,6347
+6350,"ThreadLocalWithInitial",68,6350
+6375,"ThreadLocalMap",947,6375
+6406,"Supplier<>",982,6407
+6407,"Supplier",982,6407
+6411,"ThreadLocal<>",947,6347
+6414,"ThreadLocal<S>",947,6347
+6418,"Supplier<? extends S>",982,6407
+6443,"ThreadLocal<List<String>>",947,6347
+6450,"",68,6450
+6497,"ArrayList<String>",926,906
+6498,"AbstractList<String>",926,935
+6499,"AbstractCollection<String>",926,939
+6505,"Spliterator<String>",926,970
+6508,"Consumer<? super String>",982,983
+6513,"Iterator<String>",926,998
+6515,"Stream<String>",1006,1007
+6516,"BaseStream<String,Stream<String>>",1006,1012
+6525,"Predicate<? super String>",982,1047
+6533,"Collection<? extends String>",926,943
+6534,"Iterable<? extends String>",947,948
+6581,"ListIterator<String>",926,1325
+6602,"Comparator<? super String>",926,1376
+6606,"UnaryOperator<String>",982,1387
+6607,"Function<String,String>",982,1391
+6772,"",68,6772
+6798,"Random",926,6798
+6801,"ToStringReturningNullProcessor",68,6801
+6854,"ToStringNotReturningNull",68,6854
+6879,"UnsafeCasts",68,6879
+6946,"UnusedLocals",68,6946
+7015,"UseBreak",68,7015
+7134,"UtilityClassWithPublicConstructorProcessor",68,7134
+7158,"NonUtilityClass",68,7158
+7188,"NonUtilityClass2",68,7188
+7246,"VariableModifier",68,7246
+7358,"None",3731,7358
+7406,"Closeable",7407,7406
+7412,"IOException",7407,7412
+7414,"Console",7407,7414
+7417,"Flushable",7407,7417
+7419,"Charset",21549,7419
+7440,"Reader",7407,7440
+7442,"PrintWriter",7407,7442
+7444,"DataInput",7407,7444
+7486,"DataOutput",7407,7486
+7533,"File",7407,7533
+7536,"Comparable<File>",947,7537
+7537,"Comparable",947,7537
+7546,"Path",21727,7546
+7593,"FileFilter",7407,7593
+7596,"FilenameFilter",7407,7596
+7615,"URI",19503,7615
+7617,"URL",19503,7617
+7619,"Deprecated",947,7619
+7625,"MalformedURLException",19503,7625
+7654,"FileDescriptor",7407,7654
+7667,"PhantomCleanable<FileDescriptor>",7668,7669
+7669,"PhantomCleanable",7668,7669
+7675,"PhantomReference<FileDescriptor>",7676,7677
+7677,"PhantomReference",7676,7677
+7681,"Reference<FileDescriptor>",7676,7682
+7682,"Reference",7676,7682
+7685,"Cleanable",7676,7685
+7694,"SyncFailedException",7407,7694
+7706,"FileNotFoundException",7407,7706
+7718,"FilterOutputStream",7407,7718
+7721,"OutputStream",7407,7721
+7755,"InputStream",7407,7755
+7798,"InvalidClassException",7407,7798
+7801,"ObjectStreamException",7407,7801
+7816,"InvalidObjectException",7407,7816
+7824,"NotActiveException",7407,7824
+7830,"ObjectInput",7407,7830
+7851,"ClassNotFoundException",947,7851
+7854,"FilterInfo",7407,7854
+7857,"ObjectInputFilter",7407,7857
+7863,"Status",7407,7863
+7866,"Enum<Status>",947,7867
+7867,"Enum",947,7867
+7870,"Comparable<Status>",947,7537
+7875,"Enum<>",947,7867
+7876,"Comparable<>",947,7537
+7880,"Enum<T>",947,7867
+7881,"Comparable<T>",947,7537
+7883,"Class<T>",947,3279
+7885,"Optional<>",926,7886
+7886,"Optional",926,7886
+7889,"ValueBased",34283,7889
+7893,"EnumDesc<E>",947,7894
+7894,"EnumDesc",947,7894
+7897,"DynamicConstantDesc<E>",7898,7899
+7899,"DynamicConstantDesc",7898,7899
+7903,"ConstantDesc",7898,7903
+7904,"Optional<EnumDesc<E>>",926,7886
+7907,"EnumDesc<Status>",947,7894
+7908,"DynamicConstantDesc<Status>",7898,7899
+7909,"Optional<EnumDesc<Status>>",926,7886
+7912,"Class<E>",947,3279
+7914,"Class<Status>",947,3279
+7920,"CloneNotSupportedException",947,7920
+7960,"Predicate<Class<?>>",982,1047
+7970,"GetField",7407,7970
+7973,"ObjectInputStream",7407,7973
+8014,"ObjectStreamClass",7407,8014
+8019,"ObjectStreamConstants",7407,8019
+8080,"StreamCorruptedException",7407,8080
+8084,"SecurityException",947,8084
+8097,"ObjectInputValidation",7407,8097
+8128,"ObjectOutput",7407,8128
+8149,"PutField",7407,8149
+8152,"ObjectOutputStream",7407,8152
+8287,"ClassDataSlot",7407,8287
+8298,"MethodHandle",3287,8298
+8325,"UnsupportedOperationException",947,8325
+8347,"InstantiationException",947,8347
+8349,"InvocationTargetException",9584,8349
+8365,"ObjectStreamField",7407,8365
+8412,"CallerSensitive",37750,8412
+8427,"SerializablePermission",7407,8427
+8467,"Comparable<Object>",947,7537
+8471,"Field",9584,8471
+8506,"OptionalDataException",7407,8506
+8536,"Appendable",947,8536
+8541,"CharSequence",947,8541
+8619,"UnsupportedEncodingException",7407,8619
+8652,"Writer",7407,8652
+8773,"Readable",947,8773
+8800,"CharBuffer",20170,8800
+8815,"BasicPermission",22227,8815
+8878,"AbstractStringBuilder",947,8878
+8893,"IntStream",1006,8893
+8993,"StringBuffer",947,8993
+9059,"Comparable<Boolean>",947,7537
+9065,"DynamicConstantDesc<Boolean>",7898,7899
+9066,"Optional<DynamicConstantDesc<Boolean>>",926,7886
+9096,"IntrinsicCandidate",38342,9096
+9112,"Class<Boolean>",947,3279
+9131,"Character",947,9131
+9134,"Comparable<Character>",947,7537
+9382,"DynamicConstantDesc<Character>",7898,7899
+9383,"Optional<DynamicConstantDesc<Character>>",926,7886
+9451,"Class<Character>",947,3279
+9483,"ClassDesc",7898,9483
+9484,"Optional<ClassDesc>",926,7886
+9495,"AnnotatedType",9584,9495
+9502,"Annotation",13451,9502
+9505,"Class<? extends Annotation>",947,3279
+9506,"Map<Class<? extends Annotation>,Annotation>",926,1887
+9507,"AnnotationType",39523,9507
+9523,"Class<A>",947,3279
+9528,"Class<A>",947,3279
+9537,"Class<A>",947,3279
+9544,"Class<A>",947,3279
+9549,"Class<? extends U>",947,3279
+9551,"Class<U>",947,3279
+9556,"Map<String,T>",926,1887
+9565,"ConstantPool",37750,9565
+9567,"Executable",9584,9567
+9574,"ProtectionDomain",22227,9574
+9583,"Constructor<>",9584,9585
+9585,"Constructor",9584,9585
+9590,"Constructor<T>",9584,9585
+9593,"NoSuchMethodException",947,9593
+9597,"Method",9584,9597
+9598,"List<Method>",926,954
+9599,"Collection<Method>",926,943
+9600,"Iterable<Method>",947,948
+9612,"NoSuchFieldException",947,9612
+9622,"Constructor<?>",9584,9585
+9634,"RecordComponent",9584,9634
+9706,"Package",947,9706
+9712,"Class<? super T>",947,3279
+9714,"TypeVariable",9584,9714
+9718,"TypeVariable<>",9584,9714
+9725,"TypeVariable<Class>",9584,9714
+9730,"Module",947,9730
+9732,"ClassLoader",947,9732
+9736,"ForceInline",38342,9736
+9759,"IllegalAccessException",947,9759
+9775,"TypeVariable<?>",9584,9714
+9781,"ClassValueMap",947,9781
+9782,"ClassFormatError",947,9782
+9785,"LinkageError",947,9785
+9792,"ConcurrentHashMap<>",9793,9794
+9794,"ConcurrentHashMap",9793,9794
+9798,"AbstractMap<>",926,9799
+9799,"AbstractMap",926,9799
+9802,"ConcurrentMap<>",9793,9803
+9803,"ConcurrentMap",9793,9803
+9807,"ConcurrentHashMap<?,?>",9793,9794
+9808,"AbstractMap<?,?>",926,9799
+9809,"Map<?,?>",926,1887
+9810,"ConcurrentMap<?,?>",9793,9803
+9825,"NativeLibrary",34611,9825
+9835,"Stream<Package>",1006,1007
+9836,"BaseStream<Package,Stream<Package>>",1006,1012
+9884,"Enumeration<>",926,9885
+9885,"Enumeration",926,9885
+9889,"Enumeration<URL>",926,9885
+9903,"Stream<URL>",1006,1007
+9904,"BaseStream<URL,Stream<URL>>",1006,1012
+9938,"ByteBuffer",20170,9938
+10009,"Map<String,Boolean>",926,1887
+10014,"ReflectiveOperationException",947,10014
+10025,"Identity",947,10025
+10026,"Entry<?>",947,10027
+10027,"Entry",947,10027
+10030,"Version<?>",947,10031
+10031,"Version",947,10031
+10034,"ClassValue",947,10034
+10035,"WeakReference<Version<?>>",7676,10036
+10036,"WeakReference",7676,10036
+10039,"Reference<Version<?>>",7676,7682
+10040,"WeakHashMap<Identity,Entry<?>>",926,10041
+10041,"WeakHashMap",926,10041
+10044,"AbstractMap<Identity,Entry<?>>",926,9799
+10045,"Map<Identity,Entry<?>>",926,1887
+10049,"Map<K,V>",926,1887
+10055,"Map<? extends K,? extends V>",926,1887
+10056,"Entry<>",926,10057
+10057,"Entry",926,10057
+10063,"Entry<K,V>",926,10057
+10075,"Map<K,V>",926,1887
+10081,"Entry<? extends K,? extends V>",926,10057
+10088,"Map<K,V>",926,1887
+10112,"Map<K,V>",926,1887
+10134,"Map<K,V>",926,1887
+10154,"Map<K,V>",926,1887
+10172,"Map<K,V>",926,1887
+10188,"Map<K,V>",926,1887
+10202,"Map<K,V>",926,1887
+10214,"Map<K,V>",926,1887
+10224,"Map<K,V>",926,1887
+10232,"Map<K,V>",926,1887
+10238,"Map<K,V>",926,1887
+10245,"BiFunction<? super V,? super V,? extends V>",982,10246
+10246,"BiFunction",982,10246
+10258,"BiFunction<? super Entry<?>,? super Entry<?>,? extends Entry<?>>",982,10246
+10260,"Entry<>",947,10027
+10261,"WeakReference<>",7676,10036
+10262,"Reference<>",7676,7682
+10269,"BiFunction<? super K,? super V,? extends V>",982,10246
+10276,"BiFunction<? super Identity,? super Entry<?>,? extends Entry<?>>",982,10246
+10287,"Function<? super K,? extends V>",982,1391
+10292,"Function<? super Identity,? extends Entry<?>>",982,1391
+10327,"BiConsumer<? super K,? super V>",982,10328
+10328,"BiConsumer",982,10328
+10334,"BiConsumer<? super Identity,? super Entry<?>>",982,10328
+10351,"Entry<K,V>",926,10057
+10352,"Set<Entry<K,V>>",926,1890
+10353,"Collection<Entry<K,V>>",926,943
+10354,"Iterable<Entry<K,V>>",947,948
+10356,"Entry<Identity,Entry<?>>",926,10057
+10357,"Set<Entry<Identity,Entry<?>>>",926,1890
+10358,"Collection<Entry<Identity,Entry<?>>>",926,943
+10359,"Iterable<Entry<Identity,Entry<?>>>",947,948
+10361,"Collection<V>",926,943
+10362,"Iterable<V>",947,948
+10364,"Collection<Entry<?>>",926,943
+10365,"Iterable<Entry<?>>",947,948
+10367,"Set<K>",926,1890
+10368,"Collection<K>",926,943
+10369,"Iterable<K>",947,948
+10371,"Set<Identity>",926,1890
+10372,"Collection<Identity>",926,943
+10373,"Iterable<Identity>",947,948
+10378,"Map<? extends K,? extends V>",926,1887
+10383,"Map<? extends Identity,? extends Entry<?>>",926,1887
+10427,"Entry<K,V>",926,10057
+10428,"Set<Entry<K,V>>",926,1890
+10429,"Collection<Entry<K,V>>",926,943
+10430,"Iterable<Entry<K,V>>",947,948
+10433,"Collection<V>",926,943
+10434,"Iterable<V>",947,948
+10437,"Set<K>",926,1890
+10438,"Collection<K>",926,943
+10439,"Iterable<K>",947,948
+10447,"Map<? extends K,? extends V>",926,1887
+10483,"WeakHashMap<>",926,10041
+10487,"WeakHashMap<K,V>",926,10041
+10488,"AbstractMap<K,V>",926,9799
+10489,"Map<K,V>",926,1887
+10499,"BiFunction<? super K,? super V,? extends V>",982,10246
+10505,"BiConsumer<? super K,? super V>",982,10328
+10512,"Entry<K,V>",926,10057
+10513,"Set<Entry<K,V>>",926,1890
+10514,"Collection<Entry<K,V>>",926,943
+10515,"Iterable<Entry<K,V>>",947,948
+10518,"Collection<V>",926,943
+10519,"Iterable<V>",947,948
+10522,"Set<K>",926,1890
+10523,"Collection<K>",926,943
+10524,"Iterable<K>",947,948
+10542,"Map<? extends K,? extends V>",926,1887
+10557,"Entry<>",926,10558
+10558,"Entry",926,10558
+10562,"Entry<K,V>",926,10558
+10563,"WeakReference<Object>",7676,10036
+10564,"Reference<Object>",7676,7682
+10567,"Entry<Identity,Entry<?>>",926,10558
+10618,"ClassValue<>",947,10034
+10623,"Entry<T>",947,10027
+10624,"Version<T>",947,10031
+10625,"WeakReference<Version<T>>",7676,10036
+10626,"Reference<Version<T>>",7676,7682
+10632,"ClassValue<T>",947,10034
+10635,"Entry<T>",947,10027
+10636,"Version<T>",947,10031
+10637,"WeakReference<Version<T>>",7676,10036
+10638,"Reference<Version<T>>",7676,7682
+10641,"ClassValue<T>",947,10034
+10648,"ClassValue<T>",947,10034
+10650,"ClassValue<?>",947,10034
+10655,"Entry<T>",947,10027
+10656,"Version<T>",947,10031
+10657,"WeakReference<Version<T>>",7676,10036
+10658,"Reference<Version<T>>",7676,7682
+10660,"ClassValue<T>",947,10034
+10664,"Entry<T>",947,10027
+10665,"Version<T>",947,10031
+10666,"WeakReference<Version<T>>",7676,10036
+10667,"Reference<Version<T>>",7676,7682
+10669,"ClassValue<T>",947,10034
+10673,"Version<T>",947,10031
+10674,"WeakReference<Version<T>>",7676,10036
+10675,"Reference<Version<T>>",7676,7682
+10682,"ReferenceQueue<? super T>",7676,10683
+10683,"ReferenceQueue",7676,10683
+10691,"ReferenceQueue<? super Version<T>>",7676,10683
+10710,"Version<>",947,10031
+10724,"ThreadGroup",947,10724
+10733,"ReferenceQueue<? super T>",7676,10683
+10749,"ClassValue<T>",947,10034
+10766,"Entry<T>",947,10027
+10767,"WeakReference<Version>",7676,10036
+10768,"Reference<Version>",7676,7682
+10770,"ClassValue<T>",947,10034
+10777,"Entry<T>",947,10027
+10778,"Version<T>",947,10031
+10779,"WeakReference<Version<T>>",7676,10036
+10780,"Reference<Version<T>>",7676,7682
+10785,"Version<T>",947,10031
+10789,"Entry<T>",947,10027
+10790,"WeakReference<Version<T>>",7676,10036
+10791,"Reference<Version<T>>",7676,7682
+10815,"Documented",13451,10815
+10817,"Retention",13451,10817
+10819,"RetentionPolicy",13451,10819
+10823,"Target",13451,10823
+10825,"ElementType",13451,10825
+10847,"Double",947,10847
+10850,"Number",947,10850
+10851,"Comparable<Double>",947,7537
+10856,"Lookup",3287,10856
+10860,"Optional<Double>",926,7886
+10905,"NumberFormatException",947,10905
+10932,"Class<Double>",947,3279
+10946,"DynamicConstantDesc<E>",7898,7899
+10963,"List<ConstantDesc>",926,954
+10964,"Collection<ConstantDesc>",926,943
+10965,"Iterable<ConstantDesc>",947,948
+10972,"DirectMethodHandleDesc",7898,10972
+10979,"DynamicConstantDesc<>",7898,7899
+10982,"DynamicConstantDesc<T>",7898,7899
+10986,"DynamicConstantDesc<T>",7898,7899
+10991,"DynamicConstantDesc<T>",7898,7899
+11013,"Enum<E>",947,7867
+11014,"Comparable<E>",947,7537
+11019,"EnumDesc<>",947,7894
+11023,"Enum<E>",947,7867
+11024,"Comparable<E>",947,7537
+11025,"EnumDesc<E>",947,7894
+11026,"DynamicConstantDesc<E>",7898,7899
+11029,"Comparable<E>",947,7537
+11036,"Error",947,11036
+11082,"IllegalArgumentException",947,11082
+11085,"RuntimeException",947,11085
+11094,"IllegalStateException",947,11094
+11113,"Comparable<Integer>",947,7537
+11121,"Optional<Integer>",926,7886
+11283,"Class<Integer>",947,3279
+11286,"InternalError",947,11286
+11289,"VirtualMachineError",947,11289
+11311,"Long",947,11311
+11314,"Comparable<Long>",947,7537
+11322,"Optional<Long>",926,7886
+11484,"Class<Long>",947,3279
+11502,"Class<T>",947,3279
+11503,"Configuration",17712,11503
+11504,"Function<String,ClassLoader>",982,1391
+11506,"ModuleLayer",947,11506
+11508,"Map<String,Module>",926,1887
+11580,"ModuleDescriptor",17712,11580
+11595,"Controller",947,11595
+11616,"Stream<ModuleLayer>",1006,1007
+11617,"BaseStream<ModuleLayer,Stream<ModuleLayer>>",1006,1012
+11621,"ServicesCatalog",37656,11621
+11629,"Optional<Module>",926,7886
+11633,"Set<Module>",926,1890
+11634,"Collection<Module>",926,943
+11635,"Iterable<Module>",947,948
+11638,"List<ModuleLayer>",926,954
+11639,"Collection<ModuleLayer>",926,943
+11640,"Iterable<ModuleLayer>",947,948
+11663,"NamedPackage",947,11663
+11766,"Class<A>",947,3279
+11771,"Class<A>",947,3279
+11780,"Class<A>",947,3279
+11787,"Class<A>",947,3279
+11816,"Record",947,11816
+11855,"SafeVarargs",947,11855
+11875,"SecurityManager",947,11875
+11897,"InetAddress",19503,11897
+11942,"Permission",22227,11942
+11951,"StackFrameInfo",947,11951
+11954,"StackFrame",947,11954
+11956,"StackTraceElement",947,11956
+11964,"MethodType",3287,11964
+11970,"StackWalker",947,11970
+12010,"ExtendedOption",947,12010
+12013,"Enum<ExtendedOption>",947,7867
+12014,"Comparable<ExtendedOption>",947,7537
+12019,"EnumDesc<ExtendedOption>",947,7894
+12020,"DynamicConstantDesc<ExtendedOption>",7898,7899
+12021,"Optional<EnumDesc<ExtendedOption>>",926,7886
+12024,"Class<ExtendedOption>",947,3279
+12046,"Option",947,12046
+12049,"Enum<Option>",947,7867
+12050,"Comparable<Option>",947,7537
+12055,"EnumDesc<Option>",947,7894
+12056,"DynamicConstantDesc<Option>",7898,7899
+12057,"Optional<EnumDesc<Option>>",926,7886
+12060,"Class<Option>",947,3279
+12099,"Continuation",38137,12099
+12101,"ContinuationScope",38137,12101
+12107,"Set<Option>",926,1890
+12108,"Collection<Option>",926,943
+12109,"Iterable<Option>",947,948
+12126,"Consumer<? super StackFrame>",982,983
+12131,"Function<>",982,1391
+12136,"Stream<StackFrame>",1006,1007
+12137,"BaseStream<StackFrame,Stream<StackFrame>>",1006,1012
+12142,"Function<? super Stream<StackFrame>,? extends T>",982,1391
+12162,"EnumSet<Option>",926,12163
+12163,"EnumSet",926,12163
+12166,"AbstractSet<Option>",926,12167
+12167,"AbstractSet",926,12167
+12170,"AbstractCollection<Option>",926,939
+12174,"Comparable<String>",947,7537
+12181,"Optional<String>",926,7886
+12205,"Void",947,12205
+12270,"Function<? super String,? extends R>",982,1391
+12289,"Iterable<? extends CharSequence>",947,948
+12455,"CharacterCodingException",21549,12455
+12508,"Comparator<String>",926,1376
+12514,"Comparable<StringBuffer>",947,7537
+12671,"Comparable<StringBuilder>",947,7537
+12782,"Level",947,12782
+12785,"Enum<Level>",947,7867
+12786,"Comparable<Level>",947,7537
+12791,"EnumDesc<Level>",947,7894
+12792,"DynamicConstantDesc<Level>",7898,7899
+12793,"Optional<EnumDesc<Level>>",926,7886
+12796,"Class<Level>",947,3279
+12810,"Logger",947,12810
+12829,"ResourceBundle",926,12829
+12844,"Supplier<String>",982,6407
+12904,"Properties",926,12904
+12933,"Channel",21202,12933
+12946,"OfPlatform",947,12946
+12949,"Builder",947,12949
+12952,"PreviewFeature",34560,12952
+12954,"Feature",34560,12954
+12969,"UncaughtExceptionHandler",947,12969
+12981,"OfVirtual",947,12981
+13003,"ThreadFactory",9793,13003
+13020,"State",947,13020
+13023,"Enum<State>",947,7867
+13024,"Comparable<State>",947,7537
+13029,"EnumDesc<State>",947,7894
+13030,"DynamicConstantDesc<State>",7898,7899
+13031,"Optional<EnumDesc<State>>",926,7886
+13034,"Class<State>",947,3279
+13068,"StackableScope",38137,13068
+13072,"ThreadContainer",38137,13072
+13100,"Map<Thread,StackTraceElement[]>",926,1887
+13120,"Duration",22928,13120
+13206,"AccessControlContext",22227,13206
+13259,"Interruptible",39516,13259
+13363,"ThreadLocal<?>",947,6347
+13406,"TypeNotPresentException",947,13406
+13437,"Class<Void>",947,3279
+13439,"WrongThreadException",947,13439
+13471,"Enum<ElementType>",947,7867
+13472,"Comparable<ElementType>",947,7537
+13477,"EnumDesc<ElementType>",947,7894
+13478,"DynamicConstantDesc<ElementType>",7898,7899
+13479,"Optional<EnumDesc<ElementType>>",926,7886
+13482,"Class<ElementType>",947,3279
+13513,"Enum<RetentionPolicy>",947,7867
+13514,"Comparable<RetentionPolicy>",947,7537
+13519,"EnumDesc<RetentionPolicy>",947,7894
+13520,"DynamicConstantDesc<RetentionPolicy>",7898,7899
+13521,"Optional<EnumDesc<RetentionPolicy>>",926,7886
+13524,"Class<RetentionPolicy>",947,3279
+13556,"OfField<ClassDesc>",3287,3288
+13590,"Optional<? extends ConstantDesc>",926,7886
+13597,"Kind",7898,13597
+13600,"Enum<Kind>",947,7867
+13601,"Comparable<Kind>",947,7537
+13606,"EnumDesc<Kind>",947,7894
+13607,"DynamicConstantDesc<Kind>",7898,7899
+13608,"Optional<EnumDesc<Kind>>",926,7886
+13611,"Class<Kind>",947,3279
+13653,"MethodHandleDesc",7898,13653
+13664,"MethodTypeDesc",7898,13664
+13691,"OfMethod<ClassDesc,MethodTypeDesc>",3287,13692
+13692,"OfMethod",3287,13692
+13699,"OfField<F>",3287,3288
+13706,"OfMethod<>",3287,13692
+13731,"List<F>",926,954
+13732,"Collection<F>",926,943
+13733,"Iterable<F>",947,948
+13735,"List<ClassDesc>",926,954
+13736,"Collection<ClassDesc>",926,943
+13737,"Iterable<ClassDesc>",947,948
+13777,"AbstractLayout",13778,13777
+13782,"MemoryLayout",13778,13782
+13815,"Stable",38342,13815
+13818,"Addressable",13778,13818
+13825,"MemoryAddress",13778,13825
+13827,"Kind",13778,13827
+13830,"Enum<Kind>",947,7867
+13831,"Comparable<Kind>",947,7537
+13836,"EnumDesc<Kind>",947,7894
+13837,"DynamicConstantDesc<Kind>",7898,7899
+13838,"Optional<EnumDesc<Kind>>",926,7886
+13841,"Class<Kind>",947,3279
+13855,"GroupLayout",13778,13855
+13857,"List<MemoryLayout>",926,954
+13858,"Collection<MemoryLayout>",926,943
+13859,"Iterable<MemoryLayout>",947,948
+13871,"LongBinaryOperator",982,13871
+13909,"OfAddress",13778,13909
+13919,"OfDouble",13778,13919
+13929,"OfLong",13778,13929
+13939,"OfFloat",13778,13939
+13949,"OfInt",13778,13949
+13959,"OfShort",13778,13959
+13969,"OfChar",13778,13969
+14042,"OfBoolean",13778,14042
+14052,"OfByte",13778,14052
+14078,"PathElement",13778,14078
+14104,"SequenceLayout",13778,14104
+14108,"ByteOrder",20170,14108
+14109,"ValueLayout",13778,14109
+14127,"VarHandle",3287,14127
+14147,"MemorySegment",13778,14147
+14332,"MemorySession",13778,14332
+14374,"Buffer",20170,14374
+14410,"Optional<MemorySegment>",926,7886
+14425,"Stream<MemorySegment>",1006,1007
+14426,"BaseStream<MemorySegment,Stream<MemorySegment>>",1006,1012
+14429,"Spliterator<MemorySegment>",926,970
+14434,"SegmentAllocator",13778,14434
+14440,"Cleaner",7676,14440
+14799,"Factory",3287,14799
+14802,"BoundMethodHandle",3287,14802
+14803,"SpeciesData",3287,14803
+14804,"Factory<>",3287,14805
+14805,"Factory",3287,14805
+14808,"ClassSpecializer<BoundMethodHandle,String,SpeciesData>",3287,14809
+14809,"ClassSpecializer",3287,14809
+14816,"Class<? extends T>",947,3279
+14817,"List<Class<?>>",926,954
+14818,"Collection<Class<?>>",926,943
+14819,"Iterable<Class<?>>",947,948
+14825,"Class<? extends BoundMethodHandle>",947,3279
+14835,"SpeciesData",3287,14835
+14840,"SpeciesData<>",3287,14835
+14847,"SpeciesData<>",3287,14835
+14848,"ClassSpecializer<>",3287,14809
+14860,"List<MethodHandle>",926,954
+14861,"Collection<MethodHandle>",926,943
+14862,"Iterable<MethodHandle>",947,948
+14864,"NamedFunction",3287,14864
+14865,"List<NamedFunction>",926,954
+14866,"Collection<NamedFunction>",926,943
+14867,"Iterable<NamedFunction>",947,948
+14891,"Specializer",3287,14891
+14911,"Factory<>",3287,14805
+14930,"Constructor<T>",9584,9585
+14932,"Class<T>",947,3279
+14934,"Class<T>",947,3279
+14935,"Class<K>",947,3279
+14936,"Class<S>",947,3279
+14937,"MemberName",3287,14937
+14938,"List<MemberName>",926,954
+14939,"Collection<MemberName>",926,943
+14940,"Iterable<MemberName>",947,948
+14949,"Class<BoundMethodHandle>",947,3279
+14950,"Class<String>",947,3279
+14951,"Class<SpeciesData>",947,3279
+14992,"List<X>",926,954
+14993,"Collection<X>",926,943
+14994,"Iterable<X>",947,948
+15061,"List<X>",926,954
+15062,"Collection<X>",926,943
+15063,"Iterable<X>",947,948
+15086,"LambdaForm",3287,15086
+15140,"LambdaFormEditor",3287,15140
+15142,"BasicType",3287,15142
+15152,"CallSite",3287,15152
+15183,"DirectMethodHandle",3287,15183
+15230,"Name",3287,15230
+15283,"Invokers",3287,15283
+15289,"DontInline",38342,15289
+15315,"WrongMethodTypeException",3287,15315
+15319,"AccessDescriptor",3287,15319
+15328,"Hidden",38342,15328
+15345,"AccessMode",3287,15345
+15363,"Enum<BasicType>",947,7867
+15364,"Comparable<BasicType>",947,7537
+15369,"EnumDesc<BasicType>",947,7894
+15370,"DynamicConstantDesc<BasicType>",7898,7899
+15371,"Optional<EnumDesc<BasicType>>",926,7886
+15374,"Class<BasicType>",947,3279
+15409,"Wrapper",39380,15409
+15439,"Kind",3287,15439
+15442,"Enum<Kind>",947,7867
+15443,"Comparable<Kind>",947,7537
+15448,"EnumDesc<Kind>",947,7894
+15449,"DynamicConstantDesc<Kind>",7898,7899
+15450,"Optional<EnumDesc<Kind>>",926,7886
+15453,"Class<Kind>",947,3279
+15618,"Intrinsic",3287,15618
+15871,"Factory",3287,15871
+15915,"Class<NoSuchMemberException>",947,3279
+15927,"Member",9584,15927
+16065,"PolymorphicSignature",3287,16065
+16076,"Function<LambdaForm,LambdaForm>",982,1391
+16114,"Optional<MethodHandleDesc>",926,7886
+16197,"ArrayAccess",3287,16197
+16200,"Enum<ArrayAccess>",947,7867
+16201,"Comparable<ArrayAccess>",947,7537
+16206,"EnumDesc<ArrayAccess>",947,7894
+16207,"DynamicConstantDesc<ArrayAccess>",7898,7899
+16208,"Optional<EnumDesc<ArrayAccess>>",926,7886
+16211,"Class<ArrayAccess>",947,3279
+16225,"MethodHandleImpl",3287,16225
+16244,"CasesHolder",3287,16244
+16258,"Enum<Intrinsic>",947,7867
+16259,"Comparable<Intrinsic>",947,7537
+16264,"EnumDesc<Intrinsic>",947,7894
+16265,"DynamicConstantDesc<Intrinsic>",7898,7899
+16266,"Optional<EnumDesc<Intrinsic>>",926,7886
+16269,"Class<Intrinsic>",947,3279
+16301,"LoopClauses",3287,16301
+16338,"Iterator<?>",926,998
+16396,"Empty",39374,16396
+16406,"Class<? extends Throwable>",947,3279
+16498,"MethodHandleInfo",3287,16498
+16514,"Class<T>",947,3279
+16529,"ClassDefiner",3287,16529
+16544,"ClassOption",3287,16544
+16547,"Enum<ClassOption>",947,7867
+16548,"Comparable<ClassOption>",947,7537
+16553,"EnumDesc<ClassOption>",947,7894
+16554,"DynamicConstantDesc<ClassOption>",7898,7899
+16555,"Optional<EnumDesc<ClassOption>>",926,7886
+16558,"Class<ClassOption>",947,3279
+16573,"Set<ClassOption>",926,1890
+16574,"Collection<ClassOption>",926,943
+16575,"Iterable<ClassOption>",947,948
+16588,"MethodHandles",3287,16588
+16795,"ConcurrentHashMap<MemberName,DirectMethodHandle>",9793,9794
+16796,"AbstractMap<MemberName,DirectMethodHandle>",926,9799
+16797,"Map<MemberName,DirectMethodHandle>",926,1887
+16798,"ConcurrentMap<MemberName,DirectMethodHandle>",9793,9803
+17035,"Class<T>",947,3279
+17042,"Class<T>",947,3279
+17052,"Class<T>",947,3279
+17063,"ConcurrentWeakInternSet",3287,17063
+17074,"OfMethod<Class<?>,MethodType>",3287,13692
+17094,"Optional<MethodTypeDesc>",926,7886
+17205,"MethodTypeForm",3287,17205
+17212,"ConcurrentWeakInternSet<MethodType>",3287,17063
+17280,"SoftReference",7676,17280
+17284,"SoftReference<LambdaForm>",7676,17280
+17287,"Reference<LambdaForm>",7676,7682
+17296,"SoftReference<MethodHandle>",7676,17280
+17297,"Reference<MethodHandle>",7676,7682
+17311,"VarForm",3287,17311
+17369,"Enum<AccessMode>",947,7867
+17370,"Comparable<AccessMode>",947,7537
+17375,"EnumDesc<AccessMode>",947,7894
+17376,"DynamicConstantDesc<AccessMode>",7898,7899
+17377,"Optional<EnumDesc<AccessMode>>",926,7886
+17380,"Class<AccessMode>",947,3279
+17405,"AccessType",3287,17405
+17441,"Enum<AccessType>",947,7867
+17442,"Comparable<AccessType>",947,7537
+17447,"EnumDesc<AccessType>",947,7894
+17448,"DynamicConstantDesc<AccessType>",7898,7899
+17449,"Optional<EnumDesc<AccessType>>",926,7886
+17452,"Class<AccessType>",947,3279
+17485,"VarHandleDesc",3287,17485
+17488,"DynamicConstantDesc<VarHandle>",7898,7899
+17540,"Optional<VarHandleDesc>",926,7886
+17719,"Stream<Configuration>",1006,1007
+17720,"BaseStream<Configuration,Stream<Configuration>>",1006,1012
+17721,"ResolvedModule",17712,17721
+17723,"Set<ResolvedModule>",926,1890
+17724,"Collection<ResolvedModule>",926,943
+17725,"Iterable<ResolvedModule>",947,948
+17728,"Set<ModuleDescriptor>",926,1890
+17729,"Collection<ModuleDescriptor>",926,943
+17730,"Iterable<ModuleDescriptor>",947,948
+17732,"Optional<ResolvedModule>",926,7886
+17737,"List<Configuration>",926,954
+17738,"Collection<Configuration>",926,943
+17739,"Iterable<Configuration>",947,948
+17741,"ModuleFinder",17712,17741
+17764,"Map<String,Set<String>>",926,1887
+17769,"Builder",17712,17769
+17778,"Version",17712,17778
+17786,"Provides",17712,17786
+17796,"Modifier",17712,17796
+17797,"Set<Modifier>",926,1890
+17798,"Collection<Modifier>",926,943
+17799,"Iterable<Modifier>",947,948
+17807,"Opens",17712,17807
+17815,"Modifier",17712,17815
+17816,"Set<Modifier>",926,1890
+17817,"Collection<Modifier>",926,943
+17818,"Iterable<Modifier>",947,948
+17826,"Exports",17712,17826
+17831,"Modifier",17712,17831
+17832,"Set<Modifier>",926,1890
+17833,"Collection<Modifier>",926,943
+17834,"Iterable<Modifier>",947,948
+17846,"Requires",17712,17846
+17850,"Modifier",17712,17850
+17851,"Set<Modifier>",926,1890
+17852,"Collection<Modifier>",926,943
+17853,"Iterable<Modifier>",947,948
+17861,"Map<String,Provides>",926,1887
+17864,"Map<String,Opens>",926,1887
+17866,"Map<String,Exports>",926,1887
+17868,"Map<String,Requires>",926,1887
+17878,"Enum<Modifier>",947,7867
+17879,"Comparable<Modifier>",947,7537
+17884,"EnumDesc<Modifier>",947,7894
+17885,"DynamicConstantDesc<Modifier>",7898,7899
+17886,"Optional<EnumDesc<Modifier>>",926,7886
+17889,"Class<Modifier>",947,3279
+17914,"Comparable<Exports>",947,7537
+17929,"Enum<Modifier>",947,7867
+17930,"Comparable<Modifier>",947,7537
+17935,"EnumDesc<Modifier>",947,7894
+17936,"DynamicConstantDesc<Modifier>",7898,7899
+17937,"Optional<EnumDesc<Modifier>>",926,7886
+17940,"Class<Modifier>",947,3279
+17967,"Enum<Modifier>",947,7867
+17968,"Comparable<Modifier>",947,7537
+17973,"EnumDesc<Modifier>",947,7894
+17974,"DynamicConstantDesc<Modifier>",7898,7899
+17975,"Optional<EnumDesc<Modifier>>",926,7886
+17978,"Class<Modifier>",947,3279
+18003,"Comparable<Opens>",947,7537
+18018,"Comparable<Provides>",947,7537
+18031,"Enum<Modifier>",947,7867
+18032,"Comparable<Modifier>",947,7537
+18037,"EnumDesc<Modifier>",947,7894
+18038,"DynamicConstantDesc<Modifier>",7898,7899
+18039,"Optional<EnumDesc<Modifier>>",926,7886
+18042,"Class<Modifier>",947,3279
+18069,"Comparable<Requires>",947,7537
+18081,"Optional<Version>",926,7886
+18087,"Comparable<Version>",947,7537
+18100,"Comparable<ModuleDescriptor>",947,7537
+18106,"Supplier<Set<String>>",982,6407
+18139,"Set<Provides>",926,1890
+18140,"Collection<Provides>",926,943
+18141,"Iterable<Provides>",947,948
+18144,"Set<Opens>",926,1890
+18145,"Collection<Opens>",926,943
+18146,"Iterable<Opens>",947,948
+18148,"Set<Exports>",926,1890
+18149,"Collection<Exports>",926,943
+18150,"Iterable<Exports>",947,948
+18152,"Set<Requires>",926,1890
+18153,"Collection<Requires>",926,943
+18154,"Iterable<Requires>",947,948
+18186,"ModuleReference",17712,18186
+18187,"Set<ModuleReference>",926,1890
+18188,"Collection<ModuleReference>",926,943
+18189,"Iterable<ModuleReference>",947,948
+18191,"Optional<ModuleReference>",926,7886
+18194,"ModuleReader",17712,18194
+18204,"Optional<ByteBuffer>",926,7886
+18209,"Optional<InputStream>",926,7886
+18214,"Optional<URI>",926,7886
+18254,"CleanerImpl",7668,18254
+18256,"Reference<T>",7676,7682
+18259,"ReferenceQueue<? super T>",7676,10683
+18292,"Reference<? extends T>",7676,7682
+18295,"Consumer<? super Reference<? extends T>>",982,983
+18326,"ReferenceQueue<Object>",7676,10683
+18330,"Reference<T>",7676,7682
+18333,"ReferenceQueue<? super T>",7676,10683
+18357,"Reference<T>",7676,7682
+18375,"AccessibleObject",9584,18375
+18399,"Class<T>",947,3279
+18404,"Class<T>",947,3279
+18413,"Class<T>",947,3279
+18420,"Class<T>",947,3279
+18455,"ReflectionFactory",37750,18455
+18467,"Class<T>",947,3279
+18472,"Class<T>",947,3279
+18480,"Class<T>",947,3279
+18486,"Class<T>",947,3279
+18497,"Class<T>",947,3279
+18515,"Class<T>",947,3279
+18520,"ConstructorAccessor",37750,18520
+18559,"TypeVariable<Constructor>",9584,9714
+18566,"Class<T>",947,3279
+18585,"ConstructorRepository",39577,18585
+18605,"Class<T>",947,3279
+18610,"Class<T>",947,3279
+18626,"Parameter",9584,18626
+18682,"Class<T>",947,3279
+18687,"Class<T>",947,3279
+18868,"Class<T>",947,3279
+18870,"MethodAccessor",37750,18870
+18907,"TypeVariable<Method>",9584,9714
+18936,"MethodRepository",39577,18936
+18948,"Class<T>",947,3279
+18953,"Class<T>",947,3279
+18962,"Class<T>",947,3279
+18967,"Class<T>",947,3279
+18988,"ParameterizedType",9584,18988
+19004,"Class<T>",947,3279
+19020,"WildcardType",9584,19020
+19029,"Comparable<BigDecimal>",947,7537
+19048,"BigInteger",19025,19048
+19078,"RoundingMode",19025,19078
+19082,"MathContext",19025,19082
+19268,"Comparable<BigInteger>",947,7537
+19459,"Enum<RoundingMode>",947,7867
+19460,"Comparable<RoundingMode>",947,7537
+19465,"EnumDesc<RoundingMode>",947,7894
+19466,"DynamicConstantDesc<RoundingMode>",7898,7899
+19467,"Optional<EnumDesc<RoundingMode>>",926,7886
+19470,"Class<RoundingMode>",947,3279
+19502,"ContentHandler",19503,19502
+19507,"URLConnection",19503,19507
+19516,"ContentHandlerFactory",19503,19516
+19521,"FileNameMap",19503,19521
+19526,"InetAddressHolder",19503,19526
+19550,"UnknownHostException",19503,19550
+19586,"NetworkInterface",19503,19586
+19614,"LookupPolicy",20149,19614
+19616,"InetAddressImpl",19503,19616
+19639,"InterfaceAddress",19503,19639
+19665,"SocketException",19503,19665
+19681,"Stream<NetworkInterface>",1006,1007
+19682,"BaseStream<NetworkInterface,Stream<NetworkInterface>>",1006,1012
+19685,"Enumeration<NetworkInterface>",926,9885
+19702,"List<InterfaceAddress>",926,954
+19703,"Collection<InterfaceAddress>",926,943
+19704,"Iterable<InterfaceAddress>",947,948
+19706,"Stream<InetAddress>",1006,1007
+19707,"BaseStream<InetAddress,Stream<InetAddress>>",1006,1012
+19709,"Enumeration<InetAddress>",926,9885
+19716,"Type",19503,19716
+19719,"Enum<Type>",947,7867
+19720,"Comparable<Type>",947,7537
+19725,"EnumDesc<Type>",947,7894
+19726,"DynamicConstantDesc<Type>",7898,7899
+19727,"Optional<EnumDesc<Type>>",926,7886
+19730,"Class<Type>",947,3279
+19744,"Proxy",19503,19744
+19762,"SocketAddress",19503,19762
+19785,"Comparable<URI>",947,7537
+19823,"URISyntaxException",19503,19823
+19877,"URLStreamHandler",19503,19877
+19886,"URLStreamHandlerFactory",19503,19886
+19963,"Hashtable<String,URLStreamHandler>",926,19964
+19964,"Hashtable",926,19964
+19967,"Dictionary<String,URLStreamHandler>",926,19968
+19968,"Dictionary",926,19968
+19971,"Map<String,URLStreamHandler>",926,1887
+19998,"Map<String,List<String>>",926,1887
+20153,"InetAddressResolver",20149,20153
+20176,"MemorySessionImpl",34359,20176
+20234,"ScopedMemoryAccess",34626,20234
+20236,"Unsafe",34626,20236
+20239,"Comparable<ByteBuffer>",947,7537
+20243,"DoubleBuffer",20170,20243
+20253,"FloatBuffer",20170,20253
+20263,"LongBuffer",20170,20263
+20273,"IntBuffer",20170,20273
+20283,"ShortBuffer",20170,20283
+20430,"Comparable<CharBuffer>",947,7537
+20582,"Comparable<DoubleBuffer>",947,7537
+20696,"Comparable<FloatBuffer>",947,7537
+20810,"Comparable<IntBuffer>",947,7537
+20924,"Comparable<LongBuffer>",947,7537
+21036,"MappedByteBuffer",20170,21036
+21063,"UnmapperProxy",34350,21063
+21089,"Comparable<ShortBuffer>",947,7537
+21201,"AsynchronousChannel",21202,21201
+21208,"AsynchronousCloseException",21202,21208
+21211,"ClosedChannelException",21202,21211
+21213,"AsynchronousFileChannel",21202,21213
+21217,"Future<>",9793,21218
+21218,"Future",9793,21218
+21222,"Future<Integer>",9793,21218
+21225,"CompletionHandler<>",21202,21226
+21226,"CompletionHandler",21202,21226
+21237,"CompletionHandler<Integer,? super A>",21202,21226
+21249,"CompletionHandler<Integer,? super A>",21202,21226
+21250,"FileLock",21202,21250
+21259,"Future<FileLock>",9793,21218
+21270,"CompletionHandler<FileLock,? super A>",21202,21226
+21280,"CompletionHandler<FileLock,? super A>",21202,21226
+21289,"OpenOption",21727,21289
+21299,"Set<? extends OpenOption>",926,1890
+21300,"Collection<? extends OpenOption>",926,943
+21301,"Iterable<? extends OpenOption>",947,948
+21302,"ExecutorService",9793,21302
+21303,"FileAttribute",21308,21303
+21307,"FileAttribute<?>",21308,21303
+21323,"ByteChannel",21202,21323
+21326,"ReadableByteChannel",21202,21326
+21327,"WritableByteChannel",21202,21327
+21344,"MapMode",21202,21344
+21347,"FileChannel",21202,21347
+21355,"AbstractInterruptibleChannel",21533,21355
+21356,"SeekableByteChannel",21202,21356
+21357,"GatheringByteChannel",21202,21357
+21358,"ScatteringByteChannel",21202,21358
+21490,"InterruptibleChannel",21202,21490
+21556,"Comparable<Charset>",947,7537
+21573,"CharsetEncoder",21549,21573
+21575,"CharsetDecoder",21549,21575
+21589,"SortedMap<>",926,21590
+21590,"SortedMap",926,21590
+21594,"SortedMap<String,Charset>",926,21590
+21595,"Map<String,Charset>",926,1887
+21612,"CoderResult",21549,21612
+21628,"CodingErrorAction",21549,21628
+21726,"AccessMode",21727,21726
+21730,"Enum<AccessMode>",947,7867
+21731,"Comparable<AccessMode>",947,7537
+21736,"EnumDesc<AccessMode>",947,7894
+21737,"DynamicConstantDesc<AccessMode>",7898,7899
+21738,"Optional<EnumDesc<AccessMode>>",926,7886
+21741,"Class<AccessMode>",947,3279
+21765,"CopyOption",21727,21765
+21768,"Filter",21727,21768
+21771,"DirectoryStream",21727,21771
+21780,"Iterable<T>",947,948
+21782,"Spliterator<T>",926,970
+21785,"Consumer<? super T>",982,983
+21790,"Iterator<T>",926,998
+21792,"FileStore",21727,21792
+21798,"FileStoreAttributeView",21308,21798
+21803,"Class<V>",947,3279
+21806,"FileAttributeView",21308,21806
+21809,"Class<? extends FileAttributeView>",947,3279
+21824,"FileSystem",21727,21824
+21827,"WatchService",21727,21827
+21830,"UserPrincipalLookupService",21308,21830
+21832,"PathMatcher",21727,21832
+21840,"Iterable<FileStore>",947,948
+21842,"Iterable<Path>",947,948
+21848,"FileSystemProvider",22095,21848
+21851,"LinkOption",21727,21851
+21854,"Enum<LinkOption>",947,7867
+21855,"Comparable<LinkOption>",947,7537
+21860,"EnumDesc<LinkOption>",947,7894
+21861,"DynamicConstantDesc<LinkOption>",7898,7899
+21862,"Optional<EnumDesc<LinkOption>>",926,7886
+21865,"Class<LinkOption>",947,3279
+21891,"Comparable<Path>",947,7537
+21895,"Spliterator<Path>",926,970
+21898,"Consumer<? super Path>",982,983
+21903,"Iterator<Path>",926,998
+21904,"Watchable",21727,21904
+21912,"Kind",21727,21912
+21916,"Kind<?>",21727,21912
+21919,"WatchEvent",21727,21919
+21923,"WatchKey",21727,21923
+21928,"Modifier",21727,21928
+21985,"Class<T>",947,3279
+21995,"Kind<>",21727,21912
+21997,"Kind<T>",21727,21912
+22004,"WatchEvent<?>",21727,21919
+22005,"List<WatchEvent<?>>",926,954
+22006,"Collection<WatchEvent<?>>",926,943
+22007,"Iterable<WatchEvent<?>>",947,948
+22013,"TimeUnit",9793,22013
+22032,"AttributeView",21308,22032
+22036,"BasicFileAttributes",21308,22036
+22045,"FileTime",21308,22045
+22058,"Comparable<FileTime>",947,7537
+22067,"Instant",22928,22067
+22079,"GroupPrincipal",21308,22079
+22082,"UserPrincipal",21308,22082
+22085,"Principal",22227,22085
+22107,"Map<String,Object>",926,1887
+22117,"Class<A>",947,3279
+22125,"Class<V>",947,3279
+22176,"Filter<? super Path>",21727,21768
+22178,"DirectoryStream<>",21727,21771
+22180,"DirectoryStream<Path>",21727,21771
+22208,"Map<String,?>",926,1887
+22223,"List<FileSystemProvider>",926,954
+22224,"Collection<FileSystemProvider>",926,943
+22225,"Iterable<FileSystemProvider>",947,948
+22241,"AccessControlException",22227,22241
+22244,"DomainCombiner",22227,22244
+22277,"Debug",39992,22277
+22293,"PermissionCollection",22227,22293
+22306,"CodeSigner",22227,22306
+22313,"Timestamp",22227,22313
+22315,"CertPath",22680,22315
+22320,"CodeSource",22227,22320
+22333,"Certificate",22680,22333
+22357,"GeneralSecurityException",22227,22357
+22368,"Guard",22227,22368
+22374,"InvalidKeyException",22227,22374
+22377,"KeyException",22227,22377
+22386,"Key",22227,22386
+22406,"NoSuchAlgorithmException",22227,22406
+22417,"NoSuchProviderException",22227,22417
+22445,"Stream<Permission>",1006,1007
+22446,"BaseStream<Permission,Stream<Permission>>",1006,1012
+22448,"Enumeration<Permission>",926,9885
+22456,"Subject",34168,22456
+22464,"PrivilegedAction",22227,22464
+22470,"PrivilegedActionException",22227,22470
+22478,"PrivilegedExceptionAction",22227,22478
+22485,"Key",22227,22485
+22514,"Service",22227,22514
+22517,"Provider",22227,22517
+22553,"Set<Service>",926,1890
+22554,"Collection<Service>",926,943
+22555,"Iterable<Service>",947,948
+22562,"Enumeration<Object>",926,9885
+22566,"BiConsumer<? super Object,? super Object>",982,10328
+22575,"BiFunction<? super Object,? super Object,? extends Object>",982,10246
+22584,"Function<? super Object,? extends Object>",982,1391
+22613,"Collection<Object>",926,943
+22614,"Iterable<Object>",947,948
+22616,"Set<Object>",926,1890
+22618,"Entry<Object,Object>",926,10057
+22619,"Set<Entry<Object,Object>>",926,1890
+22620,"Collection<Entry<Object,Object>>",926,943
+22621,"Iterable<Entry<Object,Object>>",947,948
+22650,"PublicKey",22227,22650
+22657,"SignatureException",22227,22657
+22675,"Date",926,22675
+22689,"List<? extends Certificate>",926,954
+22690,"Collection<? extends Certificate>",926,943
+22691,"Iterable<? extends Certificate>",947,948
+22694,"CertificateEncodingException",22680,22694
+22715,"CertificateException",22680,22715
+22763,"Attribute",22764,22763
+22768,"AttributedCharacterIterator",22764,22768
+22784,"CharacterIterator",22764,22784
+22786,"Set<Attribute>",926,1890
+22787,"Collection<Attribute>",926,943
+22788,"Iterable<Attribute>",947,948
+22792,"Map<Attribute,Object>",926,1887
+22795,"Set<? extends Attribute>",926,1890
+22796,"Collection<? extends Attribute>",926,943
+22797,"Iterable<? extends Attribute>",947,948
+22822,"FieldPosition",22764,22822
+22829,"FieldDelegate",22764,22829
+22838,"Field",22764,22838
+22852,"Format",22764,22852
+22890,"ParseException",22764,22890
+22892,"ParsePosition",22764,22892
+22927,"Clock",22928,22927
+22932,"InstantSource",22928,22932
+22940,"ZoneId",22928,22940
+22964,"DayOfWeek",22928,22964
+22967,"Enum<DayOfWeek>",947,7867
+22968,"Comparable<DayOfWeek>",947,7537
+22973,"EnumDesc<DayOfWeek>",947,7894
+22974,"DynamicConstantDesc<DayOfWeek>",7898,7899
+22975,"Optional<EnumDesc<DayOfWeek>>",926,7886
+22978,"Class<DayOfWeek>",947,3279
+22992,"TemporalAccessor",22999,22992
+22993,"TemporalAdjuster",22999,22993
+22995,"Temporal",22999,22995
+22998,"TemporalQuery<>",22999,23000
+23000,"TemporalQuery",22999,23000
+23008,"TemporalQuery<R>",22999,23000
+23014,"TemporalField",22999,23014
+23019,"ValueRange",22999,23019
+23024,"TextStyle",25155,23024
+23048,"TemporalAmount",22999,23048
+23049,"Comparable<Duration>",947,7537
+23066,"TemporalUnit",22999,23066
+23137,"List<TemporalUnit>",926,954
+23138,"Collection<TemporalUnit>",926,943
+23139,"Iterable<TemporalUnit>",947,948
+23170,"Comparable<Instant>",947,7537
+23192,"ZonedDateTime",22928,23192
+23195,"ZoneOffset",22928,23195
+23196,"OffsetDateTime",22928,23196
+23207,"TemporalQuery<R>",22999,23000
+23282,"LocalDate",22928,23282
+23285,"ChronoLocalDate",23457,23285
+23308,"LocalTime",22928,23308
+23315,"LocalDateTime",22928,23315
+23317,"OffsetTime",22928,23317
+23334,"DateTimeFormatter",25155,23334
+23337,"Period",22928,23337
+23339,"Stream<LocalDate>",1006,1007
+23340,"BaseStream<LocalDate,Stream<LocalDate>>",1006,1012
+23357,"TemporalQuery<R>",22999,23000
+23404,"Month",22928,23404
+23408,"IsoEra",23457,23408
+23410,"IsoChronology",23457,23410
+23456,"ChronoLocalDateTime<LocalDate>",23457,23458
+23458,"ChronoLocalDateTime",23457,23458
+23462,"ChronoLocalDateTime<?>",23457,23458
+23463,"Comparable<ChronoLocalDateTime<?>>",947,7537
+23498,"ChronoZonedDateTime<>",23457,23499
+23499,"ChronoZonedDateTime",23457,23499
+23504,"ChronoZonedDateTime<D>",23457,23499
+23505,"ChronoZonedDateTime<?>",23457,23499
+23506,"Comparable<ChronoZonedDateTime<?>>",947,7537
+23509,"ChronoZonedDateTime<LocalDate>",23457,23499
+23522,"TemporalQuery<R>",22999,23000
+23526,"ChronoLocalDateTime<>",23457,23458
+23569,"Chronology",23457,23569
+23574,"Comparator<>",926,1376
+23577,"Comparator<ChronoLocalDateTime<?>>",926,1376
+23613,"TemporalQuery<R>",22999,23000
+23770,"Comparable<LocalTime>",947,7537
+23810,"TemporalQuery<R>",22999,23000
+23919,"Enum<Month>",947,7867
+23920,"Comparable<Month>",947,7537
+23925,"EnumDesc<Month>",947,7894
+23926,"DynamicConstantDesc<Month>",7898,7899
+23927,"Optional<EnumDesc<Month>>",926,7886
+23930,"Class<Month>",947,3279
+23950,"TemporalQuery<R>",22999,23000
+23999,"Comparable<OffsetDateTime>",947,7537
+24041,"TemporalQuery<R>",22999,23000
+24168,"Comparator<OffsetDateTime>",926,1376
+24174,"Comparable<OffsetTime>",947,7537
+24212,"TemporalQuery<R>",22999,23000
+24303,"ChronoPeriod",23457,24303
+24390,"ZoneRules",26006,24390
+24415,"Comparable<ZoneOffset>",947,7537
+24440,"TemporalQuery<R>",22999,23000
+24513,"TemporalQuery<R>",22999,23000
+24575,"ChronoLocalDateTime<D>",23457,23458
+24596,"Comparator<ChronoZonedDateTime<?>>",926,1376
+24619,"TemporalQuery<R>",22999,23000
+24761,"AbstractChronology",23457,24761
+24778,"Map<TemporalField,Long>",926,1887
+24779,"ChronoField",22999,24779
+24789,"ResolverStyle",25155,24789
+24819,"Set<Chronology>",926,1890
+24820,"Collection<Chronology>",926,943
+24821,"Iterable<Chronology>",947,948
+24833,"Comparable<ChronoLocalDate>",947,7537
+24863,"TemporalQuery<R>",22999,23000
+24887,"Era",23457,24887
+24893,"Comparator<ChronoLocalDate>",926,1376
+24926,"Comparable<Chronology>",947,7537
+24966,"List<Era>",926,954
+24967,"Collection<Era>",926,943
+24968,"Iterable<Era>",947,948
+24979,"ChronoZonedDateTime<? extends ChronoLocalDate>",23457,23499
+24985,"ChronoLocalDateTime<? extends ChronoLocalDate>",23457,23458
+25031,"TemporalQuery<R>",22999,23000
+25118,"Enum<IsoEra>",947,7867
+25119,"Comparable<IsoEra>",947,7537
+25124,"EnumDesc<IsoEra>",947,7894
+25125,"DynamicConstantDesc<IsoEra>",7898,7899
+25126,"Optional<EnumDesc<IsoEra>>",926,7886
+25129,"Class<IsoEra>",947,3279
+25161,"TemporalQuery<?>",22999,23000
+25166,"CompositePrinterParser",25155,25166
+25185,"TemporalQuery<T>",22999,23000
+25197,"Set<TemporalField>",926,1890
+25198,"Collection<TemporalField>",926,943
+25199,"Iterable<TemporalField>",947,948
+25217,"DecimalStyle",25155,25217
+25235,"TemporalQuery<Boolean>",22999,23000
+25238,"TemporalQuery<Period>",22999,23000
+25242,"FormatStyle",25155,25242
+25274,"DateTimePrinterParser",25155,25274
+25275,"DateTimeFormatterBuilder",25155,25275
+25277,"DateTimeParseContext",25155,25277
+25282,"DateTimePrintContext",25155,25282
+25297,"DayPeriod",25155,25297
+25309,"Map<DayPeriod,Long>",926,1887
+25353,"Set<ZoneId>",926,1890
+25354,"Collection<ZoneId>",926,943
+25355,"Iterable<ZoneId>",947,948
+25378,"Map<Long,String>",926,1887
+25402,"SignStyle",25155,25402
+25440,"Consumer<Chronology>",982,983
+25456,"Parsed",25155,25456
+25493,"TemporalQuery<R>",22999,23000
+25530,"Set<Locale>",926,1890
+25531,"Collection<Locale>",926,943
+25532,"Iterable<Locale>",947,948
+25536,"Enum<FormatStyle>",947,7867
+25537,"Comparable<FormatStyle>",947,7537
+25542,"EnumDesc<FormatStyle>",947,7894
+25543,"DynamicConstantDesc<FormatStyle>",7898,7899
+25544,"Optional<EnumDesc<FormatStyle>>",926,7886
+25547,"Class<FormatStyle>",947,3279
+25581,"TemporalQuery<R>",22999,23000
+25598,"Enum<ResolverStyle>",947,7867
+25599,"Comparable<ResolverStyle>",947,7537
+25604,"EnumDesc<ResolverStyle>",947,7894
+25605,"DynamicConstantDesc<ResolverStyle>",7898,7899
+25606,"Optional<EnumDesc<ResolverStyle>>",926,7886
+25609,"Class<ResolverStyle>",947,3279
+25635,"Enum<SignStyle>",947,7867
+25636,"Comparable<SignStyle>",947,7537
+25641,"EnumDesc<SignStyle>",947,7894
+25642,"DynamicConstantDesc<SignStyle>",7898,7899
+25643,"Optional<EnumDesc<SignStyle>>",926,7886
+25646,"Class<SignStyle>",947,3279
+25678,"Enum<TextStyle>",947,7867
+25679,"Comparable<TextStyle>",947,7537
+25684,"EnumDesc<TextStyle>",947,7894
+25685,"DynamicConstantDesc<TextStyle>",7898,7899
+25686,"Optional<EnumDesc<TextStyle>>",926,7886
+25689,"Class<TextStyle>",947,3279
+25723,"Enum<ChronoField>",947,7867
+25724,"Comparable<ChronoField>",947,7537
+25729,"EnumDesc<ChronoField>",947,7894
+25730,"DynamicConstantDesc<ChronoField>",7898,7899
+25731,"Optional<EnumDesc<ChronoField>>",926,7886
+25734,"Class<ChronoField>",947,3279
+25808,"ChronoUnit",22999,25808
+25811,"Enum<ChronoUnit>",947,7867
+25812,"Comparable<ChronoUnit>",947,7537
+25817,"EnumDesc<ChronoUnit>",947,7894
+25818,"DynamicConstantDesc<ChronoUnit>",7898,7899
+25819,"Optional<EnumDesc<ChronoUnit>>",926,7886
+25822,"Class<ChronoUnit>",947,3279
+25901,"TemporalQuery<R>",22999,23000
+26005,"ZoneOffsetTransition",26006,26005
+26010,"Comparable<ZoneOffsetTransition>",947,7537
+26021,"List<ZoneOffset>",926,954
+26022,"Collection<ZoneOffset>",926,943
+26023,"Iterable<ZoneOffset>",947,948
+26053,"TimeDefinition",26006,26053
+26056,"Enum<TimeDefinition>",947,7867
+26057,"Comparable<TimeDefinition>",947,7537
+26062,"EnumDesc<TimeDefinition>",947,7894
+26063,"DynamicConstantDesc<TimeDefinition>",7898,7899
+26064,"Optional<EnumDesc<TimeDefinition>>",926,7886
+26067,"Class<TimeDefinition>",947,3279
+26081,"ZoneOffsetTransitionRule",26006,26081
+26148,"List<ZoneOffsetTransitionRule>",926,954
+26149,"Collection<ZoneOffsetTransitionRule>",926,943
+26150,"Iterable<ZoneOffsetTransitionRule>",947,948
+26152,"List<ZoneOffsetTransition>",926,954
+26153,"Collection<ZoneOffsetTransition>",926,943
+26154,"Iterable<ZoneOffsetTransition>",947,948
+26198,"Collection<E>",926,943
+26199,"Iterable<E>",947,948
+26201,"Spliterator<E>",926,970
+26204,"Consumer<? super E>",982,983
+26210,"Stream<E>",1006,1007
+26211,"BaseStream<E,Stream<E>>",1006,1012
+26220,"Predicate<? super E>",982,1047
+26244,"AbstractCollection<E>",926,939
+26246,"Spliterator<E>",926,970
+26249,"Consumer<? super E>",982,983
+26255,"Stream<E>",1006,1007
+26256,"BaseStream<E,Stream<E>>",1006,1012
+26265,"Predicate<? super E>",982,1047
+26337,"Comparator<? super E>",926,1376
+26341,"UnaryOperator<E>",982,1387
+26342,"Function<E,E>",982,1391
+26370,"Map<K,V>",926,1887
+26373,"BiFunction<? super V,? super V,? extends V>",982,10246
+26381,"BiFunction<? super K,? super V,? extends V>",982,10246
+26389,"Function<? super K,? extends V>",982,1391
+26409,"BiConsumer<? super K,? super V>",982,10328
+26439,"AbstractCollection<E>",926,939
+26440,"Collection<E>",926,943
+26441,"Iterable<E>",947,948
+26443,"Spliterator<E>",926,970
+26446,"Consumer<? super E>",982,983
+26451,"Iterator<E>",926,998
+26453,"Stream<E>",1006,1007
+26454,"BaseStream<E,Stream<E>>",1006,1012
+26463,"Predicate<? super E>",982,1047
+26471,"Collection<? extends E>",926,943
+26472,"Iterable<? extends E>",947,948
+26514,"Set<E>",926,1890
+26517,"Set<E>",926,1890
+26518,"Collection<E>",926,943
+26519,"Iterable<E>",947,948
+26523,"Collection<? extends E>",926,943
+26524,"Iterable<? extends E>",947,948
+26527,"Set<E>",926,1890
+26528,"Collection<E>",926,943
+26529,"Iterable<E>",947,948
+26536,"Set<E>",926,1890
+26537,"Collection<E>",926,943
+26538,"Iterable<E>",947,948
+26551,"Set<E>",926,1890
+26552,"Collection<E>",926,943
+26553,"Iterable<E>",947,948
+26565,"Set<E>",926,1890
+26566,"Collection<E>",926,943
+26567,"Iterable<E>",947,948
+26578,"Set<E>",926,1890
+26579,"Collection<E>",926,943
+26580,"Iterable<E>",947,948
+26590,"Set<E>",926,1890
+26591,"Collection<E>",926,943
+26592,"Iterable<E>",947,948
+26601,"Set<E>",926,1890
+26602,"Collection<E>",926,943
+26603,"Iterable<E>",947,948
+26611,"Set<E>",926,1890
+26612,"Collection<E>",926,943
+26613,"Iterable<E>",947,948
+26620,"Set<E>",926,1890
+26621,"Collection<E>",926,943
+26622,"Iterable<E>",947,948
+26628,"Set<E>",926,1890
+26629,"Collection<E>",926,943
+26630,"Iterable<E>",947,948
+26635,"Set<E>",926,1890
+26636,"Collection<E>",926,943
+26637,"Iterable<E>",947,948
+26641,"Set<E>",926,1890
+26642,"Collection<E>",926,943
+26643,"Iterable<E>",947,948
+26646,"Spliterator<E>",926,970
+26666,"Collection<? extends E>",926,943
+26667,"Iterable<? extends E>",947,948
+26695,"Iterator<E>",926,998
+26711,"AbstractList<E>",926,935
+26712,"AbstractCollection<E>",926,939
+26718,"Stream<E>",1006,1007
+26719,"BaseStream<E,Stream<E>>",1006,1012
+26876,"Comparator<? super T>",926,1376
+26888,"Comparator<? super T>",926,1376
+26994,"Comparator<? super T>",926,1376
+27006,"Comparator<? super T>",926,1376
+27019,"Comparable<? super T>",947,7537
+27037,"Comparable<? super T>",947,7537
+27166,"DoubleStream",1006,27166
+27173,"LongStream",1006,27173
+27188,"Stream<T>",1006,1007
+27189,"BaseStream<T,Stream<T>>",1006,1012
+27198,"Stream<T>",1006,1007
+27199,"BaseStream<T,Stream<T>>",1006,1012
+27204,"OfDouble",926,27204
+27211,"OfLong",926,27211
+27218,"OfInt",926,27218
+27227,"Spliterator<T>",926,970
+27236,"Spliterator<T>",926,970
+27241,"IntToDoubleFunction",982,27241
+27248,"IntToLongFunction",982,27248
+27255,"IntUnaryOperator",982,27255
+27271,"IntFunction<? extends T>",982,1086
+27282,"IntFunction<? extends T>",982,1086
+27329,"List<T>",926,954
+27330,"Collection<T>",926,943
+27331,"Iterable<T>",947,948
+27384,"Class<? extends T[]>",947,3279
+27432,"Class<? extends T[]>",947,3279
+27527,"Comparator<? super T>",926,1376
+27539,"Comparator<? super T>",926,1376
+27645,"Comparator<? super T>",926,1376
+27657,"Comparator<? super T>",926,1376
+27723,"IntBinaryOperator",982,27723
+27732,"DoubleBinaryOperator",982,27732
+27749,"BinaryOperator<>",982,27750
+27750,"BinaryOperator",982,27750
+27753,"BiFunction<>",982,10246
+27765,"BinaryOperator<T>",982,27750
+27766,"BiFunction<T,T,T>",982,10246
+27776,"BinaryOperator<T>",982,27750
+27777,"BiFunction<T,T,T>",982,10246
+27791,"Comparator<? super T>",926,1376
+27802,"Comparator<? super T>",926,1376
+27821,"Comparator<? super T>",926,1376
+27832,"Comparator<? super T>",926,1376
+27839,"Comparable<? super T>",947,7537
+27854,"Comparable<? super T>",947,7537
+27950,"Iterable<E>",947,948
+27952,"Consumer<? super E>",982,983
+27960,"Deque<>",926,27961
+27961,"Deque",926,27961
+27964,"Queue<>",926,27965
+27965,"Queue",926,27965
+27970,"Queue<T>",926,27965
+27971,"Collection<T>",926,943
+27972,"Iterable<T>",947,948
+27974,"Deque<T>",926,27961
+27977,"Set<E>",926,1890
+27978,"Collection<E>",926,943
+27979,"Iterable<E>",947,948
+27981,"Map<E,Boolean>",926,1887
+27987,"Collection<? super T>",926,943
+27988,"Iterable<? super T>",947,948
+28003,"ArrayList<>",926,906
+28004,"AbstractList<>",926,935
+28005,"AbstractCollection<>",926,939
+28008,"ArrayList<T>",926,906
+28009,"AbstractList<T>",926,935
+28010,"AbstractCollection<T>",926,939
+28011,"Collection<T>",926,943
+28012,"Iterable<T>",947,948
+28013,"List<T>",926,954
+28015,"Enumeration<T>",926,9885
+28018,"Enumeration<T>",926,9885
+28020,"Collection<T>",926,943
+28021,"Iterable<T>",947,948
+28024,"Comparator<T>",926,1376
+28029,"Comparator<T>",926,1376
+28033,"List<T>",926,954
+28034,"Collection<T>",926,943
+28035,"Iterable<T>",947,948
+28041,"Map<K,V>",926,1887
+28046,"List<T>",926,954
+28047,"Collection<T>",926,943
+28048,"Iterable<T>",947,948
+28052,"Spliterator<T>",926,970
+28056,"Iterator<E>",926,998
+28060,"Set<T>",926,1890
+28061,"Collection<T>",926,943
+28062,"Iterable<T>",947,948
+28064,"NavigableMap<>",926,28065
+28065,"NavigableMap",926,28065
+28071,"NavigableMap<K,V>",926,28065
+28072,"SortedMap<K,V>",926,21590
+28073,"Map<K,V>",926,1887
+28077,"SortedMap<K,V>",926,21590
+28078,"Map<K,V>",926,1887
+28081,"Map<K,V>",926,1887
+28083,"List<T>",926,954
+28084,"Collection<T>",926,943
+28085,"Iterable<T>",947,948
+28086,"NavigableSet<>",926,28087
+28087,"NavigableSet",926,28087
+28090,"SortedSet<>",926,28091
+28091,"SortedSet",926,28091
+28096,"NavigableSet<E>",926,28087
+28097,"SortedSet<E>",926,28091
+28098,"Set<E>",926,1890
+28099,"Collection<E>",926,943
+28100,"Iterable<E>",947,948
+28103,"SortedSet<E>",926,28091
+28104,"Set<E>",926,1890
+28105,"Collection<E>",926,943
+28106,"Iterable<E>",947,948
+28108,"Set<T>",926,1890
+28109,"Collection<T>",926,943
+28110,"Iterable<T>",947,948
+28113,"Enumeration<T>",926,9885
+28116,"ListIterator<T>",926,1325
+28117,"Iterator<T>",926,998
+28120,"Iterator<T>",926,998
+28124,"NavigableMap<K,V>",926,28065
+28125,"SortedMap<K,V>",926,21590
+28126,"Map<K,V>",926,1887
+28129,"Class<K>",947,3279
+28131,"Class<V>",947,3279
+28135,"SortedMap<K,V>",926,21590
+28136,"Map<K,V>",926,1887
+28139,"Class<K>",947,3279
+28141,"Class<V>",947,3279
+28145,"Map<K,V>",926,1887
+28148,"Class<K>",947,3279
+28150,"Class<V>",947,3279
+28153,"List<E>",926,954
+28154,"Collection<E>",926,943
+28155,"Iterable<E>",947,948
+28158,"Class<E>",947,3279
+28161,"NavigableSet<E>",926,28087
+28162,"SortedSet<E>",926,28091
+28163,"Set<E>",926,1890
+28164,"Collection<E>",926,943
+28165,"Iterable<E>",947,948
+28168,"Class<E>",947,3279
+28171,"SortedSet<E>",926,28091
+28172,"Set<E>",926,1890
+28173,"Collection<E>",926,943
+28174,"Iterable<E>",947,948
+28177,"Class<E>",947,3279
+28180,"Set<E>",926,1890
+28181,"Collection<E>",926,943
+28182,"Iterable<E>",947,948
+28185,"Class<E>",947,3279
+28188,"Queue<E>",926,27965
+28189,"Collection<E>",926,943
+28190,"Iterable<E>",947,948
+28193,"Class<E>",947,3279
+28200,"Class<T>",947,3279
+28203,"Collection<E>",926,943
+28204,"Iterable<E>",947,948
+28207,"Class<E>",947,3279
+28211,"NavigableMap<K,V>",926,28065
+28212,"SortedMap<K,V>",926,21590
+28213,"Map<K,V>",926,1887
+28218,"SortedMap<K,V>",926,21590
+28219,"Map<K,V>",926,1887
+28224,"Map<K,V>",926,1887
+28228,"List<T>",926,954
+28229,"Collection<T>",926,943
+28230,"Iterable<T>",947,948
+28235,"List<T>",926,954
+28236,"Collection<T>",926,943
+28237,"Iterable<T>",947,948
+28241,"NavigableSet<T>",926,28087
+28242,"SortedSet<T>",926,28091
+28243,"Set<T>",926,1890
+28244,"Collection<T>",926,943
+28245,"Iterable<T>",947,948
+28249,"SortedSet<T>",926,28091
+28250,"Set<T>",926,1890
+28251,"Collection<T>",926,943
+28252,"Iterable<T>",947,948
+28256,"Set<T>",926,1890
+28257,"Collection<T>",926,943
+28258,"Iterable<T>",947,948
+28263,"Set<T>",926,1890
+28264,"Collection<T>",926,943
+28265,"Iterable<T>",947,948
+28269,"Collection<T>",926,943
+28270,"Iterable<T>",947,948
+28275,"Collection<T>",926,943
+28276,"Iterable<T>",947,948
+28281,"NavigableMap<K,V>",926,28065
+28282,"SortedMap<K,V>",926,21590
+28283,"Map<K,V>",926,1887
+28287,"NavigableMap<K,? extends V>",926,28065
+28288,"SortedMap<K,? extends V>",926,21590
+28289,"Map<K,? extends V>",926,1887
+28293,"SortedMap<K,V>",926,21590
+28294,"Map<K,V>",926,1887
+28298,"SortedMap<K,? extends V>",926,21590
+28299,"Map<K,? extends V>",926,1887
+28303,"Map<K,V>",926,1887
+28309,"Map<? extends K,? extends V>",926,1887
+28312,"List<T>",926,954
+28313,"Collection<T>",926,943
+28314,"Iterable<T>",947,948
+28318,"List<? extends T>",926,954
+28319,"Collection<? extends T>",926,943
+28320,"Iterable<? extends T>",947,948
+28323,"NavigableSet<T>",926,28087
+28324,"SortedSet<T>",926,28091
+28325,"Set<T>",926,1890
+28326,"Collection<T>",926,943
+28327,"Iterable<T>",947,948
+28331,"SortedSet<T>",926,28091
+28332,"Set<T>",926,1890
+28333,"Collection<T>",926,943
+28334,"Iterable<T>",947,948
+28338,"Set<T>",926,1890
+28339,"Collection<T>",926,943
+28340,"Iterable<T>",947,948
+28344,"Set<? extends T>",926,1890
+28345,"Collection<? extends T>",926,943
+28346,"Iterable<? extends T>",947,948
+28349,"Collection<T>",926,943
+28350,"Iterable<T>",947,948
+28354,"Collection<? extends T>",926,943
+28355,"Iterable<? extends T>",947,948
+28365,"List<T>",926,954
+28366,"Collection<T>",926,943
+28367,"Iterable<T>",947,948
+28378,"Collection<? extends T>",926,943
+28379,"Iterable<? extends T>",947,948
+28383,"Comparator<? super T>",926,1376
+28391,"Comparable<? super T>",947,7537
+28395,"Collection<? extends T>",926,943
+28396,"Iterable<? extends T>",947,948
+28402,"Collection<? extends T>",926,943
+28403,"Iterable<? extends T>",947,948
+28407,"Comparator<? super T>",926,1376
+28415,"Comparable<? super T>",947,7537
+28419,"Collection<? extends T>",926,943
+28420,"Iterable<? extends T>",947,948
+28426,"List<? super T>",926,954
+28427,"Collection<? super T>",926,943
+28428,"Iterable<? super T>",947,948
+28432,"List<? extends T>",926,954
+28433,"Collection<? extends T>",926,943
+28434,"Iterable<? extends T>",947,948
+28440,"List<? super T>",926,954
+28441,"Collection<? super T>",926,943
+28442,"Iterable<? super T>",947,948
+28460,"List<? extends T>",926,954
+28461,"Collection<? extends T>",926,943
+28462,"Iterable<? extends T>",947,948
+28467,"Comparator<? super T>",926,1376
+28474,"Comparable<? super T>",947,7537
+28477,"List<? extends Comparable<? super T>>",926,954
+28478,"Collection<? extends Comparable<? super T>>",926,943
+28479,"Iterable<? extends Comparable<? super T>>",947,948
+28484,"List<T>",926,954
+28485,"Collection<T>",926,943
+28486,"Iterable<T>",947,948
+28490,"Comparator<? super T>",926,1376
+28497,"Comparable<? super T>",947,7537
+28499,"List<T>",926,954
+28500,"Collection<T>",926,943
+28501,"Iterable<T>",947,948
+28504,"ToDoubleFunction<>",982,28505
+28505,"ToDoubleFunction",982,28505
+28511,"Comparator<T>",926,1376
+28516,"ToDoubleFunction<? super T>",982,28505
+28518,"ToLongFunction<>",982,28519
+28519,"ToLongFunction",982,28519
+28525,"Comparator<T>",926,1376
+28530,"ToLongFunction<? super T>",982,28519
+28532,"ToIntFunction<>",982,28533
+28533,"ToIntFunction",982,28533
+28539,"Comparator<T>",926,1376
+28544,"ToIntFunction<? super T>",982,28533
+28552,"Comparable<? super U>",947,7537
+28553,"Comparator<T>",926,1376
+28560,"Function<? super T,? extends U>",982,1391
+28565,"Comparator<T>",926,1376
+28572,"Function<? super T,? extends U>",982,1391
+28577,"Comparator<? super U>",926,1376
+28581,"Comparator<T>",926,1376
+28586,"Comparator<? super T>",926,1376
+28590,"Comparator<T>",926,1376
+28595,"Comparator<? super T>",926,1376
+28602,"Comparable<? super T>",947,7537
+28603,"Comparator<T>",926,1376
+28610,"Comparable<? super T>",947,7537
+28611,"Comparator<T>",926,1376
+28615,"ToDoubleFunction<? super T>",982,28505
+28619,"ToLongFunction<? super T>",982,28519
+28623,"ToIntFunction<? super T>",982,28533
+28632,"Comparable<? super U>",947,7537
+28636,"Function<? super T,? extends U>",982,1391
+28643,"Function<? super T,? extends U>",982,1391
+28648,"Comparator<? super U>",926,1376
+28650,"Comparator<? super T>",926,1376
+28662,"Comparable<Date>",947,7537
+28805,"Queue<E>",926,27965
+28806,"Collection<E>",926,943
+28807,"Iterable<E>",947,948
+28809,"Spliterator<E>",926,970
+28812,"Consumer<? super E>",982,983
+28817,"Iterator<E>",926,998
+28819,"Stream<E>",1006,1007
+28820,"BaseStream<E,Stream<E>>",1006,1012
+28829,"Predicate<? super E>",982,1047
+28837,"Collection<? extends E>",926,943
+28838,"Iterable<? extends E>",947,948
+28924,"Enumeration<V>",926,9885
+28926,"Enumeration<K>",926,9885
+28930,"DoubleSummaryStatistics",926,28930
+28933,"DoubleConsumer",982,28933
+28952,"AbstractSet<E>",926,12167
+28953,"AbstractCollection<E>",926,939
+28954,"Collection<E>",926,943
+28955,"Iterable<E>",947,948
+28956,"Set<E>",926,1890
+28958,"Spliterator<E>",926,970
+28961,"Consumer<? super E>",982,983
+28966,"Iterator<E>",926,998
+28968,"Stream<E>",1006,1007
+28969,"BaseStream<E,Stream<E>>",1006,1012
+28978,"Predicate<? super E>",982,1047
+28986,"Collection<? extends E>",926,943
+28987,"Iterable<? extends E>",947,948
+29061,"Enum<E>",947,7867
+29062,"Comparable<E>",947,7537
+29067,"EnumSet<>",926,12163
+29068,"AbstractSet<>",926,12167
+29076,"Enum<E>",947,7867
+29077,"Comparable<E>",947,7537
+29078,"EnumSet<E>",926,12163
+29079,"AbstractSet<E>",926,12167
+29080,"AbstractCollection<E>",926,939
+29081,"Collection<E>",926,943
+29082,"Iterable<E>",947,948
+29083,"Set<E>",926,1890
+29095,"Enum<E>",947,7867
+29096,"Comparable<E>",947,7537
+29097,"EnumSet<E>",926,12163
+29098,"AbstractSet<E>",926,12167
+29099,"AbstractCollection<E>",926,939
+29100,"Collection<E>",926,943
+29101,"Iterable<E>",947,948
+29102,"Set<E>",926,1890
+29115,"Enum<E>",947,7867
+29116,"Comparable<E>",947,7537
+29117,"EnumSet<E>",926,12163
+29118,"AbstractSet<E>",926,12167
+29119,"AbstractCollection<E>",926,939
+29120,"Collection<E>",926,943
+29121,"Iterable<E>",947,948
+29122,"Set<E>",926,1890
+29131,"Enum<E>",947,7867
+29132,"Comparable<E>",947,7537
+29133,"EnumSet<E>",926,12163
+29134,"AbstractSet<E>",926,12167
+29135,"AbstractCollection<E>",926,939
+29136,"Collection<E>",926,943
+29137,"Iterable<E>",947,948
+29138,"Set<E>",926,1890
+29146,"Enum<E>",947,7867
+29147,"Comparable<E>",947,7537
+29148,"EnumSet<E>",926,12163
+29149,"AbstractSet<E>",926,12167
+29150,"AbstractCollection<E>",926,939
+29151,"Collection<E>",926,943
+29152,"Iterable<E>",947,948
+29153,"Set<E>",926,1890
+29160,"Enum<E>",947,7867
+29161,"Comparable<E>",947,7537
+29162,"EnumSet<E>",926,12163
+29163,"AbstractSet<E>",926,12167
+29164,"AbstractCollection<E>",926,939
+29165,"Collection<E>",926,943
+29166,"Iterable<E>",947,948
+29167,"Set<E>",926,1890
+29173,"Enum<E>",947,7867
+29174,"Comparable<E>",947,7537
+29175,"EnumSet<E>",926,12163
+29176,"AbstractSet<E>",926,12167
+29177,"AbstractCollection<E>",926,939
+29178,"Collection<E>",926,943
+29179,"Iterable<E>",947,948
+29180,"Set<E>",926,1890
+29185,"Enum<E>",947,7867
+29186,"Comparable<E>",947,7537
+29187,"EnumSet<E>",926,12163
+29188,"AbstractSet<E>",926,12167
+29189,"AbstractCollection<E>",926,939
+29190,"Collection<E>",926,943
+29191,"Iterable<E>",947,948
+29192,"Set<E>",926,1890
+29197,"Enum<E>",947,7867
+29198,"Comparable<E>",947,7537
+29199,"EnumSet<E>",926,12163
+29200,"AbstractSet<E>",926,12167
+29201,"AbstractCollection<E>",926,939
+29202,"Collection<E>",926,943
+29203,"Iterable<E>",947,948
+29204,"Set<E>",926,1890
+29209,"Enum<E>",947,7867
+29210,"Comparable<E>",947,7537
+29211,"EnumSet<E>",926,12163
+29212,"AbstractSet<E>",926,12167
+29213,"AbstractCollection<E>",926,939
+29214,"Collection<E>",926,943
+29215,"Iterable<E>",947,948
+29216,"Set<E>",926,1890
+29222,"Enum<E>",947,7867
+29223,"Comparable<E>",947,7537
+29224,"EnumSet<E>",926,12163
+29225,"AbstractSet<E>",926,12167
+29226,"AbstractCollection<E>",926,939
+29227,"Collection<E>",926,943
+29228,"Iterable<E>",947,948
+29229,"Set<E>",926,1890
+29231,"Class<E>",947,3279
+29235,"Enum<E>",947,7867
+29236,"Comparable<E>",947,7537
+29237,"EnumSet<E>",926,12163
+29238,"AbstractSet<E>",926,12167
+29239,"AbstractCollection<E>",926,939
+29240,"Collection<E>",926,943
+29241,"Iterable<E>",947,948
+29242,"Set<E>",926,1890
+29244,"Class<E>",947,3279
+29245,"Class<E>",947,3279
+29246,"Enum<?>",947,7867
+29247,"Comparable<?>",947,7537
+29258,"Iterator<E>",926,998
+29263,"Dictionary<K,V>",926,19968
+29272,"Enumeration<V>",926,9885
+29274,"Enumeration<K>",926,9885
+29278,"Map<K,V>",926,1887
+29283,"BiFunction<? super V,? super V,? extends V>",982,10246
+29291,"BiFunction<? super K,? super V,? extends V>",982,10246
+29299,"Function<? super K,? extends V>",982,1391
+29319,"BiConsumer<? super K,? super V>",982,10328
+29330,"Entry<K,V>",926,10057
+29331,"Set<Entry<K,V>>",926,1890
+29332,"Collection<Entry<K,V>>",926,943
+29333,"Iterable<Entry<K,V>>",947,948
+29335,"Collection<V>",926,943
+29336,"Iterable<V>",947,948
+29338,"Set<K>",926,1890
+29339,"Collection<K>",926,943
+29340,"Iterable<K>",947,948
+29344,"Map<? extends K,? extends V>",926,1887
+29412,"Hashtable<>",926,19964
+29413,"Dictionary<>",926,19968
+29415,"Hashtable<?,?>",926,19964
+29416,"Dictionary<?,?>",926,19968
+29449,"IntSummaryStatistics",926,29449
+29452,"IntConsumer",982,29452
+29470,"InvalidPropertiesFormatException",926,29470
+29480,"Consumer<? super E>",982,983
+29487,"Collection<E>",926,943
+29488,"Iterable<E>",947,948
+29490,"Consumer<? super E>",982,983
+29496,"Stream<E>",1006,1007
+29497,"BaseStream<E,Stream<E>>",1006,1012
+29506,"Predicate<? super E>",982,1047
+29532,"Iterator<E>",926,998
+29535,"Consumer<? super E>",982,983
+29553,"Category",926,29553
+29556,"Enum<Category>",947,7867
+29557,"Comparable<Category>",947,7537
+29562,"EnumDesc<Category>",947,7894
+29563,"DynamicConstantDesc<Category>",7898,7899
+29564,"Optional<EnumDesc<Category>>",926,7886
+29567,"Class<Category>",947,3279
+29595,"FilteringMode",926,29595
+29598,"Enum<FilteringMode>",947,7867
+29599,"Comparable<FilteringMode>",947,7537
+29604,"EnumDesc<FilteringMode>",947,7894
+29605,"DynamicConstantDesc<FilteringMode>",7898,7899
+29606,"Optional<EnumDesc<FilteringMode>>",926,7886
+29609,"Class<FilteringMode>",947,3279
+29635,"IsoCountryCode",926,29635
+29638,"Enum<IsoCountryCode>",947,7867
+29639,"Comparable<IsoCountryCode>",947,7537
+29644,"EnumDesc<IsoCountryCode>",947,7894
+29645,"DynamicConstantDesc<IsoCountryCode>",7898,7899
+29646,"Optional<EnumDesc<IsoCountryCode>>",926,7886
+29649,"Class<IsoCountryCode>",947,3279
+29676,"LanguageRange",926,29676
+29683,"List<LanguageRange>",926,954
+29684,"Collection<LanguageRange>",926,943
+29685,"Iterable<LanguageRange>",947,948
+29720,"List<Locale>",926,954
+29747,"MissingResourceException",926,29747
+29755,"LocaleExtensions",40022,29755
+29757,"BaseLocale",40022,29757
+29764,"Set<Character>",926,1890
+29765,"Collection<Character>",926,943
+29766,"Iterable<Character>",947,948
+29855,"LongSummaryStatistics",926,29855
+29858,"LongConsumer",982,29858
+29883,"Entry<K,V>",926,10057
+29889,"Entry<? extends K,? extends V>",926,10057
+29893,"Entry<K,V>",926,10057
+29894,"Comparator<Entry<K,V>>",926,1376
+29899,"Comparator<? super V>",926,1376
+29904,"Entry<K,V>",926,10057
+29905,"Comparator<Entry<K,V>>",926,1376
+29910,"Comparator<? super K>",926,1376
+29918,"Comparable<? super V>",947,7537
+29919,"Entry<K,V>",926,10057
+29920,"Comparator<Entry<K,V>>",926,1376
+29927,"Comparable<? super K>",947,7537
+29929,"Entry<K,V>",926,10057
+29930,"Comparator<Entry<K,V>>",926,1376
+29955,"SortedMap<K,V>",926,21590
+29956,"Map<K,V>",926,1887
+29961,"BiFunction<? super V,? super V,? extends V>",982,10246
+29969,"BiFunction<? super K,? super V,? extends V>",982,10246
+29977,"Function<? super K,? extends V>",982,1391
+29997,"BiConsumer<? super K,? super V>",982,10328
+30008,"Entry<K,V>",926,10057
+30009,"Set<Entry<K,V>>",926,1890
+30010,"Collection<Entry<K,V>>",926,943
+30011,"Iterable<Entry<K,V>>",947,948
+30013,"Collection<V>",926,943
+30014,"Iterable<V>",947,948
+30016,"Set<K>",926,1890
+30017,"Collection<K>",926,943
+30018,"Iterable<K>",947,948
+30022,"Map<? extends K,? extends V>",926,1887
+30041,"Entry<K,V>",926,10057
+30042,"Set<Entry<K,V>>",926,1890
+30043,"Collection<Entry<K,V>>",926,943
+30044,"Iterable<Entry<K,V>>",947,948
+30047,"Collection<V>",926,943
+30048,"Iterable<V>",947,948
+30051,"Set<K>",926,1890
+30052,"Collection<K>",926,943
+30053,"Iterable<K>",947,948
+30076,"Comparator<? super K>",926,1376
+30079,"Comparator<? super K>",926,1376
+30100,"NavigableSet<K>",926,28087
+30101,"SortedSet<K>",926,28091
+30125,"SortedSet<E>",926,28091
+30126,"Set<E>",926,1890
+30127,"Collection<E>",926,943
+30128,"Iterable<E>",947,948
+30130,"Spliterator<E>",926,970
+30133,"Consumer<? super E>",982,983
+30138,"Iterator<E>",926,998
+30140,"Stream<E>",1006,1007
+30141,"BaseStream<E,Stream<E>>",1006,1012
+30150,"Predicate<? super E>",982,1047
+30158,"Collection<? extends E>",926,943
+30159,"Iterable<? extends E>",947,948
+30205,"Spliterator<E>",926,970
+30228,"Comparator<? super E>",926,1376
+30231,"Comparator<? super E>",926,1376
+30300,"Supplier<? extends T>",982,6407
+30326,"Comparator<? super T>",926,1376
+30356,"Supplier<? extends X>",982,6407
+30362,"Supplier<? extends T>",982,6407
+30369,"Stream<T>",1006,1007
+30370,"BaseStream<T,Stream<T>>",1006,1012
+30371,"Optional<? extends T>",926,7886
+30375,"Supplier<? extends Optional<? extends T>>",982,6407
+30381,"Optional<U>",926,7886
+30388,"Optional<? extends U>",926,7886
+30392,"Function<? super T,? extends Optional<? extends U>>",982,1391
+30396,"Optional<U>",926,7886
+30401,"Function<? super T,? extends U>",982,1391
+30403,"Predicate<? super T>",982,1047
+30407,"Consumer<? super T>",982,983
+30419,"Optional<T>",926,7886
+30424,"Optional<T>",926,7886
+30429,"Optional<T>",926,7886
+30431,"OptionalDouble",926,30431
+30446,"Supplier<? extends X>",982,6407
+30450,"DoubleSupplier",982,30450
+30467,"OptionalInt",926,30467
+30482,"Supplier<? extends X>",982,6407
+30486,"IntSupplier",982,30486
+30503,"OptionalLong",926,30503
+30518,"Supplier<? extends X>",982,6407
+30522,"LongSupplier",982,30522
+30539,"OfDouble",926,30539
+30542,"PrimitiveIterator<Double,DoubleConsumer>",926,30543
+30543,"PrimitiveIterator",926,30543
+30546,"Iterator<Double>",926,998
+30549,"Consumer<? super Double>",982,983
+30567,"OfInt",926,30567
+30570,"PrimitiveIterator<Integer,IntConsumer>",926,30543
+30584,"OfLong",926,30584
+30587,"PrimitiveIterator<Long,LongConsumer>",926,30543
+30588,"Iterator<Long>",926,998
+30591,"Consumer<? super Long>",982,983
+30607,"Iterator<T>",926,998
+30610,"Consumer<? super T>",982,983
+30619,"Hashtable<Object,Object>",926,19964
+30620,"Dictionary<Object,Object>",926,19968
+30621,"Map<Object,Object>",926,1887
+30674,"Map<? extends Object,? extends Object>",926,1887
+30785,"BiFunction<? super Object,? super Object,?>",982,10246
+30797,"Function<? super Object,?>",982,1391
+30855,"Enumeration<?>",926,9885
+30908,"Collection<E>",926,943
+30909,"Iterable<E>",947,948
+30911,"Spliterator<E>",926,970
+30914,"Consumer<? super E>",982,983
+30919,"Iterator<E>",926,998
+30921,"Stream<E>",1006,1007
+30922,"BaseStream<E,Stream<E>>",1006,1012
+30931,"Predicate<? super E>",982,1047
+30939,"Collection<? extends E>",926,943
+30940,"Iterable<? extends E>",947,948
+30961,"RandomGenerator",33316,30961
+30962,"RandomGeneratorProperties",38039,30962
+31033,"Control",926,31033
+31088,"Enumeration<String>",926,9885
+31143,"Collection<E>",926,943
+31144,"Iterable<E>",947,948
+31148,"Consumer<? super E>",982,983
+31154,"Stream<E>",1006,1007
+31155,"BaseStream<E,Stream<E>>",1006,1012
+31164,"Predicate<? super E>",982,1047
+31189,"Map<K,V>",926,1887
+31194,"BiFunction<? super V,? super V,? extends V>",982,10246
+31200,"BiFunction<? super K,? super V,? extends V>",982,10246
+31208,"Function<? super K,? extends V>",982,1391
+31228,"BiConsumer<? super K,? super V>",982,10328
+31244,"Map<? extends K,? extends V>",926,1887
+31260,"Set<E>",926,1890
+31261,"Collection<E>",926,943
+31262,"Iterable<E>",947,948
+31264,"Consumer<? super E>",982,983
+31269,"Iterator<E>",926,998
+31271,"Stream<E>",1006,1007
+31272,"BaseStream<E,Stream<E>>",1006,1012
+31281,"Predicate<? super E>",982,1047
+31289,"Collection<? extends E>",926,943
+31290,"Iterable<? extends E>",947,948
+31336,"OfPrimitive<Double,DoubleConsumer,OfDouble>",926,31337
+31337,"OfPrimitive",926,31337
+31340,"Spliterator<Double>",926,970
+31345,"Comparator<? super T>",926,1376
+31348,"Comparator<? super Double>",926,1376
+31362,"Consumer<? super T>",982,983
+31389,"OfPrimitive<>",926,31337
+31404,"OfPrimitive<Integer,IntConsumer,OfInt>",926,31337
+31432,"OfPrimitive<Long,LongConsumer,OfLong>",926,31337
+31433,"Spliterator<Long>",926,970
+31435,"Comparator<? super Long>",926,1376
+31462,"Spliterator<T>",926,970
+31466,"Comparator<? super T>",926,1376
+31474,"Consumer<? super T>",982,983
+31481,"ReferenceQueue<? super Object>",7676,10683
+31506,"Entry<K,V>",926,10057
+31531,"AbstractMap<K,V>",926,9799
+31532,"Map<K,V>",926,1887
+31533,"BiFunction<? super V,? super V,? extends V>",982,10246
+31545,"Function<? super K,? extends V>",982,1391
+31618,"Callable",9793,31618
+31625,"CompletionException",9793,31625
+31636,"CollectionView",9793,31636
+31640,"Collection<E>",926,943
+31641,"Iterable<E>",947,948
+31643,"Spliterator<E>",926,970
+31646,"Consumer<? super E>",982,983
+31651,"Iterator<E>",926,998
+31653,"Stream<E>",1006,1007
+31654,"BaseStream<E,Stream<E>>",1006,1012
+31663,"Predicate<? super E>",982,1047
+31671,"Collection<? extends E>",926,943
+31672,"Iterable<? extends E>",947,948
+31716,"ConcurrentHashMap<K,V>",9793,9794
+31717,"AbstractMap<K,V>",926,9799
+31718,"Map<K,V>",926,1887
+31719,"ConcurrentMap<K,V>",9793,9803
+31723,"KeySetView",9793,31723
+31728,"CollectionView<K,V,K>",9793,31636
+31729,"Collection<K>",926,943
+31730,"Iterable<K>",947,948
+31732,"Spliterator<K>",926,970
+31735,"Consumer<? super K>",982,983
+31740,"Iterator<K>",926,998
+31742,"Stream<K>",1006,1007
+31743,"BaseStream<K,Stream<K>>",1006,1012
+31752,"Predicate<? super K>",982,1047
+31760,"Collection<? extends K>",926,943
+31761,"Iterable<? extends K>",947,948
+31799,"ConcurrentHashMap<K,V>",9793,9794
+31800,"AbstractMap<K,V>",926,9799
+31801,"Map<K,V>",926,1887
+31802,"ConcurrentMap<K,V>",9793,9803
+31805,"Set<K>",926,1890
+31850,"Node",9793,31850
+31855,"Entry<K,V>",926,10057
+31863,"Node<>",9793,31850
+31890,"AbstractMap<K,V>",926,9799
+31891,"Map<K,V>",926,1887
+31896,"BiFunction<? super V,? super V,? extends V>",982,10246
+31904,"BiFunction<? super K,? super V,? extends V>",982,10246
+31912,"Function<? super K,? extends V>",982,1391
+31932,"BiConsumer<? super K,? super V>",982,10328
+31943,"Entry<K,V>",926,10057
+31944,"Set<Entry<K,V>>",926,1890
+31945,"Collection<Entry<K,V>>",926,943
+31946,"Iterable<Entry<K,V>>",947,948
+31948,"Collection<V>",926,943
+31949,"Iterable<V>",947,948
+31951,"Set<K>",926,1890
+31952,"Collection<K>",926,943
+31953,"Iterable<K>",947,948
+31957,"Map<? extends K,? extends V>",926,1887
+31999,"ConcurrentMap<K,V>",9793,9803
+32006,"BiFunction<? super V,? super V,? extends V>",982,10246
+32018,"BiFunction<? super K,? super V,? extends V>",982,10246
+32032,"Function<? super K,? extends V>",982,1391
+32070,"BiConsumer<? super K,? super V>",982,10328
+32083,"ToIntFunction<Entry<K,V>>",982,28533
+32090,"ToLongFunction<Entry<K,V>>",982,28519
+32097,"ToDoubleFunction<Entry<K,V>>",982,28505
+32110,"Function<Entry<K,V>,? extends U>",982,1391
+32115,"BiFunction<? super U,? super U,? extends U>",982,10246
+32119,"BiFunction<Entry<K,V>,Entry<K,V>,? extends Entry<K,V>>",982,10246
+32130,"Function<Entry<K,V>,? extends U>",982,1391
+32132,"Consumer<>",982,983
+32140,"Function<Entry<K,V>,? extends U>",982,1391
+32145,"Consumer<? super U>",982,983
+32149,"Consumer<? super Entry<K,V>>",982,983
+32154,"ToIntFunction<? super V>",982,28533
+32161,"ToLongFunction<? super V>",982,28519
+32168,"ToDoubleFunction<? super V>",982,28505
+32181,"Function<? super V,? extends U>",982,1391
+32186,"BiFunction<? super U,? super U,? extends U>",982,10246
+32197,"Function<? super V,? extends U>",982,1391
+32205,"Function<? super V,? extends U>",982,1391
+32210,"Consumer<? super U>",982,983
+32212,"Consumer<? super V>",982,983
+32217,"ToIntFunction<? super K>",982,28533
+32224,"ToLongFunction<? super K>",982,28519
+32231,"ToDoubleFunction<? super K>",982,28505
+32244,"Function<? super K,? extends U>",982,1391
+32249,"BiFunction<? super U,? super U,? extends U>",982,10246
+32251,"BiFunction<? super K,? super K,? extends K>",982,10246
+32262,"Function<? super K,? extends U>",982,1391
+32270,"Function<? super K,? extends U>",982,1391
+32275,"Consumer<? super U>",982,983
+32277,"Consumer<? super K>",982,983
+32282,"ToIntBiFunction<? super K,? super V>",982,32283
+32283,"ToIntBiFunction",982,32283
+32292,"ToLongBiFunction<? super K,? super V>",982,32293
+32293,"ToLongBiFunction",982,32293
+32302,"ToDoubleBiFunction<? super K,? super V>",982,32303
+32303,"ToDoubleBiFunction",982,32303
+32318,"BiFunction<? super K,? super V,? extends U>",982,10246
+32323,"BiFunction<? super U,? super U,? extends U>",982,10246
+32331,"BiFunction<? super K,? super V,? extends U>",982,10246
+32339,"BiFunction<? super K,? super V,? extends U>",982,10246
+32344,"Consumer<? super U>",982,983
+32354,"Node<K,V>",9793,31850
+32355,"Entry<K,V>",926,10057
+32361,"Node<K,V>",9793,31850
+32373,"KeySetView<>",9793,31723
+32374,"CollectionView<>",9793,31636
+32376,"KeySetView<K,V>",9793,31723
+32377,"CollectionView<K,V,K>",9793,31636
+32381,"KeySetView<K,Boolean>",9793,31723
+32382,"CollectionView<K,Boolean,K>",9793,31636
+32383,"Collection<K>",926,943
+32384,"Iterable<K>",947,948
+32385,"Set<K>",926,1890
+32389,"KeySetView<K,Boolean>",9793,31723
+32390,"CollectionView<K,Boolean,K>",9793,31636
+32391,"Collection<K>",926,943
+32392,"Iterable<K>",947,948
+32393,"Set<K>",926,1890
+32396,"Enumeration<V>",926,9885
+32398,"Enumeration<K>",926,9885
+32414,"Predicate<? super V>",982,1047
+32418,"Predicate<? super Entry<K,V>>",982,1047
+32489,"Node<K,V>",9793,31850
+32490,"Entry<K,V>",926,10057
+32500,"Node<K,V>",9793,31850
+32501,"Entry<K,V>",926,10057
+32511,"Node<K,V>",9793,31850
+32512,"Entry<K,V>",926,10057
+32536,"Map<K,V>",926,1887
+32574,"Entry<K,V>",926,10057
+32575,"Set<Entry<K,V>>",926,1890
+32576,"Collection<Entry<K,V>>",926,943
+32577,"Iterable<Entry<K,V>>",947,948
+32579,"Collection<V>",926,943
+32580,"Iterable<V>",947,948
+32582,"Set<K>",926,1890
+32583,"Collection<K>",926,943
+32584,"Iterable<K>",947,948
+32588,"Map<? extends K,? extends V>",926,1887
+32604,"ExecutionException",9793,32604
+32615,"Executor",9793,32615
+32626,"Callable<T>",9793,31618
+32630,"Collection<? extends Callable<T>>",926,943
+32631,"Iterable<? extends Callable<T>>",947,948
+32636,"TimeoutException",9793,32636
+32641,"Callable<T>",9793,31618
+32645,"Collection<? extends Callable<T>>",926,943
+32646,"Iterable<? extends Callable<T>>",947,948
+32651,"Future<T>",9793,21218
+32652,"List<Future<T>>",926,954
+32653,"Collection<Future<T>>",926,943
+32654,"Iterable<Future<T>>",947,948
+32656,"Callable<T>",9793,31618
+32660,"Collection<? extends Callable<T>>",926,943
+32661,"Iterable<? extends Callable<T>>",947,948
+32667,"Future<T>",9793,21218
+32668,"List<Future<T>>",926,954
+32669,"Collection<Future<T>>",926,943
+32670,"Iterable<Future<T>>",947,948
+32672,"Callable<T>",9793,31618
+32676,"Collection<? extends Callable<T>>",926,943
+32677,"Iterable<? extends Callable<T>>",947,948
+32680,"Future<?>",9793,21218
+32684,"Future<T>",9793,21218
+32687,"Callable<>",9793,31618
+32691,"Future<T>",9793,21218
+32693,"Callable<T>",9793,31618
+32702,"List<Runnable>",926,954
+32703,"Collection<Runnable>",926,943
+32704,"Iterable<Runnable>",947,948
+32706,"State",9793,32706
+32709,"Enum<State>",947,7867
+32710,"Comparable<State>",947,7537
+32715,"EnumDesc<State>",947,7894
+32716,"DynamicConstantDesc<State>",7898,7899
+32717,"Optional<EnumDesc<State>>",926,7886
+32720,"Class<State>",947,3279
+32768,"Enum<TimeUnit>",947,7867
+32769,"Comparable<TimeUnit>",947,7537
+32774,"EnumDesc<TimeUnit>",947,7894
+32775,"DynamicConstantDesc<TimeUnit>",7898,7899
+32776,"Optional<EnumDesc<TimeUnit>>",926,7886
+32779,"Class<TimeUnit>",947,3279
+32927,"BiConsumer<? super T,? super U>",982,10328
+32929,"BiConsumer<>",982,10328
+32942,"BiFunction<T,U,V>",982,10246
+32949,"Function<? super R,? extends V>",982,1391
+32955,"BiFunction<T,T,T>",982,10246
+32958,"BiFunction<T,T,V>",982,10246
+32963,"Function<? super T,? extends V>",982,1391
+32971,"BinaryOperator<T>",982,27750
+32972,"BiFunction<T,T,T>",982,10246
+32978,"Comparator<? super T>",926,1376
+32982,"BinaryOperator<T>",982,27750
+32983,"BiFunction<T,T,T>",982,10246
+32989,"Comparator<? super T>",926,1376
+32995,"Consumer<? super T>",982,983
+33014,"DoubleFunction",982,33014
+33021,"DoublePredicate",982,33021
+33036,"DoubleToIntFunction",982,33036
+33042,"DoubleToLongFunction",982,33042
+33048,"DoubleUnaryOperator",982,33048
+33064,"Function<T,T>",982,1391
+33068,"Function<T,V>",982,1391
+33075,"Function<? super R,? extends V>",982,1391
+33079,"Function<V,R>",982,1391
+33086,"Function<? super V,? extends T>",982,1391
+33107,"IntPredicate",982,33107
+33155,"LongFunction",982,33155
+33162,"LongPredicate",982,33162
+33177,"LongToDoubleFunction",982,33177
+33183,"LongToIntFunction",982,33183
+33189,"LongUnaryOperator",982,33189
+33200,"ObjDoubleConsumer",982,33200
+33208,"ObjIntConsumer",982,33208
+33216,"ObjLongConsumer",982,33216
+33226,"Predicate<>",982,1047
+33230,"Predicate<T>",982,1047
+33235,"Predicate<? super T>",982,1047
+33239,"Predicate<T>",982,1047
+33244,"Predicate<? super T>",982,1047
+33287,"Function<T,T>",982,1391
+33290,"Function<T,V>",982,1391
+33295,"Function<? super T,? extends V>",982,1391
+33298,"Function<V,T>",982,1391
+33303,"Function<? super V,? extends T>",982,1391
+33308,"UnaryOperator<>",982,1387
+33312,"UnaryOperator<T>",982,1387
+33313,"Function<T,T>",982,1391
+33397,"Spliterator<T>",926,970
+33399,"Iterator<T>",926,998
+33400,"Characteristics",1006,33400
+33403,"Enum<Characteristics>",947,7867
+33404,"Comparable<Characteristics>",947,7537
+33409,"EnumDesc<Characteristics>",947,7894
+33410,"DynamicConstantDesc<Characteristics>",7898,7899
+33411,"Optional<EnumDesc<Characteristics>>",926,7886
+33414,"Class<Characteristics>",947,3279
+33428,"Collector",1006,33428
+33444,"Collector<>",1006,33428
+33449,"Collector<T,A,R>",1006,33428
+33451,"Supplier<A>",982,6407
+33454,"BiConsumer<A,T>",982,10328
+33457,"BinaryOperator<A>",982,27750
+33458,"BiFunction<A,A,A>",982,10246
+33462,"Function<A,R>",982,1391
+33468,"Collector<T,R,R>",1006,33428
+33470,"Supplier<R>",982,6407
+33473,"BiConsumer<R,T>",982,10328
+33476,"BinaryOperator<R>",982,27750
+33477,"BiFunction<R,R,R>",982,10246
+33482,"Set<Characteristics>",926,1890
+33483,"Collection<Characteristics>",926,943
+33484,"Iterable<Characteristics>",947,948
+33486,"Function<A,R>",982,1391
+33489,"BinaryOperator<A>",982,27750
+33490,"BiFunction<A,A,A>",982,10246
+33494,"BiConsumer<A,T>",982,10328
+33497,"Supplier<A>",982,6407
+33499,"Builder",1006,33499
+33507,"DoubleMapMultiConsumer",1006,33507
+33516,"BaseStream<Double,DoubleStream>",1006,1012
+33549,"Stream<Double>",1006,1007
+33550,"BaseStream<Double,Stream<Double>>",1006,1012
+33565,"ObjDoubleConsumer<>",982,33200
+33570,"Supplier<R>",982,6407
+33573,"ObjDoubleConsumer<R>",982,33200
+33576,"BiConsumer<R,R>",982,10328
+33604,"DoubleFunction<? extends DoubleStream>",982,33014
+33612,"DoubleFunction<>",982,33014
+33616,"Stream<U>",1006,1007
+33617,"BaseStream<U,Stream<U>>",1006,1012
+33621,"DoubleFunction<? extends U>",982,33014
+33627,"Builder",1006,33627
+33635,"IntMapMultiConsumer",1006,33635
+33644,"BaseStream<Integer,IntStream>",1006,1012
+33699,"ObjIntConsumer<>",982,33208
+33704,"Supplier<R>",982,6407
+33707,"ObjIntConsumer<R>",982,33208
+33710,"BiConsumer<R,R>",982,10328
+33738,"IntFunction<? extends IntStream>",982,1086
+33748,"Stream<U>",1006,1007
+33749,"BaseStream<U,Stream<U>>",1006,1012
+33753,"IntFunction<? extends U>",982,1086
+33759,"Builder",1006,33759
+33767,"LongMapMultiConsumer",1006,33767
+33776,"BaseStream<Long,LongStream>",1006,1012
+33815,"Stream<Long>",1006,1007
+33816,"BaseStream<Long,Stream<Long>>",1006,1012
+33832,"ObjLongConsumer<>",982,33216
+33837,"Supplier<R>",982,6407
+33840,"ObjLongConsumer<R>",982,33216
+33843,"BiConsumer<R,R>",982,10328
+33871,"LongFunction<? extends LongStream>",982,33155
+33879,"LongFunction<>",982,33155
+33883,"Stream<U>",1006,1007
+33884,"BaseStream<U,Stream<U>>",1006,1012
+33888,"LongFunction<? extends U>",982,33155
+33894,"Builder",1006,33894
+33898,"Consumer<T>",982,983
+33902,"Consumer<? super T>",982,983
+33909,"Stream<T>",1006,1007
+33910,"BaseStream<T,Stream<T>>",1006,1012
+33911,"Builder<>",1006,33894
+33917,"BaseStream<T,Stream>",1006,1012
+33926,"Spliterator<T>",926,970
+33928,"Iterator<T>",926,998
+33931,"Stream<T>",1006,1007
+33932,"BaseStream<T,Stream<T>>",1006,1012
+33936,"Stream<? extends T>",1006,1007
+33937,"BaseStream<? extends T,Stream<? extends T>>",1006,1012
+33941,"Stream<T>",1006,1007
+33942,"BaseStream<T,Stream<T>>",1006,1012
+33946,"Supplier<? extends T>",982,6407
+33950,"Stream<T>",1006,1007
+33951,"BaseStream<T,Stream<T>>",1006,1012
+33956,"Predicate<? super T>",982,1047
+33959,"UnaryOperator<T>",982,1387
+33960,"Function<T,T>",982,1391
+33965,"Stream<T>",1006,1007
+33966,"BaseStream<T,Stream<T>>",1006,1012
+33969,"UnaryOperator<T>",982,1387
+33970,"Function<T,T>",982,1391
+33975,"Stream<T>",1006,1007
+33976,"BaseStream<T,Stream<T>>",1006,1012
+33984,"Stream<T>",1006,1007
+33985,"BaseStream<T,Stream<T>>",1006,1012
+33989,"Stream<T>",1006,1007
+33990,"BaseStream<T,Stream<T>>",1006,1012
+33994,"Stream<T>",1006,1007
+33995,"BaseStream<T,Stream<T>>",1006,1012
+33998,"Builder<T>",1006,33894
+33999,"Consumer<T>",982,983
+34002,"Optional<T>",926,7886
+34007,"Predicate<? super T>",982,1047
+34016,"Comparator<? super T>",926,1376
+34023,"List<T>",926,954
+34024,"Collection<T>",926,943
+34025,"Iterable<T>",947,948
+34030,"Collector<? super T,A,R>",1006,33428
+34034,"Supplier<R>",982,6407
+34037,"BiConsumer<R,? super T>",982,10328
+34040,"BiConsumer<R,R>",982,10328
+34046,"BiFunction<U,? super T,U>",982,10246
+34049,"BinaryOperator<U>",982,27750
+34050,"BiFunction<U,U,U>",982,10246
+34053,"BinaryOperator<T>",982,27750
+34054,"BiFunction<T,T,T>",982,10246
+34068,"IntFunction<A[]>",982,1086
+34071,"Consumer<? super T>",982,983
+34093,"BiConsumer<? super T,? super DoubleConsumer>",982,10328
+34099,"BiConsumer<? super T,? super LongConsumer>",982,10328
+34105,"BiConsumer<? super T,? super IntConsumer>",982,10328
+34111,"Stream<R>",1006,1007
+34112,"BaseStream<R,Stream<R>>",1006,1012
+34114,"Consumer<R>",982,983
+34118,"BiConsumer<? super T,? super Consumer<R>>",982,10328
+34120,"Function<? super T,? extends DoubleStream>",982,1391
+34124,"Function<? super T,? extends LongStream>",982,1391
+34128,"Function<? super T,? extends IntStream>",982,1391
+34134,"Stream<R>",1006,1007
+34135,"BaseStream<R,Stream<R>>",1006,1012
+34139,"Stream<? extends R>",1006,1007
+34140,"BaseStream<? extends R,Stream<? extends R>>",1006,1012
+34143,"Function<? super T,? extends Stream<? extends R>>",982,1391
+34145,"ToDoubleFunction<? super T>",982,28505
+34149,"ToLongFunction<? super T>",982,28519
+34153,"ToIntFunction<? super T>",982,28533
+34159,"Stream<R>",1006,1007
+34160,"BaseStream<R,Stream<R>>",1006,1012
+34164,"Function<? super T,? extends R>",982,1391
+34183,"Set<T>",926,1890
+34184,"Collection<T>",926,943
+34185,"Iterable<T>",947,948
+34187,"Class<T>",947,3279
+34190,"Set<T>",926,1890
+34191,"Collection<T>",926,943
+34192,"Iterable<T>",947,948
+34194,"Class<T>",947,3279
+34200,"Set<T>",926,1890
+34201,"Collection<T>",926,943
+34202,"Iterable<T>",947,948
+34204,"Class<T>",947,3279
+34206,"Set<Principal>",926,1890
+34207,"Collection<Principal>",926,943
+34208,"Iterable<Principal>",947,948
+34209,"PrivilegedExceptionAction<>",22227,22478
+34215,"PrivilegedExceptionAction<T>",22227,22478
+34222,"PrivilegedAction<>",22227,22464
+34228,"PrivilegedAction<T>",22227,22464
+34238,"PrivilegedExceptionAction<T>",22227,22478
+34248,"PrivilegedAction<T>",22227,22464
+34257,"Callable<T>",9793,31618
+34270,"Set<? extends Principal>",926,1890
+34271,"Collection<? extends Principal>",926,943
+34272,"Iterable<? extends Principal>",947,948
+34273,"Set<?>",926,1890
+34291,"JavaNioAccess",34292,34291
+34348,"BufferPool",34626,34348
+34358,"AbstractMemorySegmentImpl",34359,34358
+34363,"Scoped",34359,34363
+34364,"List<Number>",926,954
+34365,"Collection<Number>",926,943
+34366,"Iterable<Number>",947,948
+34367,"BiFunction<String,List<Number>,RuntimeException>",982,10246
+34370,"BiFunction<String,List<Number>,V>",982,10246
+34375,"Function<? super RuntimeException,? extends V>",982,1391
+34470,"ResourceCleanup",34359,34470
+34473,"ResourceList",34359,34473
+34543,"ScopedAccessError",34626,34543
+34564,"Enum<Feature>",947,7867
+34565,"Comparable<Feature>",947,7537
+34570,"EnumDesc<Feature>",947,7894
+34571,"DynamicConstantDesc<Feature>",7898,7899
+34572,"Optional<EnumDesc<Feature>>",926,7886
+34575,"Class<Feature>",947,3279
+34625,"Scoped",34626,34625
+34641,"Supplier<RuntimeException>",982,6407
+35699,"Vector<>",35700,35701
+35701,"Vector",35700,35701
+35706,"VectorPayload",35700,35706
+35707,"VectorSupport",35700,35707
+35708,"VectorMask<>",35700,35709
+35709,"VectorMask",35700,35709
+35712,"StoreVectorMaskedOperation<>",35700,35713
+35713,"StoreVectorMaskedOperation",35700,35713
+35720,"Vector<E>",35700,35701
+35723,"VectorMask<E>",35700,35709
+35727,"Class<? extends V>",947,3279
+35729,"Class<M>",947,3279
+35731,"Class<E>",947,3279
+35738,"StoreVectorMaskedOperation<AbstractMemorySegmentImpl,V,M>",35700,35713
+35740,"StoreVectorOperation<>",35700,35741
+35741,"StoreVectorOperation",35700,35741
+35748,"Vector<E>",35700,35701
+35752,"Class<? extends V>",947,3279
+35754,"Class<E>",947,3279
+35760,"StoreVectorOperation<AbstractMemorySegmentImpl,V>",35700,35741
+35762,"VectorSpecies<>",35700,35763
+35763,"VectorSpecies",35700,35763
+35766,"LoadVectorMaskedOperation<>",35700,35767
+35767,"LoadVectorMaskedOperation",35700,35767
+35774,"Vector<E>",35700,35701
+35777,"VectorSpecies<E>",35700,35763
+35780,"VectorMask<E>",35700,35709
+35784,"Class<? extends V>",947,3279
+35786,"Class<M>",947,3279
+35788,"Class<E>",947,3279
+35796,"LoadVectorMaskedOperation<AbstractMemorySegmentImpl,V,S,M>",35700,35767
+35798,"LoadOperation<>",35700,35799
+35799,"LoadOperation",35700,35799
+35806,"Vector<E>",35700,35701
+35809,"VectorSpecies<E>",35700,35763
+35813,"Class<? extends V>",947,3279
+35815,"Class<E>",947,3279
+35821,"LoadOperation<AbstractMemorySegmentImpl,V,S>",35700,35799
+37598,"VM",34626,37598
+37607,"List<BufferPool>",926,954
+37608,"Collection<BufferPool>",926,943
+37609,"Iterable<BufferPool>",947,948
+37655,"ServiceProvider",37656,37655
+37679,"List<ServiceProvider>",926,954
+37680,"Collection<ServiceProvider>",926,943
+37681,"Iterable<ServiceProvider>",947,948
+37700,"Function<Cleaner,CleanerImpl>",982,1391
+37705,"PhantomCleanable<?>",7668,7669
+37706,"PhantomReference<?>",7676,7677
+37707,"Reference<?>",7676,7682
+37710,"PhantomReference<T>",7676,7677
+37711,"Reference<T>",7676,7682
+37714,"ReferenceQueue<? super T>",7676,10683
+37759,"Tag",37750,37759
+37762,"Enum<Tag>",947,7867
+37763,"Comparable<Tag>",947,7537
+37768,"EnumDesc<Tag>",947,7894
+37769,"DynamicConstantDesc<Tag>",7898,7899
+37770,"Optional<EnumDesc<Tag>>",926,7886
+37773,"Class<Tag>",947,3279
+37855,"FieldAccessor",37750,37855
+37930,"MagicAccessorImpl",37750,37930
+37947,"MethodAccessorImpl",37750,37947
+37971,"Constructor<OptionalDataException>",9584,9585
+37994,"Constructor<T>",9584,9585
+38006,"Constructor<T>",9584,9585
+38044,"RandomSupport",38039,38044
+38136,"Pinned",38137,38136
+38140,"Enum<Pinned>",947,7867
+38141,"Comparable<Pinned>",947,7537
+38146,"EnumDesc<Pinned>",947,7894
+38147,"DynamicConstantDesc<Pinned>",7898,7899
+38148,"Optional<EnumDesc<Pinned>>",926,7886
+38151,"Class<Pinned>",947,3279
+38175,"PreemptStatus",38137,38175
+38178,"Enum<PreemptStatus>",947,7867
+38179,"Comparable<PreemptStatus>",947,7537
+38184,"EnumDesc<PreemptStatus>",947,7894
+38185,"DynamicConstantDesc<PreemptStatus>",7898,7899
+38186,"Optional<EnumDesc<PreemptStatus>>",926,7886
+38189,"Class<PreemptStatus>",947,3279
+38241,"Supplier<R>",982,6407
+38269,"BindingsSnapshot",38137,38269
+38272,"ExtentLocalContainer",38137,38272
+38288,"Callable<V>",9793,31618
+38299,"Class<T>",947,3279
+38310,"Class<T>",947,3279
+38315,"ReservedStackAccess",38342,38315
+38333,"Stream<Thread>",1006,1007
+38334,"BaseStream<Thread,Stream<Thread>>",1006,1012
+38337,"Stream<ThreadContainer>",1006,1007
+38338,"BaseStream<ThreadContainer,Stream<ThreadContainer>>",1006,1012
+38391,"BinaryOperation",35700,38391
+38398,"VectorMask<?>",35700,35709
+38403,"CompressExpandOperation",35700,38403
+38408,"Vector<?>",35700,35701
+38414,"FromBitsCoercedOperation",35700,38414
+38421,"VectorSpecies<?>",35700,35763
+38425,"IndexOperation",35700,38425
+38457,"LoadVectorOperationWithMap",35700,38457
+38474,"ReductionOperation",35700,38474
+38484,"ShuffleIotaOperation",35700,38484
+38491,"VectorShuffle<?>",35700,38492
+38492,"VectorShuffle",35700,38492
+38495,"VectorShuffle<>",35700,38492
+38501,"ShuffleToVectorOperation",35700,38501
+38527,"StoreVectorOperationWithMap",35700,38527
+38542,"TernaryOperation",35700,38542
+38554,"UnaryOperation",35700,38554
+38564,"VecExtractOp",35700,38564
+38572,"VecInsertOp",35700,38572
+38584,"VectorBlendOp",35700,38584
+38595,"VectorBroadcastIntOp",35700,38595
+38606,"VectorCompareOp",35700,38606
+38618,"VectorConvertOp",35700,38618
+38633,"VectorMaskOp",35700,38633
+38645,"VectorRearrangeOp",35700,38645
+38670,"VectorMaskOp<>",35700,38633
+38675,"VectorMask<E>",35700,35709
+38680,"Class<? extends M>",947,3279
+38685,"VectorMaskOp<M>",35700,38633
+38692,"CompressExpandOperation<>",35700,38403
+38697,"Vector<E>",35700,35701
+38700,"VectorMask<E>",35700,35709
+38705,"Class<? extends V>",947,3279
+38709,"Class<? extends M>",947,3279
+38711,"Class<E>",947,3279
+38716,"CompressExpandOperation<V,M>",35700,38403
+38718,"VectorConvertOp<>",35700,38618
+38736,"VectorConvertOp<VOUT,VIN,S>",35700,38618
+38738,"VectorBroadcastIntOp<>",35700,38595
+38743,"Vector<E>",35700,35701
+38746,"VectorMask<E>",35700,35709
+38751,"Class<? extends V>",947,3279
+38755,"Class<? extends M>",947,3279
+38757,"Class<E>",947,3279
+38763,"VectorBroadcastIntOp<V,M>",35700,38595
+38765,"VectorBlendOp<>",35700,38584
+38770,"Vector<E>",35700,35701
+38773,"VectorMask<E>",35700,35709
+38777,"Class<? extends V>",947,3279
+38779,"Class<M>",947,3279
+38781,"Class<E>",947,3279
+38787,"VectorBlendOp<V,M>",35700,38584
+38789,"VectorRearrangeOp<>",35700,38645
+38794,"Vector<E>",35700,35701
+38797,"VectorShuffle<E>",35700,38492
+38800,"VectorMask<E>",35700,35709
+38804,"Class<? extends V>",947,3279
+38806,"Class<SH>",947,3279
+38808,"Class<M>",947,3279
+38810,"Class<E>",947,3279
+38816,"VectorRearrangeOp<V,SH,M>",35700,38645
+38818,"VectorCompareOp<>",35700,38606
+38823,"Vector<E>",35700,35701
+38826,"VectorMask<E>",35700,35709
+38831,"Class<? extends V>",947,3279
+38833,"Class<M>",947,3279
+38835,"Class<E>",947,3279
+38841,"VectorCompareOp<V,M>",35700,38606
+38847,"VectorMask<E>",35700,35709
+38855,"BiFunction<M,M,Boolean>",982,10246
+38858,"StoreVectorOperationWithMap<>",35700,38527
+38864,"Vector<E>",35700,35701
+38867,"Vector<Integer>",35700,35701
+38870,"VectorMask<E>",35700,35709
+38874,"Class<? extends V>",947,3279
+38876,"Class<M>",947,3279
+38878,"Class<E>",947,3279
+38883,"Class<? extends Vector<Integer>>",947,3279
+38894,"StoreVectorOperationWithMap<C,V,M>",35700,38527
+38901,"Vector<E>",35700,35701
+38904,"VectorMask<E>",35700,35709
+38908,"Class<? extends V>",947,3279
+38910,"Class<M>",947,3279
+38912,"Class<E>",947,3279
+38921,"StoreVectorMaskedOperation<C,V,M>",35700,35713
+38936,"StoreVectorOperation<C,V>",35700,35741
+38938,"LoadVectorOperationWithMap<>",35700,38457
+38948,"VectorSpecies<E>",35700,35763
+38951,"VectorMask<E>",35700,35709
+38955,"Class<? extends V>",947,3279
+38957,"Class<M>",947,3279
+38959,"Class<E>",947,3279
+38972,"LoadVectorOperationWithMap<C,V,S,M>",35700,38457
+38981,"VectorSpecies<E>",35700,35763
+38984,"VectorMask<E>",35700,35709
+38988,"Class<? extends V>",947,3279
+38990,"Class<M>",947,3279
+38992,"Class<E>",947,3279
+39002,"LoadVectorMaskedOperation<C,V,S,M>",35700,35767
+39011,"VectorSpecies<E>",35700,35763
+39015,"Class<? extends VM>",947,3279
+39017,"Class<E>",947,3279
+39025,"LoadOperation<C,VM,S>",35700,35799
+39027,"TernaryOperation<>",35700,38542
+39032,"Vector<E>",35700,35701
+39035,"VectorMask<E>",35700,35709
+39040,"Class<? extends V>",947,3279
+39044,"Class<? extends M>",947,3279
+39046,"Class<E>",947,3279
+39053,"TernaryOperation<V,M>",35700,38542
+39055,"BinaryOperation<>",35700,38391
+39062,"VectorMask<E>",35700,35709
+39067,"Class<? extends VM>",947,3279
+39071,"Class<? extends M>",947,3279
+39073,"Class<E>",947,3279
+39079,"BinaryOperation<VM,M>",35700,38391
+39081,"UnaryOperation<>",35700,38554
+39086,"Vector<E>",35700,35701
+39089,"VectorMask<E>",35700,35709
+39094,"Class<? extends V>",947,3279
+39098,"Class<? extends M>",947,3279
+39100,"Class<E>",947,3279
+39105,"UnaryOperation<V,M>",35700,38554
+39107,"VecInsertOp<>",35700,38572
+39112,"Vector<E>",35700,35701
+39116,"Class<? extends V>",947,3279
+39118,"Class<E>",947,3279
+39124,"VecInsertOp<V>",35700,38572
+39126,"VecExtractOp<>",35700,38564
+39131,"Vector<E>",35700,35701
+39135,"Class<? extends V>",947,3279
+39137,"Class<E>",947,3279
+39142,"VecExtractOp<V>",35700,38564
+39144,"ReductionOperation<>",35700,38474
+39149,"Vector<E>",35700,35701
+39152,"VectorMask<E>",35700,35709
+39157,"Class<? extends V>",947,3279
+39161,"Class<? extends M>",947,3279
+39163,"Class<E>",947,3279
+39168,"ReductionOperation<V,M>",35700,38474
+39170,"IndexOperation<>",35700,38425
+39175,"Vector<E>",35700,35701
+39178,"VectorSpecies<E>",35700,35763
+39182,"Class<? extends V>",947,3279
+39184,"Class<E>",947,3279
+39190,"IndexOperation<V,S>",35700,38425
+39191,"ShuffleToVectorOperation<>",35700,38501
+39196,"Vector<E>",35700,35701
+39199,"VectorShuffle<E>",35700,38492
+39203,"Class<? extends Vector<E>>",947,3279
+39205,"Class<E>",947,3279
+39209,"Class<? extends SH>",947,3279
+39213,"ShuffleToVectorOperation<V,SH>",35700,38501
+39215,"ShuffleIotaOperation<>",35700,38484
+39220,"VectorSpecies<E>",35700,35763
+39223,"VectorShuffle<E>",35700,38492
+39225,"Class<E>",947,3279
+39229,"Class<? extends SH>",947,3279
+39236,"ShuffleIotaOperation<S,SH>",35700,38484
+39238,"FromBitsCoercedOperation<>",35700,38414
+39245,"VectorSpecies<E>",35700,35763
+39249,"Class<? extends VM>",947,3279
+39251,"Class<E>",947,3279
+39257,"FromBitsCoercedOperation<VM,S>",35700,38414
+39384,"Enum<Wrapper>",947,7867
+39385,"Comparable<Wrapper>",947,7537
+39390,"EnumDesc<Wrapper>",947,7894
+39391,"DynamicConstantDesc<Wrapper>",7898,7899
+39392,"Optional<EnumDesc<Wrapper>>",926,7886
+39395,"Class<Wrapper>",947,3279
+39431,"Class<T>",947,3279
+39438,"Class<T>",947,3279
+39443,"Class<T>",947,3279
+39456,"Class<T>",947,3279
+39460,"Class<T>",947,3279
+39464,"Class<T>",947,3279
+39483,"Class<T>",947,3279
+39534,"Map<String,Method>",926,1887
+39536,"Map<String,Class<?>>",926,1887
+39541,"GenericsFactory",39542,39541
+39560,"FieldTypeSignature",39645,39560
+39576,"AbstractRepository",39577,39576
+39583,"Tree",39645,39583
+39589,"Reifier",39650,39589
+39594,"MethodTypeSignature",39645,39594
+39595,"GenericDeclRepository<MethodTypeSignature>",39577,39596
+39596,"GenericDeclRepository",39577,39596
+39599,"AbstractRepository<MethodTypeSignature>",39577,39576
+39628,"AbstractRepository<S>",39577,39576
+39629,"Signature",39645,39629
+39644,"ArrayTypeSignature",39645,39644
+39649,"TypeTreeVisitor<?>",39650,39651
+39651,"TypeTreeVisitor",39650,39651
+39657,"TypeSignature",39645,39657
+39661,"BaseType",39645,39661
+39664,"BooleanSignature",39645,39664
+39671,"BottomSignature",39645,39671
+39678,"ByteSignature",39645,39678
+39685,"CharSignature",39645,39685
+39692,"ClassSignature",39645,39692
+39695,"Visitor<?>",39650,39696
+39696,"Visitor",39650,39696
+39701,"ClassTypeSignature",39645,39701
+39707,"FormalTypeParameter",39645,39707
+39721,"SimpleClassTypeSignature",39645,39721
+39722,"List<SimpleClassTypeSignature>",926,954
+39723,"Collection<SimpleClassTypeSignature>",926,943
+39724,"Iterable<SimpleClassTypeSignature>",947,948
+39727,"DoubleSignature",39645,39727
+39736,"TypeArgument",39645,39736
+39737,"FloatSignature",39645,39737
+39746,"TypeTree",39645,39746
+39754,"IntSignature",39645,39754
+39761,"LongSignature",39645,39761
+39773,"ReturnType",39645,39773
+39787,"ShortSignature",39645,39787
+39821,"TypeVariableSignature",39645,39821
+39829,"VoidDescriptor",39645,39829
+39836,"Wildcard",39645,39836
+39849,"TypeTreeVisitor<Type>",39650,39651
+39954,"TypeTreeVisitor<T>",39650,39651
+40069,"Extension",40022,40069
+40083,"CaseInsensitiveChar",40022,40083
+40086,"InternalLocaleBuilder",40022,40086
+40093,"CaseInsensitiveString",40022,40093
+40114,"LocaleSyntaxException",40022,40114
+40116,"LanguageTag",40022,40116
+40205,"ParseStatus",40022,40205
+40235,"Map<CaseInsensitiveChar,String>",926,1887
+40236,"Set<CaseInsensitiveString>",926,1890
+40237,"Collection<CaseInsensitiveString>",926,943
+40238,"Iterable<CaseInsensitiveString>",947,948
+40239,"Map<CaseInsensitiveString,String>",926,1887

@@ -1,0 +1,15 @@
+
+input
+public class ArgumentsMethod {
+    public void test() {
+
+    }
+    public boolean equals (int x, int y) {
+        return x==y;
+    }
+}
+
+output
+public boolean equals(int x, int y){
+    return x==y;
+}

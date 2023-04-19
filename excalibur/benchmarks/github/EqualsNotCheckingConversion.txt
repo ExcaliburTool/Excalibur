@@ -1,0 +1,34 @@
+
+input
+class Animal {
+    int val;
+}
+
+class Cat extends Animal {
+    public boolean equals(Object obj) {
+        return val == ((Cat)obj).val;  // no type test
+    }
+}
+
+class Dog extends Animal {
+    public boolean equals(Object obj) {
+        if (obj == null || getClass() != obj.getClass()) {   // type test (the desired form)
+            return false;
+        }
+        return val == ((Dog)obj).val;
+    }
+}
+
+class Mouse extends Animal {
+    public boolean equals(Object obj) {
+        if (obj == null || !(obj instanceof Mouse)) {   // type test (the desired form)
+            return false;
+        }
+        return val == ((Mouse)obj).val;
+    }
+}
+
+output
+public boolean equals(Object obj) {
+    return val == ((Cat)obj).val;
+}

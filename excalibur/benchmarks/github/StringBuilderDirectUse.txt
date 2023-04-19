@@ -1,0 +1,21 @@
+if the function after sb.toString() has the same method name and parameter size as methods in StringBuilder, 
+then it is not necessary for StringBuilder to become String (i.e., toString)
+
+input
+import java.util.Locale;
+
+public class StringBuilderDirectUse {
+    public void test(){
+        StringBuilder sb = new StringBuilder();
+        String s = "hello";
+        sb.toString().substring(0); // bad
+        sb.toString().length();     // bad
+        s.toString().length();      // okay
+        sb.toString().toLowerCase(Locale.ROOT);
+    }
+}
+
+output
+sb.toString().substring(0)
+~
+sb.toString().length()

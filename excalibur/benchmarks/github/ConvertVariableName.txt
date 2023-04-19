@@ -1,0 +1,18 @@
+
+input
+public class ConvertVariableName {
+    int each;   //reserve word
+    int with;   //reserve word
+    int get;    //reserve word
+    int set;    //reserve word
+    int hello;  //non-reserve word
+    int world;  //non-reserve word
+}
+output
+int each;
+~
+int with;
+~
+int get;
+~
+int set;

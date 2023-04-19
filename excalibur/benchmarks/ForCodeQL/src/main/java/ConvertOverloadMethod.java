@@ -1,0 +1,22 @@
+public class ConvertOverloadMethod {
+    /**
+    * Overloaded methods
+    */
+    public void overloadMethod() {}
+
+    public void overloadMethod(int i) {}
+
+    /**
+    * Other non-overloading methods
+    */
+    protected void f1() {}
+
+    protected void f2() {}
+
+    /**
+    * Documented field
+    */
+    protected boolean field;
+
+    public String fieldNotDocumented;
+}

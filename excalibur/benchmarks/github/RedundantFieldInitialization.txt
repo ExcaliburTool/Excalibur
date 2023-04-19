@@ -1,0 +1,7 @@
+
+input
+public class RedundantFieldInitialization {
+    boolean x = false;
+}
+output
+boolean x = false;

@@ -1,0 +1,3869 @@
+{
+  "$schema" : "https://json.schemastore.org/sarif-2.1.0.json",
+  "version" : "2.1.0",
+  "runs" : [ {
+    "tool" : {
+      "driver" : {
+        "name" : "CodeQL",
+        "organization" : "GitHub",
+        "semanticVersion" : "2.12.5",
+        "rules" : [ {
+          "id" : "java/example/controlflow",
+          "name" : "java/example/controlflow",
+          "shortDescription" : {
+            "text" : "Controlflow"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "id" : "java/example/controlflow",
+            "kind" : "problem",
+            "name" : "Controlflow",
+            "problem.severity" : "warning"
+          }
+        } ]
+      },
+      "extensions" : [ {
+        "name" : "legacy-upgrades",
+        "semanticVersion" : "0.0.0",
+        "locations" : [ {
+          "uri" : "file:///opt/homebrew/Caskroom/codeql/2.12.5/codeql/legacy-upgrades/",
+          "description" : {
+            "text" : "The QL pack root directory."
+          }
+        }, {
+          "uri" : "file:///opt/homebrew/Caskroom/codeql/2.12.5/codeql/legacy-upgrades/qlpack.yml",
+          "description" : {
+            "text" : "The QL pack definition file."
+          }
+        } ]
+      }, {
+        "name" : "getting-started/codeql-extra-queries-java",
+        "semanticVersion" : "0.0.0+9688a33f8a7790e1160da629a5cf79ee7cd635f2",
+        "locations" : [ {
+          "uri" : "file:///Users/sissel/repository/JavaSyntaxTool/codeql/",
+          "description" : {
+            "text" : "The QL pack root directory."
+          }
+        }, {
+          "uri" : "file:///Users/sissel/repository/JavaSyntaxTool/codeql/qlpack.yml",
+          "description" : {
+            "text" : "The QL pack definition file."
+          }
+        } ]
+      } ]
+    },
+    "artifacts" : [ {
+      "location" : {
+        "uri" : "src/main/java/BooleanExpression.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 0
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/CollectionEmptyCheck.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 1
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/CompareToReturnValueProcessor.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 2
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/ComparizonModifier.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 3
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/ConstConds.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 4
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/EmptyStringCheck.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 5
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/EqualsNotCheckingConversion.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 6
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/IsNullCondition.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 7
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/LoopHeadElement.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 8
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/MutualRecursive.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 9
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/StringCompare.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 10
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/TestCompareByteInt.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 11
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/TestDataFlow.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 12
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/TestEqBooleanConsts.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 13
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/TestThreadStop.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 14
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/TestUnusedLocals.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 15
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/TestUseBreak.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 16
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/ToStringReturningNullProcessor.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 17
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/UseBreak.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 18
+      }
+    } ],
+    "results" : [ {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [{{ ... }}](1) and [if (...)](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/BooleanExpression.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 6,
+            "startColumn" : 13,
+            "endColumn" : 26
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "f6aeb5ccbfdff72f:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/BooleanExpression.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 6,
+            "startColumn" : 27,
+            "endLine" : 8,
+            "endColumn" : 10
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/BooleanExpression.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 9,
+            "endColumn" : 19
+          }
+        },
+        "message" : {
+          "text" : "if (...)"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [{{ ... }}](1) and [if (...)](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/BooleanExpression.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 13,
+            "endColumn" : 18
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "ec0d80785873c51e:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/BooleanExpression.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 19,
+            "endLine" : 11,
+            "endColumn" : 10
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/BooleanExpression.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 12,
+            "startColumn" : 9,
+            "endColumn" : 28
+          }
+        },
+        "message" : {
+          "text" : "if (...)"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [{{ ... }}](1) and [if (...)](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/BooleanExpression.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 12,
+            "startColumn" : 13,
+            "endColumn" : 27
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "29e00affa087bf01:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/BooleanExpression.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 12,
+            "startColumn" : 28,
+            "endLine" : 14,
+            "endColumn" : 10
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/BooleanExpression.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 15,
+            "startColumn" : 9,
+            "endColumn" : 20
+          }
+        },
+        "message" : {
+          "text" : "if (...)"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [if (...)](1) and [{{ ... }}](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/BooleanExpression.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 15,
+            "startColumn" : 14,
+            "endColumn" : 19
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "d43e1b976548ec9d:1",
+        "primaryLocationStartColumnFingerprint" : "5"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/BooleanExpression.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 18,
+            "startColumn" : 9,
+            "endColumn" : 24
+          }
+        },
+        "message" : {
+          "text" : "if (...)"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/BooleanExpression.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 15,
+            "startColumn" : 20,
+            "endLine" : 17,
+            "endColumn" : 10
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [{{ ... }}](1) and [if (...)](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/BooleanExpression.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 18,
+            "startColumn" : 13,
+            "endColumn" : 23
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "bbd1070ab8da2c6d:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/BooleanExpression.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 18,
+            "startColumn" : 24,
+            "endLine" : 20,
+            "endColumn" : 10
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/BooleanExpression.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 21,
+            "startColumn" : 9,
+            "endColumn" : 23
+          }
+        },
+        "message" : {
+          "text" : "if (...)"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [{{ ... }}](1) and [if (...)](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/BooleanExpression.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 21,
+            "startColumn" : 13,
+            "endColumn" : 22
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "266bfbaef4cbdcb3:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/BooleanExpression.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 21,
+            "startColumn" : 23,
+            "endLine" : 23,
+            "endColumn" : 10
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/BooleanExpression.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 24,
+            "startColumn" : 9,
+            "endColumn" : 24
+          }
+        },
+        "message" : {
+          "text" : "if (...)"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [{{ ... }}](1) and [compare](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/BooleanExpression.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 24,
+            "startColumn" : 13,
+            "endColumn" : 23
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "d19f1b3be664ce5b:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/BooleanExpression.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 24,
+            "startColumn" : 24,
+            "endLine" : 26,
+            "endColumn" : 10
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/BooleanExpression.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 2,
+            "startColumn" : 17,
+            "endColumn" : 24
+          }
+        },
+        "message" : {
+          "text" : "compare"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [{{ ... }}](1) and [<Expr>;](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/CollectionEmptyCheck.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 1
+          },
+          "region" : {
+            "startLine" : 10,
+            "startColumn" : 13,
+            "endColumn" : 24
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "6ca353b15463f960:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/CollectionEmptyCheck.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 1
+          },
+          "region" : {
+            "startLine" : 10,
+            "startColumn" : 25,
+            "endLine" : 12,
+            "endColumn" : 10
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/CollectionEmptyCheck.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 1
+          },
+          "region" : {
+            "startLine" : 13,
+            "startColumn" : 9,
+            "endColumn" : 18
+          }
+        },
+        "message" : {
+          "text" : "<Expr>;"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [{{ ... }}](1) and [if (...)](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/CollectionEmptyCheck.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 1
+          },
+          "region" : {
+            "startLine" : 14,
+            "startColumn" : 13,
+            "endColumn" : 26
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "878b7827718ad75a:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/CollectionEmptyCheck.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 1
+          },
+          "region" : {
+            "startLine" : 14,
+            "startColumn" : 27,
+            "endLine" : 16,
+            "endColumn" : 10
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/CollectionEmptyCheck.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 1
+          },
+          "region" : {
+            "startLine" : 17,
+            "startColumn" : 9,
+            "endColumn" : 27
+          }
+        },
+        "message" : {
+          "text" : "if (...)"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [{{ ... }}](1) and [<Expr>;](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/CollectionEmptyCheck.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 1
+          },
+          "region" : {
+            "startLine" : 17,
+            "startColumn" : 13,
+            "endColumn" : 26
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "61dfe121112c5c41:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/CollectionEmptyCheck.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 1
+          },
+          "region" : {
+            "startLine" : 17,
+            "startColumn" : 27,
+            "endLine" : 19,
+            "endColumn" : 10
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/CollectionEmptyCheck.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 1
+          },
+          "region" : {
+            "startLine" : 20,
+            "startColumn" : 9,
+            "endColumn" : 43
+          }
+        },
+        "message" : {
+          "text" : "<Expr>;"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [Integer.MIN_VALUE](1) and [1](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/CompareToReturnValueProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 2
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 13,
+            "endColumn" : 18
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "87de32478e72bb1d:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/CompareToReturnValueProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 2
+          },
+          "region" : {
+            "startLine" : 10,
+            "startColumn" : 20,
+            "endColumn" : 37
+          }
+        },
+        "message" : {
+          "text" : "Integer.MIN_VALUE"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/CompareToReturnValueProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 2
+          },
+          "region" : {
+            "startLine" : 12,
+            "startColumn" : 21,
+            "endColumn" : 22
+          }
+        },
+        "message" : {
+          "text" : "1"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [{{ ... }}](1) and [if (...)](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ComparizonModifier.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 6,
+            "startColumn" : 13,
+            "endColumn" : 35
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "3f8a17b6a3966241:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ComparizonModifier.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 6,
+            "startColumn" : 36,
+            "endLine" : 8,
+            "endColumn" : 10
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ComparizonModifier.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 9,
+            "endColumn" : 36
+          }
+        },
+        "message" : {
+          "text" : "if (...)"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [{{ ... }}](1) and [if (...)](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ComparizonModifier.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 13,
+            "endColumn" : 35
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "3b395bd218dc3fcd:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ComparizonModifier.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 36,
+            "endLine" : 11,
+            "endColumn" : 10
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ComparizonModifier.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 12,
+            "startColumn" : 9,
+            "endColumn" : 47
+          }
+        },
+        "message" : {
+          "text" : "if (...)"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [{{ ... }}](1) and [if (...)](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ComparizonModifier.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 12,
+            "startColumn" : 13,
+            "endColumn" : 46
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "6b7e141176545cb5:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ComparizonModifier.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 12,
+            "startColumn" : 47,
+            "endLine" : 14,
+            "endColumn" : 10
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ComparizonModifier.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 16,
+            "startColumn" : 9,
+            "endColumn" : 28
+          }
+        },
+        "message" : {
+          "text" : "if (...)"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [{{ ... }}](1) and [if (...)](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ComparizonModifier.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 16,
+            "startColumn" : 13,
+            "endColumn" : 27
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "48462f7524ea4506:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ComparizonModifier.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 16,
+            "startColumn" : 28,
+            "endLine" : 18,
+            "endColumn" : 10
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ComparizonModifier.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 19,
+            "startColumn" : 9,
+            "endColumn" : 24
+          }
+        },
+        "message" : {
+          "text" : "if (...)"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [{{ ... }}](1) and [if (...)](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ComparizonModifier.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 19,
+            "startColumn" : 13,
+            "endColumn" : 23
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "bbd1070ab8da2c6d:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ComparizonModifier.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 19,
+            "startColumn" : 24,
+            "endLine" : 21,
+            "endColumn" : 10
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ComparizonModifier.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 22,
+            "startColumn" : 9,
+            "endColumn" : 23
+          }
+        },
+        "message" : {
+          "text" : "if (...)"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [{{ ... }}](1) and [if (...)](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ComparizonModifier.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 22,
+            "startColumn" : 13,
+            "endColumn" : 22
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "266bfbaef4cbdcb3:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ComparizonModifier.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 22,
+            "startColumn" : 23,
+            "endLine" : 24,
+            "endColumn" : 10
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ComparizonModifier.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 25,
+            "startColumn" : 9,
+            "endColumn" : 24
+          }
+        },
+        "message" : {
+          "text" : "if (...)"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [{{ ... }}](1) and [compare](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ComparizonModifier.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 25,
+            "startColumn" : 13,
+            "endColumn" : 23
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "d19f1b3be664ce5b:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ComparizonModifier.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 25,
+            "startColumn" : 24,
+            "endLine" : 27,
+            "endColumn" : 10
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ComparizonModifier.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 2,
+            "startColumn" : 17,
+            "endColumn" : 24
+          }
+        },
+        "message" : {
+          "text" : "compare"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [b](1) and [true](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ConstConds.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 4
+          },
+          "region" : {
+            "startLine" : 3,
+            "startColumn" : 15,
+            "endColumn" : 22
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "191c93d65dde8b07:1",
+        "primaryLocationStartColumnFingerprint" : "8"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ConstConds.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 4
+          },
+          "region" : {
+            "startLine" : 3,
+            "startColumn" : 11,
+            "endColumn" : 30
+          }
+        },
+        "message" : {
+          "text" : "b"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ConstConds.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 4
+          },
+          "region" : {
+            "startLine" : 3,
+            "startColumn" : 26,
+            "endColumn" : 30
+          }
+        },
+        "message" : {
+          "text" : "true"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [if (...)](1) and [1](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ConstConds.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 4
+          },
+          "region" : {
+            "startLine" : 4,
+            "startColumn" : 12,
+            "endColumn" : 13
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "9dfa65749a81a544:1",
+        "primaryLocationStartColumnFingerprint" : "5"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ConstConds.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 4
+          },
+          "region" : {
+            "startLine" : 5,
+            "startColumn" : 7,
+            "endColumn" : 22
+          }
+        },
+        "message" : {
+          "text" : "if (...)"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ConstConds.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 4
+          },
+          "region" : {
+            "startLine" : 4,
+            "startColumn" : 22,
+            "endColumn" : 23
+          }
+        },
+        "message" : {
+          "text" : "1"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [2](1) and [if (...)](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ConstConds.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 4
+          },
+          "region" : {
+            "startLine" : 5,
+            "startColumn" : 20,
+            "endColumn" : 21
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "d61d5f327c3cbd0f:1",
+        "primaryLocationStartColumnFingerprint" : "13"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ConstConds.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 4
+          },
+          "region" : {
+            "startLine" : 5,
+            "startColumn" : 30,
+            "endColumn" : 31
+          }
+        },
+        "message" : {
+          "text" : "2"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ConstConds.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 4
+          },
+          "region" : {
+            "startLine" : 6,
+            "startColumn" : 7,
+            "endColumn" : 16
+          }
+        },
+        "message" : {
+          "text" : "if (...)"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [{{ ... }}](1) and [if (...)](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EmptyStringCheck.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 5
+          },
+          "region" : {
+            "startLine" : 4,
+            "startColumn" : 13,
+            "endColumn" : 25
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "6483d24be77c9a85:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EmptyStringCheck.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 5
+          },
+          "region" : {
+            "startLine" : 4,
+            "startColumn" : 26,
+            "endColumn" : 28
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EmptyStringCheck.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 5
+          },
+          "region" : {
+            "startLine" : 5,
+            "startColumn" : 9,
+            "endColumn" : 31
+          }
+        },
+        "message" : {
+          "text" : "if (...)"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [{{ ... }}](1) and [var ...;](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EmptyStringCheck.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 5
+          },
+          "region" : {
+            "startLine" : 5,
+            "startColumn" : 13,
+            "endColumn" : 30
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "511b81fa6b5206c1:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EmptyStringCheck.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 5
+          },
+          "region" : {
+            "startLine" : 5,
+            "startColumn" : 31,
+            "endColumn" : 33
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EmptyStringCheck.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 5
+          },
+          "region" : {
+            "startLine" : 6,
+            "startColumn" : 9,
+            "endColumn" : 25
+          }
+        },
+        "message" : {
+          "text" : "var ...;"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [{{ ... }}](1) and [getClass(...)](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EqualsNotCheckingConversion.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 6
+          },
+          "region" : {
+            "startLine" : 13,
+            "startColumn" : 13,
+            "endColumn" : 24
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "f4bc7255e39248a6:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EqualsNotCheckingConversion.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 6
+          },
+          "region" : {
+            "startLine" : 13,
+            "startColumn" : 58,
+            "endLine" : 15,
+            "endColumn" : 10
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EqualsNotCheckingConversion.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 6
+          },
+          "region" : {
+            "startLine" : 13,
+            "startColumn" : 28,
+            "endColumn" : 38
+          }
+        },
+        "message" : {
+          "text" : "getClass(...)"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [{{ ... }}](1) and [val](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EqualsNotCheckingConversion.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 6
+          },
+          "region" : {
+            "startLine" : 13,
+            "startColumn" : 28,
+            "endColumn" : 56
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "f4bc7255e39248a6:1",
+        "primaryLocationStartColumnFingerprint" : "19"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EqualsNotCheckingConversion.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 6
+          },
+          "region" : {
+            "startLine" : 13,
+            "startColumn" : 58,
+            "endLine" : 15,
+            "endColumn" : 10
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EqualsNotCheckingConversion.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 6
+          },
+          "region" : {
+            "startLine" : 16,
+            "startColumn" : 16,
+            "endColumn" : 19
+          }
+        },
+        "message" : {
+          "text" : "val"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [{{ ... }}](1) and [!...](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EqualsNotCheckingConversion.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 6
+          },
+          "region" : {
+            "startLine" : 22,
+            "startColumn" : 13,
+            "endColumn" : 24
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "69cac1ecceb513ce:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EqualsNotCheckingConversion.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 6
+          },
+          "region" : {
+            "startLine" : 22,
+            "startColumn" : 53,
+            "endLine" : 24,
+            "endColumn" : 10
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EqualsNotCheckingConversion.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 6
+          },
+          "region" : {
+            "startLine" : 22,
+            "startColumn" : 28,
+            "endColumn" : 51
+          }
+        },
+        "message" : {
+          "text" : "!..."
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [val](1) and [{{ ... }}](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EqualsNotCheckingConversion.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 6
+          },
+          "region" : {
+            "startLine" : 22,
+            "startColumn" : 30,
+            "endColumn" : 50
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "69cac1ecceb513ce:1",
+        "primaryLocationStartColumnFingerprint" : "21"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EqualsNotCheckingConversion.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 6
+          },
+          "region" : {
+            "startLine" : 25,
+            "startColumn" : 16,
+            "endColumn" : 19
+          }
+        },
+        "message" : {
+          "text" : "val"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/EqualsNotCheckingConversion.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 6
+          },
+          "region" : {
+            "startLine" : 22,
+            "startColumn" : 53,
+            "endLine" : 24,
+            "endColumn" : 10
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [{{ ... }}](1) and [if (...)](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/IsNullCondition.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 7
+          },
+          "region" : {
+            "startLine" : 5,
+            "startColumn" : 13,
+            "endColumn" : 25
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "1aad2a7f60b92ede:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/IsNullCondition.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 7
+          },
+          "region" : {
+            "startLine" : 5,
+            "startColumn" : 26,
+            "endColumn" : 28
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/IsNullCondition.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 7
+          },
+          "region" : {
+            "startLine" : 6,
+            "startColumn" : 9,
+            "endColumn" : 26
+          }
+        },
+        "message" : {
+          "text" : "if (...)"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [{{ ... }}](1) and [if (...)](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/IsNullCondition.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 7
+          },
+          "region" : {
+            "startLine" : 6,
+            "startColumn" : 13,
+            "endColumn" : 25
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "352c9766ac061ce3:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/IsNullCondition.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 7
+          },
+          "region" : {
+            "startLine" : 6,
+            "startColumn" : 26,
+            "endColumn" : 28
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/IsNullCondition.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 7
+          },
+          "region" : {
+            "startLine" : 7,
+            "startColumn" : 9,
+            "endColumn" : 27
+          }
+        },
+        "message" : {
+          "text" : "if (...)"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [{{ ... }}](1) and [if (...)](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/IsNullCondition.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 7
+          },
+          "region" : {
+            "startLine" : 7,
+            "startColumn" : 13,
+            "endColumn" : 26
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "5a4841e743a2e09c:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/IsNullCondition.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 7
+          },
+          "region" : {
+            "startLine" : 7,
+            "startColumn" : 27,
+            "endColumn" : 29
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/IsNullCondition.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 7
+          },
+          "region" : {
+            "startLine" : 8,
+            "startColumn" : 9,
+            "endColumn" : 23
+          }
+        },
+        "message" : {
+          "text" : "if (...)"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [{{ ... }}](1) and [if (...)](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/IsNullCondition.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 7
+          },
+          "region" : {
+            "startLine" : 8,
+            "startColumn" : 13,
+            "endColumn" : 22
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "467a785cfa51b417:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/IsNullCondition.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 7
+          },
+          "region" : {
+            "startLine" : 8,
+            "startColumn" : 23,
+            "endColumn" : 25
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/IsNullCondition.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 7
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 9,
+            "endColumn" : 23
+          }
+        },
+        "message" : {
+          "text" : "if (...)"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [{{ ... }}](1) and [if (...)](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/IsNullCondition.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 7
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 13,
+            "endColumn" : 22
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "ac5d6060f4970447:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/IsNullCondition.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 7
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 23,
+            "endColumn" : 25
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/IsNullCondition.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 7
+          },
+          "region" : {
+            "startLine" : 10,
+            "startColumn" : 9,
+            "endColumn" : 20
+          }
+        },
+        "message" : {
+          "text" : "if (...)"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [{{ ... }}](1) and [test](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/IsNullCondition.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 7
+          },
+          "region" : {
+            "startLine" : 10,
+            "startColumn" : 13,
+            "endColumn" : 19
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "a34b39f034a6d43b:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/IsNullCondition.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 7
+          },
+          "region" : {
+            "startLine" : 10,
+            "startColumn" : 20,
+            "endColumn" : 22
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/IsNullCondition.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 7
+          },
+          "region" : {
+            "startLine" : 2,
+            "startColumn" : 17,
+            "endColumn" : 21
+          }
+        },
+        "message" : {
+          "text" : "test"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [{{ ... }}](1) and [var ...;](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/LoopHeadElement.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 8
+          },
+          "region" : {
+            "startLine" : 6,
+            "startColumn" : 25,
+            "endColumn" : 30
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "fd52de66a3605099:1",
+        "primaryLocationStartColumnFingerprint" : "16"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/LoopHeadElement.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 8
+          },
+          "region" : {
+            "startLine" : 6,
+            "startColumn" : 37,
+            "endLine" : 9,
+            "endColumn" : 10
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/LoopHeadElement.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 8
+          },
+          "region" : {
+            "startLine" : 11,
+            "startColumn" : 9,
+            "endColumn" : 19
+          }
+        },
+        "message" : {
+          "text" : "var ...;"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [<Expr>;](1) and [i](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/LoopHeadElement.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 8
+          },
+          "region" : {
+            "startLine" : 7,
+            "startColumn" : 17,
+            "endColumn" : 27
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "aefaa1ad4c7192cf:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/LoopHeadElement.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 8
+          },
+          "region" : {
+            "startLine" : 8,
+            "startColumn" : 17,
+            "endColumn" : 39
+          }
+        },
+        "message" : {
+          "text" : "<Expr>;"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/LoopHeadElement.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 8
+          },
+          "region" : {
+            "startLine" : 6,
+            "startColumn" : 32,
+            "endColumn" : 33
+          }
+        },
+        "message" : {
+          "text" : "i"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [{{ ... }}](1) and [for (... : ...)](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/LoopHeadElement.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 8
+          },
+          "region" : {
+            "startLine" : 12,
+            "startColumn" : 16,
+            "endColumn" : 21
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "f1db3d77ce04f981:1",
+        "primaryLocationStartColumnFingerprint" : "7"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/LoopHeadElement.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 8
+          },
+          "region" : {
+            "startLine" : 12,
+            "startColumn" : 23,
+            "endLine" : 15,
+            "endColumn" : 10
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/LoopHeadElement.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 8
+          },
+          "region" : {
+            "startLine" : 17,
+            "startColumn" : 9,
+            "endColumn" : 26
+          }
+        },
+        "message" : {
+          "text" : "for (... : ...)"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [{{ ... }}](1) and [{{ ... }}](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 9
+          },
+          "region" : {
+            "startLine" : 7,
+            "startColumn" : 13,
+            "endColumn" : 19
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "9cbe344e2bad304e:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 9
+          },
+          "region" : {
+            "startLine" : 7,
+            "startColumn" : 21,
+            "endLine" : 9,
+            "endColumn" : 10
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 9
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 16,
+            "endLine" : 11,
+            "endColumn" : 10
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [{{ ... }}](1) and [{{ ... }}](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 9
+          },
+          "region" : {
+            "startLine" : 15,
+            "startColumn" : 13,
+            "endColumn" : 19
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "fb2cecd6fc3f2529:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 9
+          },
+          "region" : {
+            "startLine" : 15,
+            "startColumn" : 21,
+            "endLine" : 17,
+            "endColumn" : 10
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 9
+          },
+          "region" : {
+            "startLine" : 17,
+            "startColumn" : 16,
+            "endLine" : 19,
+            "endColumn" : 10
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [acc](1) and [n](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 9
+          },
+          "region" : {
+            "startLine" : 23,
+            "startColumn" : 13,
+            "endColumn" : 19
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "f8527fe0c1acc5e1:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 9
+          },
+          "region" : {
+            "startLine" : 23,
+            "startColumn" : 28,
+            "endColumn" : 31
+          }
+        },
+        "message" : {
+          "text" : "acc"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 9
+          },
+          "region" : {
+            "startLine" : 24,
+            "startColumn" : 18,
+            "endColumn" : 19
+          }
+        },
+        "message" : {
+          "text" : "n"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [acc](1) and [n](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 9
+          },
+          "region" : {
+            "startLine" : 28,
+            "startColumn" : 13,
+            "endColumn" : 19
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "33743368c55cbac5:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 9
+          },
+          "region" : {
+            "startLine" : 28,
+            "startColumn" : 28,
+            "endColumn" : 31
+          }
+        },
+        "message" : {
+          "text" : "acc"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 9
+          },
+          "region" : {
+            "startLine" : 29,
+            "startColumn" : 18,
+            "endColumn" : 19
+          }
+        },
+        "message" : {
+          "text" : "n"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [<Expr>;](1) and [if (...)](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 10
+          },
+          "region" : {
+            "startLine" : 5,
+            "startColumn" : 13,
+            "endColumn" : 25
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "7c6a47fad5e5962a:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 10
+          },
+          "region" : {
+            "startLine" : 5,
+            "startColumn" : 27,
+            "endColumn" : 63
+          }
+        },
+        "message" : {
+          "text" : "<Expr>;"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 10
+          },
+          "region" : {
+            "startLine" : 6,
+            "startColumn" : 9,
+            "endColumn" : 26
+          }
+        },
+        "message" : {
+          "text" : "if (...)"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [<Expr>;](1) and [if (...)](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 10
+          },
+          "region" : {
+            "startLine" : 6,
+            "startColumn" : 13,
+            "endColumn" : 25
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "1edd1da81a1b3e16:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 10
+          },
+          "region" : {
+            "startLine" : 6,
+            "startColumn" : 27,
+            "endColumn" : 62
+          }
+        },
+        "message" : {
+          "text" : "<Expr>;"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 10
+          },
+          "region" : {
+            "startLine" : 7,
+            "startColumn" : 9,
+            "endColumn" : 26
+          }
+        },
+        "message" : {
+          "text" : "if (...)"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [<Expr>;](1) and [if (...)](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 10
+          },
+          "region" : {
+            "startLine" : 7,
+            "startColumn" : 13,
+            "endColumn" : 25
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "6810f50dfe1b8470:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 10
+          },
+          "region" : {
+            "startLine" : 7,
+            "startColumn" : 27,
+            "endColumn" : 62
+          }
+        },
+        "message" : {
+          "text" : "<Expr>;"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 10
+          },
+          "region" : {
+            "startLine" : 8,
+            "startColumn" : 9,
+            "endColumn" : 31
+          }
+        },
+        "message" : {
+          "text" : "if (...)"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [<Expr>;](1) and [if (...)](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 10
+          },
+          "region" : {
+            "startLine" : 8,
+            "startColumn" : 13,
+            "endColumn" : 30
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "4c1522c1c7592e04:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 10
+          },
+          "region" : {
+            "startLine" : 8,
+            "startColumn" : 32,
+            "endColumn" : 72
+          }
+        },
+        "message" : {
+          "text" : "<Expr>;"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 10
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 9,
+            "endColumn" : 42
+          }
+        },
+        "message" : {
+          "text" : "if (...)"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [<Expr>;](1) and [main](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 10
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 13,
+            "endColumn" : 41
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "1c0a075a9bf48357:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 10
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 43,
+            "endColumn" : 94
+          }
+        },
+        "message" : {
+          "text" : "<Expr>;"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 10
+          },
+          "region" : {
+            "startLine" : 2,
+            "startColumn" : 24,
+            "endColumn" : 28
+          }
+        },
+        "message" : {
+          "text" : "main"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [return ...](1) and [a](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestCompareByteInt.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 11
+          },
+          "region" : {
+            "startLine" : 3,
+            "startColumn" : 16,
+            "endColumn" : 22
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "5a55705f2e572218:1",
+        "primaryLocationStartColumnFingerprint" : "7"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestCompareByteInt.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 11
+          },
+          "region" : {
+            "startLine" : 3,
+            "startColumn" : 9,
+            "endColumn" : 32
+          }
+        },
+        "message" : {
+          "text" : "return ..."
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestCompareByteInt.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 11
+          },
+          "region" : {
+            "startLine" : 3,
+            "startColumn" : 26,
+            "endColumn" : 27
+          }
+        },
+        "message" : {
+          "text" : "a"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [a](1) and [b](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestDataFlow.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 12
+          },
+          "region" : {
+            "startLine" : 3,
+            "startColumn" : 17,
+            "endColumn" : 22
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "2aaf6494ee192522:1",
+        "primaryLocationStartColumnFingerprint" : "8"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestDataFlow.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 12
+          },
+          "region" : {
+            "startLine" : 3,
+            "startColumn" : 25,
+            "endColumn" : 26
+          }
+        },
+        "message" : {
+          "text" : "a"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestDataFlow.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 12
+          },
+          "region" : {
+            "startLine" : 3,
+            "startColumn" : 33,
+            "endColumn" : 34
+          }
+        },
+        "message" : {
+          "text" : "b"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [{{ ... }}](1) and [{{ ... }}](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestDataFlow.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 12
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 13,
+            "endColumn" : 18
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "e5968bab8fbef928:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestDataFlow.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 12
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 20,
+            "endLine" : 11,
+            "endColumn" : 10
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestDataFlow.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 12
+          },
+          "region" : {
+            "startLine" : 11,
+            "startColumn" : 16,
+            "endLine" : 13,
+            "endColumn" : 10
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [{{ ... }}](1) and [0](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestEqBooleanConsts.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 13
+          },
+          "region" : {
+            "startLine" : 3,
+            "startColumn" : 13,
+            "endColumn" : 33
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "3bf28a6250d37fb9:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestEqBooleanConsts.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 13
+          },
+          "region" : {
+            "startLine" : 3,
+            "startColumn" : 35,
+            "endLine" : 5,
+            "endColumn" : 10
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestEqBooleanConsts.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 13
+          },
+          "region" : {
+            "startLine" : 6,
+            "startColumn" : 16,
+            "endColumn" : 17
+          }
+        },
+        "message" : {
+          "text" : "0"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [{{ ... }}](1) and [run](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestThreadStop.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 14
+          },
+          "region" : {
+            "startLine" : 5,
+            "startColumn" : 22,
+            "endColumn" : 25
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "abd938e34cc82186:1",
+        "primaryLocationStartColumnFingerprint" : "13"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestThreadStop.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 14
+          },
+          "region" : {
+            "startLine" : 6,
+            "startColumn" : 9,
+            "endLine" : 14,
+            "endColumn" : 10
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestThreadStop.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 14
+          },
+          "region" : {
+            "startLine" : 3,
+            "startColumn" : 17,
+            "endColumn" : 20
+          }
+        },
+        "message" : {
+          "text" : "run"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [i](1) and [0](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestUnusedLocals.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 15
+          },
+          "region" : {
+            "startLine" : 5,
+            "startColumn" : 13,
+            "endColumn" : 18
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "f7babe5ca0ee961a:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestUnusedLocals.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 15
+          },
+          "region" : {
+            "startLine" : 5,
+            "startColumn" : 27,
+            "endColumn" : 28
+          }
+        },
+        "message" : {
+          "text" : "i"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestUnusedLocals.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 15
+          },
+          "region" : {
+            "startLine" : 6,
+            "startColumn" : 16,
+            "endColumn" : 17
+          }
+        },
+        "message" : {
+          "text" : "0"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [{{ ... }}](1) and [i](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestUseBreak.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 16
+          },
+          "region" : {
+            "startLine" : 6,
+            "startColumn" : 21,
+            "endColumn" : 26
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "ddb7b213365fe1a5:1",
+        "primaryLocationStartColumnFingerprint" : "12"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestUseBreak.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 16
+          },
+          "region" : {
+            "startLine" : 6,
+            "startColumn" : 33,
+            "endLine" : 14,
+            "endColumn" : 10
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestUseBreak.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 16
+          },
+          "region" : {
+            "startLine" : 15,
+            "startColumn" : 16,
+            "endColumn" : 17
+          }
+        },
+        "message" : {
+          "text" : "i"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [break](1) and [<Expr>;](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestUseBreak.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 16
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 21,
+            "endColumn" : 26
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "8069b22c3d08546a:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestUseBreak.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 16
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 28,
+            "endColumn" : 34
+          }
+        },
+        "message" : {
+          "text" : "break"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestUseBreak.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 16
+          },
+          "region" : {
+            "startLine" : 10,
+            "startColumn" : 17,
+            "endColumn" : 21
+          }
+        },
+        "message" : {
+          "text" : "<Expr>;"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [break](1) and [true](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestUseBreak.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 16
+          },
+          "region" : {
+            "startLine" : 12,
+            "startColumn" : 21,
+            "endColumn" : 32
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "7aa0eb253dc103ea:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestUseBreak.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 16
+          },
+          "region" : {
+            "startLine" : 12,
+            "startColumn" : 34,
+            "endColumn" : 46
+          }
+        },
+        "message" : {
+          "text" : "break"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestUseBreak.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 16
+          },
+          "region" : {
+            "startLine" : 8,
+            "startColumn" : 20,
+            "endColumn" : 24
+          }
+        },
+        "message" : {
+          "text" : "true"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [{{ ... }}](1) and [{{ ... }}](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ToStringReturningNullProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 17
+          },
+          "region" : {
+            "startLine" : 7,
+            "startColumn" : 13,
+            "endColumn" : 21
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "2e8b934e1642d493:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ToStringReturningNullProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 17
+          },
+          "region" : {
+            "startLine" : 7,
+            "startColumn" : 23,
+            "endLine" : 9,
+            "endColumn" : 10
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ToStringReturningNullProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 17
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 16,
+            "endLine" : 11,
+            "endColumn" : 10
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [{{ ... }}](1) and [main](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/UseBreak.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 18
+          },
+          "region" : {
+            "startLine" : 6,
+            "startColumn" : 25,
+            "endColumn" : 30
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "f9dfd9b32ec7d370:1",
+        "primaryLocationStartColumnFingerprint" : "16"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/UseBreak.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 18
+          },
+          "region" : {
+            "startLine" : 6,
+            "startColumn" : 37,
+            "endLine" : 15,
+            "endColumn" : 10
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/UseBreak.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 18
+          },
+          "region" : {
+            "startLine" : 2,
+            "startColumn" : 24,
+            "endColumn" : 28
+          }
+        },
+        "message" : {
+          "text" : "main"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [{{ ... }}](1) and [if (...)](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/UseBreak.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 18
+          },
+          "region" : {
+            "startLine" : 10,
+            "startColumn" : 21,
+            "endColumn" : 30
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "326b244a3730c6f:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/UseBreak.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 18
+          },
+          "region" : {
+            "startLine" : 10,
+            "startColumn" : 32,
+            "endLine" : 12,
+            "endColumn" : 18
+          }
+        },
+        "message" : {
+          "text" : "{{ ... }}"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/UseBreak.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 18
+          },
+          "region" : {
+            "startLine" : 13,
+            "startColumn" : 17,
+            "endColumn" : 28
+          }
+        },
+        "message" : {
+          "text" : "if (...)"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [break](1) and [true](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/UseBreak.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 18
+          },
+          "region" : {
+            "startLine" : 13,
+            "startColumn" : 21,
+            "endColumn" : 27
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "4d5fc94486e01e5a:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/UseBreak.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 18
+          },
+          "region" : {
+            "startLine" : 13,
+            "startColumn" : 29,
+            "endColumn" : 35
+          }
+        },
+        "message" : {
+          "text" : "break"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/UseBreak.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 18
+          },
+          "region" : {
+            "startLine" : 8,
+            "startColumn" : 19,
+            "endColumn" : 23
+          }
+        },
+        "message" : {
+          "text" : "true"
+        }
+      } ]
+    } ],
+    "columnKind" : "utf16CodeUnits",
+    "properties" : {
+      "semmle.formatSpecifier" : "sarifv2.1.0"
+    }
+  } ]
+}

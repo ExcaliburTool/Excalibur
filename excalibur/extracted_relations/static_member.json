@@ -1,0 +1,1231 @@
+{
+  "$schema" : "https://json.schemastore.org/sarif-2.1.0.json",
+  "version" : "2.1.0",
+  "runs" : [ {
+    "tool" : {
+      "driver" : {
+        "name" : "CodeQL",
+        "organization" : "GitHub",
+        "semanticVersion" : "2.12.5",
+        "rules" : [ {
+          "id" : "java/example/static_member",
+          "name" : "java/example/static_member",
+          "shortDescription" : {
+            "text" : "StaticMember"
+          },
+          "defaultConfiguration" : {
+            "enabled" : true,
+            "level" : "warning"
+          },
+          "properties" : {
+            "id" : "java/example/static_member",
+            "kind" : "problem",
+            "name" : "StaticMember",
+            "problem.severity" : "warning"
+          }
+        } ]
+      },
+      "extensions" : [ {
+        "name" : "legacy-upgrades",
+        "semanticVersion" : "0.0.0",
+        "locations" : [ {
+          "uri" : "file:///opt/homebrew/Caskroom/codeql/2.12.5/codeql/legacy-upgrades/",
+          "description" : {
+            "text" : "The QL pack root directory."
+          }
+        }, {
+          "uri" : "file:///opt/homebrew/Caskroom/codeql/2.12.5/codeql/legacy-upgrades/qlpack.yml",
+          "description" : {
+            "text" : "The QL pack definition file."
+          }
+        } ]
+      }, {
+        "name" : "getting-started/codeql-extra-queries-java",
+        "semanticVersion" : "0.0.0+9688a33f8a7790e1160da629a5cf79ee7cd635f2",
+        "locations" : [ {
+          "uri" : "file:///Users/sissel/repository/JavaSyntaxTool/codeql/",
+          "description" : {
+            "text" : "The QL pack root directory."
+          }
+        }, {
+          "uri" : "file:///Users/sissel/repository/JavaSyntaxTool/codeql/qlpack.yml",
+          "description" : {
+            "text" : "The QL pack definition file."
+          }
+        } ]
+      } ]
+    },
+    "artifacts" : [ {
+      "location" : {
+        "uri" : "src/main/java/ByteCompareInt.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 0
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/ConstVoidFuncs.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 1
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/ConstVoidFuncs_noFP.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 2
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/DangerousFuncs.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 3
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/FloatConversion.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 4
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/FloatConversion_noFP.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 5
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/LoopHeadElement.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 6
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/MutualRecursive.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 7
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/SerialVersionUidProcessor.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 8
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/StaticAccessThroughInstance.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 9
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/StringCompare.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 10
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/TestStaticVoidMethod.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 11
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/TestThreadStop.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 12
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/ThreadLocalWithInitial.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 13
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/UnsafeCasts.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 14
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/UseBreak.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 15
+      }
+    }, {
+      "location" : {
+        "uri" : "src/main/java/UtilityClassWithPublicConstructorProcessor.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 16
+      }
+    } ],
+    "results" : [ {
+      "ruleId" : "java/example/static_member",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/static_member",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "static"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ByteCompareInt.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 2,
+            "startColumn" : 24,
+            "endColumn" : 28
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "dd004174e1feb4c4:1",
+        "primaryLocationStartColumnFingerprint" : "19"
+      }
+    }, {
+      "ruleId" : "java/example/static_member",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/static_member",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "static"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ConstVoidFuncs.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 1
+          },
+          "region" : {
+            "startLine" : 10,
+            "startColumn" : 19,
+            "endColumn" : 22
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "fe6e66d24537ec61:1",
+        "primaryLocationStartColumnFingerprint" : "14"
+      }
+    }, {
+      "ruleId" : "java/example/static_member",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/static_member",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "static"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ConstVoidFuncs.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 1
+          },
+          "region" : {
+            "startLine" : 6,
+            "startColumn" : 25,
+            "endColumn" : 28
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "a65e7aac6e493e93:1",
+        "primaryLocationStartColumnFingerprint" : "20"
+      }
+    }, {
+      "ruleId" : "java/example/static_member",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/static_member",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "static"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ConstVoidFuncs.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 1
+          },
+          "region" : {
+            "startLine" : 4,
+            "startColumn" : 17,
+            "endColumn" : 20
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "326657de10722eac:1",
+        "primaryLocationStartColumnFingerprint" : "12"
+      }
+    }, {
+      "ruleId" : "java/example/static_member",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/static_member",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "static"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ConstVoidFuncs.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 1
+          },
+          "region" : {
+            "startLine" : 2,
+            "startColumn" : 24,
+            "endColumn" : 28
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "a1dfd257b53ec31e:1",
+        "primaryLocationStartColumnFingerprint" : "19"
+      }
+    }, {
+      "ruleId" : "java/example/static_member",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/static_member",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "static"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ConstVoidFuncs.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 1
+          },
+          "region" : {
+            "startLine" : 8,
+            "startColumn" : 23,
+            "endColumn" : 26
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "4e24d3b945f9e970:1",
+        "primaryLocationStartColumnFingerprint" : "18"
+      }
+    }, {
+      "ruleId" : "java/example/static_member",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/static_member",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "static"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ConstVoidFuncs_noFP.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 2
+          },
+          "region" : {
+            "startLine" : 10,
+            "startColumn" : 19,
+            "endColumn" : 22
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "413b2e7119130393:1",
+        "primaryLocationStartColumnFingerprint" : "14"
+      }
+    }, {
+      "ruleId" : "java/example/static_member",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/static_member",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "static"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ConstVoidFuncs_noFP.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 2
+          },
+          "region" : {
+            "startLine" : 6,
+            "startColumn" : 25,
+            "endColumn" : 28
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "8e9f491221a6130e:1",
+        "primaryLocationStartColumnFingerprint" : "20"
+      }
+    }, {
+      "ruleId" : "java/example/static_member",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/static_member",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "static"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ConstVoidFuncs_noFP.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 2
+          },
+          "region" : {
+            "startLine" : 4,
+            "startColumn" : 17,
+            "endColumn" : 20
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "326657de10722eac:1",
+        "primaryLocationStartColumnFingerprint" : "12"
+      }
+    }, {
+      "ruleId" : "java/example/static_member",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/static_member",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "static"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ConstVoidFuncs_noFP.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 2
+          },
+          "region" : {
+            "startLine" : 2,
+            "startColumn" : 24,
+            "endColumn" : 28
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "a1dfd257b53ec31e:1",
+        "primaryLocationStartColumnFingerprint" : "19"
+      }
+    }, {
+      "ruleId" : "java/example/static_member",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/static_member",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "static"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ConstVoidFuncs_noFP.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 2
+          },
+          "region" : {
+            "startLine" : 8,
+            "startColumn" : 23,
+            "endColumn" : 26
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "20676a3d562691a2:1",
+        "primaryLocationStartColumnFingerprint" : "18"
+      }
+    }, {
+      "ruleId" : "java/example/static_member",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/static_member",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "static"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/DangerousFuncs.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 2,
+            "startColumn" : 24,
+            "endColumn" : 28
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "63407ac9ff31546e:1",
+        "primaryLocationStartColumnFingerprint" : "19"
+      }
+    }, {
+      "ruleId" : "java/example/static_member",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/static_member",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "static"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/FloatConversion.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 4
+          },
+          "region" : {
+            "startLine" : 2,
+            "startColumn" : 25,
+            "endColumn" : 29
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "cdcfc2ff3528f1a9:1",
+        "primaryLocationStartColumnFingerprint" : "20"
+      }
+    }, {
+      "ruleId" : "java/example/static_member",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/static_member",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "static"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/FloatConversion_noFP.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 5
+          },
+          "region" : {
+            "startLine" : 2,
+            "startColumn" : 25,
+            "endColumn" : 29
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "ebba11057936af7c:1",
+        "primaryLocationStartColumnFingerprint" : "20"
+      }
+    }, {
+      "ruleId" : "java/example/static_member",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/static_member",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "static"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/LoopHeadElement.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 6
+          },
+          "region" : {
+            "startLine" : 5,
+            "startColumn" : 24,
+            "endColumn" : 28
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "9c3c3efb2249cbf:1",
+        "primaryLocationStartColumnFingerprint" : "19"
+      }
+    }, {
+      "ruleId" : "java/example/static_member",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/static_member",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "static"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 7
+          },
+          "region" : {
+            "startLine" : 2,
+            "startColumn" : 24,
+            "endColumn" : 28
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "2f56b4419c376651:1",
+        "primaryLocationStartColumnFingerprint" : "19"
+      }
+    }, {
+      "ruleId" : "java/example/static_member",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/static_member",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "static"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 7
+          },
+          "region" : {
+            "startLine" : 6,
+            "startColumn" : 23,
+            "endColumn" : 24
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "8a7a89dda95bcb74:1",
+        "primaryLocationStartColumnFingerprint" : "18"
+      }
+    }, {
+      "ruleId" : "java/example/static_member",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/static_member",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "static"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MutualRecursive.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 7
+          },
+          "region" : {
+            "startLine" : 14,
+            "startColumn" : 23,
+            "endColumn" : 24
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "fcc64b68f40808b6:1",
+        "primaryLocationStartColumnFingerprint" : "18"
+      }
+    }, {
+      "ruleId" : "java/example/static_member",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/static_member",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "static"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/SerialVersionUidProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 8
+          },
+          "region" : {
+            "startLine" : 4,
+            "startColumn" : 23,
+            "endColumn" : 39
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "b843619a81cccce6:1",
+        "primaryLocationStartColumnFingerprint" : "18"
+      }
+    }, {
+      "ruleId" : "java/example/static_member",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/static_member",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "static"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/SerialVersionUidProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 8
+          },
+          "region" : {
+            "startLine" : 3,
+            "startColumn" : 7,
+            "endColumn" : 13
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "5daa1bee1cbe4917:1",
+        "primaryLocationStartColumnFingerprint" : "6"
+      }
+    }, {
+      "ruleId" : "java/example/static_member",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/static_member",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "static"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/SerialVersionUidProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 8
+          },
+          "region" : {
+            "startLine" : 8,
+            "startColumn" : 23,
+            "endColumn" : 39
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "e82b01e74eac3eb0:1",
+        "primaryLocationStartColumnFingerprint" : "18"
+      }
+    }, {
+      "ruleId" : "java/example/static_member",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/static_member",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "static"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/SerialVersionUidProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 8
+          },
+          "region" : {
+            "startLine" : 7,
+            "startColumn" : 7,
+            "endColumn" : 13
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "6739aa0bb2eaf841:1",
+        "primaryLocationStartColumnFingerprint" : "6"
+      }
+    }, {
+      "ruleId" : "java/example/static_member",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/static_member",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "static"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/SerialVersionUidProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 8
+          },
+          "region" : {
+            "startLine" : 14,
+            "startColumn" : 24,
+            "endColumn" : 40
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "5ba8518bdf731389:1",
+        "primaryLocationStartColumnFingerprint" : "18"
+      }
+    }, {
+      "ruleId" : "java/example/static_member",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/static_member",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "static"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/SerialVersionUidProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 8
+          },
+          "region" : {
+            "startLine" : 13,
+            "startColumn" : 7,
+            "endColumn" : 21
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "fbb30435fabb4665:1",
+        "primaryLocationStartColumnFingerprint" : "6"
+      }
+    }, {
+      "ruleId" : "java/example/static_member",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/static_member",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "static"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StaticAccessThroughInstance.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 9
+          },
+          "region" : {
+            "startLine" : 2,
+            "startColumn" : 24,
+            "endColumn" : 28
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "e566bcb662b71c9e:1",
+        "primaryLocationStartColumnFingerprint" : "19"
+      }
+    }, {
+      "ruleId" : "java/example/static_member",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/static_member",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "static"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StaticAccessThroughInstance.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 9
+          },
+          "region" : {
+            "startLine" : 12,
+            "startColumn" : 24,
+            "endColumn" : 28
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "ef1eb0f197f95ebd:1",
+        "primaryLocationStartColumnFingerprint" : "19"
+      }
+    }, {
+      "ruleId" : "java/example/static_member",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/static_member",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "static"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StaticAccessThroughInstance.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 9
+          },
+          "region" : {
+            "startLine" : 18,
+            "startColumn" : 17,
+            "endColumn" : 21
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "61c564caaea04f09:1",
+        "primaryLocationStartColumnFingerprint" : "12"
+      }
+    }, {
+      "ruleId" : "java/example/static_member",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/static_member",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "static"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 10
+          },
+          "region" : {
+            "startLine" : 2,
+            "startColumn" : 24,
+            "endColumn" : 28
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "b91d4200c67df7d5:1",
+        "primaryLocationStartColumnFingerprint" : "19"
+      }
+    }, {
+      "ruleId" : "java/example/static_member",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/static_member",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "static"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestStaticVoidMethod.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 11
+          },
+          "region" : {
+            "startLine" : 2,
+            "startColumn" : 24,
+            "endColumn" : 27
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "739377d89b99f6b6:1",
+        "primaryLocationStartColumnFingerprint" : "19"
+      }
+    }, {
+      "ruleId" : "java/example/static_member",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/static_member",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "static"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/TestThreadStop.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 12
+          },
+          "region" : {
+            "startLine" : 16,
+            "startColumn" : 24,
+            "endColumn" : 28
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "d00f516697712dd5:1",
+        "primaryLocationStartColumnFingerprint" : "19"
+      }
+    }, {
+      "ruleId" : "java/example/static_member",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/static_member",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "static"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ThreadLocalWithInitial.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 13
+          },
+          "region" : {
+            "startLine" : 5,
+            "startColumn" : 32,
+            "endColumn" : 35
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "51367c1d359e1f1b:1",
+        "primaryLocationStartColumnFingerprint" : "27"
+      }
+    }, {
+      "ruleId" : "java/example/static_member",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/static_member",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "static"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ThreadLocalWithInitial.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 13
+          },
+          "region" : {
+            "startLine" : 4,
+            "startColumn" : 14,
+            "endColumn" : 36
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "bdb03d25bb17a73c:1",
+        "primaryLocationStartColumnFingerprint" : "13"
+      }
+    }, {
+      "ruleId" : "java/example/static_member",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/static_member",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "static"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/UnsafeCasts.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 14
+          },
+          "region" : {
+            "startLine" : 2,
+            "startColumn" : 24,
+            "endColumn" : 28
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "c59b8ed69958ffb5:1",
+        "primaryLocationStartColumnFingerprint" : "19"
+      }
+    }, {
+      "ruleId" : "java/example/static_member",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/static_member",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "static"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/UseBreak.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 15
+          },
+          "region" : {
+            "startLine" : 2,
+            "startColumn" : 24,
+            "endColumn" : 28
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "ec61907b5b342860:1",
+        "primaryLocationStartColumnFingerprint" : "19"
+      }
+    }, {
+      "ruleId" : "java/example/static_member",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/static_member",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "static"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/UtilityClassWithPublicConstructorProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 16
+          },
+          "region" : {
+            "startLine" : 1,
+            "startColumn" : 7,
+            "endColumn" : 49
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "bcf9bf0d359d084b:1",
+        "primaryLocationStartColumnFingerprint" : "6"
+      }
+    }, {
+      "ruleId" : "java/example/static_member",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/static_member",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "static"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/UtilityClassWithPublicConstructorProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 16
+          },
+          "region" : {
+            "startLine" : 2,
+            "startColumn" : 29,
+            "endColumn" : 42
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "f8f995ffcd45ed79:1",
+        "primaryLocationStartColumnFingerprint" : "24"
+      }
+    }, {
+      "ruleId" : "java/example/static_member",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/static_member",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "static"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/UtilityClassWithPublicConstructorProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 16
+          },
+          "region" : {
+            "startLine" : 14,
+            "startColumn" : 24,
+            "endColumn" : 26
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "f1a6dd7b60165250:1",
+        "primaryLocationStartColumnFingerprint" : "19"
+      }
+    }, {
+      "ruleId" : "java/example/static_member",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/static_member",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "static"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/UtilityClassWithPublicConstructorProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 16
+          },
+          "region" : {
+            "startLine" : 13,
+            "startColumn" : 7,
+            "endColumn" : 23
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "799ab728240225ac:1",
+        "primaryLocationStartColumnFingerprint" : "6"
+      }
+    } ],
+    "columnKind" : "utf16CodeUnits",
+    "properties" : {
+      "semmle.formatSpecifier" : "sarifv2.1.0"
+    }
+  } ]
+}

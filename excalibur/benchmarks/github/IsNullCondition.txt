@@ -1,0 +1,24 @@
+Update on 19 May: modification on the code, so it also checks null value on the LHS of the binary operation
+
+input
+public class IsNullCondition {
+    public void test(){
+        Boolean flag = false;
+        Integer x = 0;
+        if (flag == null){} // bad
+        if (null == null){} // bad
+        if (flag == false){}
+        if (x == null){} // bad
+        if (null == x){} // bad
+        if (x == 0){}
+    }
+}
+
+output
+flag == null
+~
+null == null
+~
+x == null
+~
+null == x

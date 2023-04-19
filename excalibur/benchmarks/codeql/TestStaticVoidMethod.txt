@@ -1,0 +1,6 @@
+input
+class TestStaticVoidMethod {
+    public static void foo() {}
+}
+output
+public static void foo() {}
