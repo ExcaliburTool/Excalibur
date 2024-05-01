@@ -1,5 +1,8 @@
 # Excalibur
 
+## Note
+This repository is obselete (24 May 1) and will be updated soon.
+
 ## Benchmarks
 See `excalibur/benchmarks/github` and `excalibur/benchmarks/sporq`
 
@@ -29,6 +32,3 @@ The default setting is `NoMinmax`. You can modify `excalibur/config.json` to ena
 
 ## Proofs
 See `appendix.pdf`
-
-## Found Issues
-* n at line 591 of the submitted paper is any subtree, i.e., not limited to terminals
