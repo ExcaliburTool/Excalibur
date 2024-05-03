@@ -1,16 +1,21 @@
 # Excalibur
 
 ## Note
-This repository is obselete (24 May 1) and will be updated soon.
+This repository is obselete (24 May 1) and is being updated.
 
-## Benchmarks
+## Appendix
+The `appendix.pdf` includes:
+* Wildcard patterns (updated)
+* Semantic relation rules (TBD)
+
+## Benchmarks (obselete)
 See `excalibur/benchmarks/github` and `excalibur/benchmarks/sporq`
 
 In each file,
 the input example is between `input` and `output`;
 the output examples are specified after `output` and separated by `~`
 
-## Reproduction
+## Reproduction (obselete)
 
 Required software: [`souffle`](https://souffle-lang.github.io/install), `java >= 11`
 
@@ -29,6 +34,3 @@ java -cp Excalibur-0.1.0.jar MyTestRunner
 The default setting is `NoMinmax`. You can modify `excalibur/config.json` to enable different settings:
 * Full-featured Excalibur, by setting `useTraceSet` as `true` and `random` as `false`
 * NoVS, by setting  `useTraceSet` as `false` and `random` as `false`
-
-## Proofs
-See `appendix.pdf`
