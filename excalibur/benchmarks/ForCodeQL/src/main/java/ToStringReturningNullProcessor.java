@@ -15,7 +15,7 @@ public class ToStringReturningNullProcessor {
 }
 
 class ToStringNotReturningNull {
-    public String toSring() {
+    public String toString() {
         return "";
     }
 }

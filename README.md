@@ -1,36 +1,38 @@
 # Excalibur
 
-## Note
-This repository is obselete (24 May 1) and is being updated.
-
 ## Appendix
 The `appendix.pdf` includes:
 * Wildcard patterns (updated)
-* Semantic relation rules (TBD)
+* Semantic relation rules (Todo)
+* Prompt (Todo)
 
-## Benchmarks (obselete)
+## Benchmark
 See `excalibur/benchmarks/github` and `excalibur/benchmarks/sporq`
 
-In each file,
-the input example is between `input` and `output`;
-the output examples are specified after `output` and separated by `~`
+Each task has a file describing the task and a file specifying the example.
+* The input example is between `input` and `output`;
+* The output examples are specified after `output` and separated by `~`.
 
-## Reproduction (obselete)
+## Reproduction
+
+You may need `git lfs` to download the compiled jar file. See [this](https://git-lfs.com/).
 
 Required software: [`souffle`](https://souffle-lang.github.io/install), `java >= 11`
 
-To run the baseline, run the following commands. Note that the execution may take around 20 hours. Results would be logged to `excalibur/temp`.
+To run the baseline (sporq), run the following commands. Note that the execution may take around 20 hours. Results would be logged to `excalibur/temp`.
 ```
-cd excalibur
-java -cp Excalibur-0.1.0.jar sporq.Executor
-```
-
-To run Excalibur, run the following commands. Results would be logged as `.csv` files in `excalibur/temp`.
-```
-cd excalibur
-java -cp Excalibur-0.1.0.jar MyTestRunner
+cd excalibur; ./runSporq.sh
 ```
 
-The default setting is `NoMinmax`. You can modify `excalibur/config.json` to enable different settings:
-* Full-featured Excalibur, by setting `useTraceSet` as `true` and `random` as `false`
-* NoVS, by setting  `useTraceSet` as `false` and `random` as `false`
+To run Excalibur, run the following commands. Results would be tabulated as `.csv` files and also logged as `.log` in `excalibur/temp`.
+```
+cd excalibur; ./runExcalibur.sh
+```
+Note that you may specify the estimation to use by changing the `-m` option (model) and the `-t` option (trial).
+They together locate the estimation results stored in `excalibur/estimate_results`.
+For example, given `-m gpt-4 -t 2`, the files `*_gpt-4_2.txt` would be used.
+
+Other settings can be changed in `excalibur/config.json`.
+
+## Source Code
+The source code would be released upon acceptance.

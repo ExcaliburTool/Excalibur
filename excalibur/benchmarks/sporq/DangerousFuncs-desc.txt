@@ -1,0 +1,1 @@
+expressions calling the `stop()` method of `Thread` type

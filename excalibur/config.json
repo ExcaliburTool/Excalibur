@@ -3,7 +3,19 @@
   "goalNum": 4,
   "oracle": "perfect",
   "useTraceSet": true,
-  "random": true,
-  "timeout": 450,
-  "smallTrace": 1000
+  "random": false,
+  "timeout": 600,
+  "smallTrace": 1000,
+  "threads": 8,
+  "probApproximation": "greedy",
+  "feature": "NodeInTrace",
+  "otherFeatures": "NodeTouchedByTrace",
+  "probAssignment": "0.8",
+  "model": "uniform",
+  "topP": 0.95,
+  "maxTokens": 3600,
+  "temperature": 0.1,
+  "dumpDist": true,
+  "apiType": "azure",
+  "proxy": "127.0.0.1:7890"
 }

@@ -1,0 +1,1 @@
+`StringBuilder` objects calling `length()` or `substring()` after calling `toString()`

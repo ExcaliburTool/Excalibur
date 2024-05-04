@@ -1,0 +1,1 @@
+constants of collections in `Collections`, such as `Collections.EMPTY_LIST`, `Collections.EMPTY_MAP`, and `Collections.EMPTY_SET`

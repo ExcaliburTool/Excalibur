@@ -6,7 +6,7 @@
       "driver" : {
         "name" : "CodeQL",
         "organization" : "GitHub",
-        "semanticVersion" : "2.12.5",
+        "semanticVersion" : "2.15.1",
         "rules" : [ {
           "id" : "java/example/dataflow",
           "name" : "java/example/dataflow",
@@ -26,22 +26,8 @@
         } ]
       },
       "extensions" : [ {
-        "name" : "legacy-upgrades",
-        "semanticVersion" : "0.0.0",
-        "locations" : [ {
-          "uri" : "file:///opt/homebrew/Caskroom/codeql/2.12.5/codeql/legacy-upgrades/",
-          "description" : {
-            "text" : "The QL pack root directory."
-          }
-        }, {
-          "uri" : "file:///opt/homebrew/Caskroom/codeql/2.12.5/codeql/legacy-upgrades/qlpack.yml",
-          "description" : {
-            "text" : "The QL pack definition file."
-          }
-        } ]
-      }, {
         "name" : "getting-started/codeql-extra-queries-java",
-        "semanticVersion" : "0.0.0+9688a33f8a7790e1160da629a5cf79ee7cd635f2",
+        "semanticVersion" : "0.0.0+4ea267541fa11baaeed75482d21273841ca54b9b",
         "locations" : [ {
           "uri" : "file:///Users/sissel/repository/JavaSyntaxTool/codeql/",
           "description" : {

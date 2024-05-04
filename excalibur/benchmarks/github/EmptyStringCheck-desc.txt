@@ -1,0 +1,1 @@
+expressions checking whether an object is empty string with `.equals("")`

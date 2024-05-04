@@ -1,0 +1,1 @@
+variable definitions whose names are either `as`, `each`, `with`, `get`, or `set`.

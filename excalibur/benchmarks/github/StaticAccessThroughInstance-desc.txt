@@ -1,0 +1,1 @@
+static methods/fields accessed through objects instead of the static class name

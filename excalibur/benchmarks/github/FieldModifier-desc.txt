@@ -1,0 +1,1 @@
+Fields that are not declared with default values (`false`, `null`, `0`, etc.)

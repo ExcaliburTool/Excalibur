@@ -1,0 +1,1 @@
+`equals` calls on `AtomicInteger` objects

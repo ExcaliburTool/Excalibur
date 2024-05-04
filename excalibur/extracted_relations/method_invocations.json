@@ -6,7 +6,7 @@
       "driver" : {
         "name" : "CodeQL",
         "organization" : "GitHub",
-        "semanticVersion" : "2.12.5",
+        "semanticVersion" : "2.15.1",
         "rules" : [ {
           "id" : "java/example/invocation",
           "name" : "java/example/invocation",
@@ -26,22 +26,8 @@
         } ]
       },
       "extensions" : [ {
-        "name" : "legacy-upgrades",
-        "semanticVersion" : "0.0.0",
-        "locations" : [ {
-          "uri" : "file:///opt/homebrew/Caskroom/codeql/2.12.5/codeql/legacy-upgrades/",
-          "description" : {
-            "text" : "The QL pack root directory."
-          }
-        }, {
-          "uri" : "file:///opt/homebrew/Caskroom/codeql/2.12.5/codeql/legacy-upgrades/qlpack.yml",
-          "description" : {
-            "text" : "The QL pack definition file."
-          }
-        } ]
-      }, {
         "name" : "getting-started/codeql-extra-queries-java",
-        "semanticVersion" : "0.0.0+9688a33f8a7790e1160da629a5cf79ee7cd635f2",
+        "semanticVersion" : "0.0.0+4ea267541fa11baaeed75482d21273841ca54b9b",
         "locations" : [ {
           "uri" : "file:///Users/sissel/repository/JavaSyntaxTool/codeql/",
           "description" : {
@@ -73,125 +59,125 @@
       }
     }, {
       "location" : {
-        "uri" : "src/main/java/ArraysToString.java",
-        "uriBaseId" : "%SRCROOT%",
+        "uri" : "file:/modules/java.base/java/lang/Integer.class",
         "index" : 3
       }
     }, {
       "location" : {
-        "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+        "uri" : "src/main/java/ArraysToString.java",
+        "uriBaseId" : "%SRCROOT%",
         "index" : 4
+      }
+    }, {
+      "location" : {
+        "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+        "index" : 5
       }
     }, {
       "location" : {
         "uri" : "src/main/java/BigDecimalDoubleConstructorProcessor.java",
         "uriBaseId" : "%SRCROOT%",
-        "index" : 5
+        "index" : 6
       }
     }, {
       "location" : {
         "uri" : "file:/modules/java.base/java/math/BigDecimal.class",
-        "index" : 6
+        "index" : 7
       }
     }, {
       "location" : {
         "uri" : "src/main/java/BooleanExpression.java",
         "uriBaseId" : "%SRCROOT%",
-        "index" : 7
+        "index" : 8
       }
     }, {
       "location" : {
         "uri" : "src/main/java/ByteCompareInt.java",
         "uriBaseId" : "%SRCROOT%",
-        "index" : 8
+        "index" : 9
       }
     }, {
       "location" : {
         "uri" : "src/main/java/CollectionEmptyCheck.java",
         "uriBaseId" : "%SRCROOT%",
-        "index" : 9
+        "index" : 10
       }
     }, {
       "location" : {
         "uri" : "file:/modules/java.base/java/util/ArrayList.class",
-        "index" : 10
+        "index" : 11
       }
     }, {
       "location" : {
         "uri" : "src/main/java/CollectionsEmptyConstantsProcessor.java",
         "uriBaseId" : "%SRCROOT%",
-        "index" : 11
+        "index" : 12
       }
     }, {
       "location" : {
         "uri" : "file:/modules/java.base/java/util/Collections.class",
-        "index" : 12
+        "index" : 13
       }
     }, {
       "location" : {
         "uri" : "src/main/java/ComparizonModifier.java",
         "uriBaseId" : "%SRCROOT%",
-        "index" : 13
+        "index" : 14
       }
     }, {
       "location" : {
         "uri" : "src/main/java/ConvertVariableAccessName.java",
         "uriBaseId" : "%SRCROOT%",
-        "index" : 14
+        "index" : 15
       }
     }, {
       "location" : {
         "uri" : "src/main/java/DangerousFuncs.java",
         "uriBaseId" : "%SRCROOT%",
-        "index" : 15
-      }
-    }, {
-      "location" : {
-        "uri" : "file:/modules/java.base/java/lang/Thread.class",
         "index" : 16
       }
     }, {
       "location" : {
-        "uri" : "file:/modules/java.base/java/lang/Throwable.class",
+        "uri" : "file:/modules/java.base/java/lang/Thread.class",
         "index" : 17
+      }
+    }, {
+      "location" : {
+        "uri" : "file:/modules/java.base/java/lang/Throwable.class",
+        "index" : 18
       }
     }, {
       "location" : {
         "uri" : "src/main/java/DeadStoreProcessor.java",
         "uriBaseId" : "%SRCROOT%",
-        "index" : 18
+        "index" : 19
       }
     }, {
       "location" : {
         "uri" : "src/main/java/EmptyStringCheck.java",
         "uriBaseId" : "%SRCROOT%",
-        "index" : 19
+        "index" : 20
       }
     }, {
       "location" : {
         "uri" : "file:/modules/java.base/java/lang/String.class",
-        "index" : 20
+        "index" : 21
       }
     }, {
       "location" : {
         "uri" : "src/main/java/EqualsNotCheckingConversion.java",
         "uriBaseId" : "%SRCROOT%",
-        "index" : 21
+        "index" : 22
       }
     }, {
       "location" : {
         "uri" : "src/main/java/EqualsOnAtomicClassProcessor.java",
         "uriBaseId" : "%SRCROOT%",
-        "index" : 22
-      }
-    }, {
-      "location" : {
-        "uri" : "file:/modules/java.base/java/util/concurrent/atomic/AtomicInteger.class",
         "index" : 23
       }
     }, {
       "location" : {
-        "uri" : "file:/modules/java.base/java/lang/Integer.class",
+        "uri" : "file:/modules/java.base/java/util/concurrent/atomic/AtomicInteger.class",
         "index" : 24
       }
     }, {
@@ -220,97 +206,103 @@
       }
     }, {
       "location" : {
-        "uri" : "src/main/java/MissingOverride.java",
+        "uri" : "src/main/java/MathOnFloatProcessor.java",
         "uriBaseId" : "%SRCROOT%",
         "index" : 29
       }
     }, {
       "location" : {
-        "uri" : "src/main/java/MutualRecursive.java",
+        "uri" : "src/main/java/MissingOverride.java",
         "uriBaseId" : "%SRCROOT%",
         "index" : 30
       }
     }, {
       "location" : {
-        "uri" : "src/main/java/ObjectsEqualsInvocationFilter.java",
+        "uri" : "src/main/java/MutualRecursive.java",
         "uriBaseId" : "%SRCROOT%",
         "index" : 31
       }
     }, {
       "location" : {
-        "uri" : "file:/modules/java.base/java/util/Objects.class",
+        "uri" : "src/main/java/ObjectsEqualsInvocationFilter.java",
+        "uriBaseId" : "%SRCROOT%",
         "index" : 32
+      }
+    }, {
+      "location" : {
+        "uri" : "file:/modules/java.base/java/util/Objects.class",
+        "index" : 33
       }
     }, {
       "location" : {
         "uri" : "src/main/java/RedundantFieldInitialization.java",
         "uriBaseId" : "%SRCROOT%",
-        "index" : 33
+        "index" : 34
       }
     }, {
       "location" : {
         "uri" : "src/main/java/StaticAccessThroughInstance.java",
         "uriBaseId" : "%SRCROOT%",
-        "index" : 34
+        "index" : 35
       }
     }, {
       "location" : {
         "uri" : "src/main/java/StringBuilderDirectUse.java",
         "uriBaseId" : "%SRCROOT%",
-        "index" : 35
+        "index" : 36
       }
     }, {
       "location" : {
         "uri" : "file:/modules/java.base/java/lang/StringBuilder.class",
-        "index" : 36
+        "index" : 37
       }
     }, {
       "location" : {
         "uri" : "src/main/java/StringCompare.java",
         "uriBaseId" : "%SRCROOT%",
-        "index" : 37
+        "index" : 38
       }
     }, {
       "location" : {
         "uri" : "src/main/java/SuperEqualsMethodInvocationFilter.java",
         "uriBaseId" : "%SRCROOT%",
-        "index" : 38
+        "index" : 39
       }
     }, {
       "location" : {
         "uri" : "src/main/java/TestConstConditions.java",
         "uriBaseId" : "%SRCROOT%",
-        "index" : 39
+        "index" : 40
       }
     }, {
       "location" : {
         "uri" : "src/main/java/TestThreadStop.java",
         "uriBaseId" : "%SRCROOT%",
-        "index" : 40
+        "index" : 41
       }
     }, {
       "location" : {
         "uri" : "src/main/java/UnsafeCasts.java",
         "uriBaseId" : "%SRCROOT%",
-        "index" : 41
+        "index" : 42
       }
     }, {
       "location" : {
         "uri" : "src/main/java/UnusedLocals.java",
         "uriBaseId" : "%SRCROOT%",
-        "index" : 42
+        "index" : 43
       }
     }, {
       "location" : {
         "uri" : "src/main/java/UtilityClassWithPublicConstructorProcessor.java",
         "uriBaseId" : "%SRCROOT%",
-        "index" : 43
+        "index" : 44
       }
     }, {
       "location" : {
         "uri" : "src/main/java/VariableModifier.java",
         "uriBaseId" : "%SRCROOT%",
-        "index" : 44
+        "index" : 45
       }
     } ],
     "results" : [ {
@@ -418,7 +410,7 @@
         }
       } ],
       "partialFingerprints" : {
-        "primaryLocationLineHash" : "9b6a3ea53e13c1e3:1",
+        "primaryLocationLineHash" : "5d144a29768ca9ff:1",
         "primaryLocationStartColumnFingerprint" : "17"
       },
       "relatedLocations" : [ {
@@ -458,7 +450,7 @@
         }
       } ],
       "partialFingerprints" : {
-        "primaryLocationLineHash" : "2c7ac2363e305695:1",
+        "primaryLocationLineHash" : "681e8c46b41d8b3e:1",
         "primaryLocationStartColumnFingerprint" : "15"
       },
       "relatedLocations" : [ {
@@ -481,6 +473,86 @@
         "index" : 0
       },
       "message" : {
+        "text" : "calls [toString](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ArrayHashCodeAndToStringProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 11,
+            "startColumn" : 28,
+            "endColumn" : 40
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "5f93ba2a5f9b160f:1",
+        "primaryLocationStartColumnFingerprint" : "19"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/Integer.class",
+            "index" : 3
+          }
+        },
+        "message" : {
+          "text" : "toString"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [hashCode](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ArrayHashCodeAndToStringProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 12,
+            "startColumn" : 26,
+            "endColumn" : 38
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "6b02b0654403d37f:1",
+        "primaryLocationStartColumnFingerprint" : "17"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/lang/Integer.class",
+            "index" : 3
+          }
+        },
+        "message" : {
+          "text" : "hashCode"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
         "text" : "calls [println](1)"
       },
       "locations" : [ {
@@ -488,7 +560,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/ArraysToString.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 3
+            "index" : 4
           },
           "region" : {
             "startLine" : 7,
@@ -506,7 +578,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -528,7 +600,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/ArraysToString.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 3
+            "index" : 4
           },
           "region" : {
             "startLine" : 7,
@@ -568,7 +640,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/ArraysToString.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 3
+            "index" : 4
           },
           "region" : {
             "startLine" : 8,
@@ -586,7 +658,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -608,7 +680,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/ArraysToString.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 3
+            "index" : 4
           },
           "region" : {
             "startLine" : 8,
@@ -648,7 +720,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/ArraysToString.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 3
+            "index" : 4
           },
           "region" : {
             "startLine" : 9,
@@ -666,7 +738,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -688,7 +760,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/ArraysToString.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 3
+            "index" : 4
           },
           "region" : {
             "startLine" : 9,
@@ -728,7 +800,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/ArraysToString.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 3
+            "index" : 4
           },
           "region" : {
             "startLine" : 10,
@@ -746,7 +818,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -768,7 +840,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/ArraysToString.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 3
+            "index" : 4
           },
           "region" : {
             "startLine" : 10,
@@ -808,7 +880,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/BigDecimalDoubleConstructorProcessor.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 5
+            "index" : 6
           },
           "region" : {
             "startLine" : 10,
@@ -826,7 +898,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/math/BigDecimal.class",
-            "index" : 6
+            "index" : 7
           }
         },
         "message" : {
@@ -848,7 +920,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/BigDecimalDoubleConstructorProcessor.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 5
+            "index" : 6
           },
           "region" : {
             "startLine" : 11,
@@ -866,7 +938,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/math/BigDecimal.class",
-            "index" : 6
+            "index" : 7
           }
         },
         "message" : {
@@ -888,7 +960,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/BooleanExpression.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 7
+            "index" : 8
           },
           "region" : {
             "startLine" : 7,
@@ -906,7 +978,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -928,7 +1000,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/BooleanExpression.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 7
+            "index" : 8
           },
           "region" : {
             "startLine" : 10,
@@ -946,7 +1018,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -968,7 +1040,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/BooleanExpression.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 7
+            "index" : 8
           },
           "region" : {
             "startLine" : 13,
@@ -986,7 +1058,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -1008,7 +1080,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/BooleanExpression.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 7
+            "index" : 8
           },
           "region" : {
             "startLine" : 16,
@@ -1026,7 +1098,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -1048,7 +1120,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/BooleanExpression.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 7
+            "index" : 8
           },
           "region" : {
             "startLine" : 19,
@@ -1066,7 +1138,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -1088,7 +1160,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/BooleanExpression.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 7
+            "index" : 8
           },
           "region" : {
             "startLine" : 22,
@@ -1106,7 +1178,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -1128,7 +1200,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/BooleanExpression.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 7
+            "index" : 8
           },
           "region" : {
             "startLine" : 25,
@@ -1146,7 +1218,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -1168,7 +1240,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/ByteCompareInt.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 8
+            "index" : 9
           },
           "region" : {
             "startLine" : 5,
@@ -1186,7 +1258,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -1208,7 +1280,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/ByteCompareInt.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 8
+            "index" : 9
           },
           "region" : {
             "startLine" : 6,
@@ -1226,7 +1298,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -1248,7 +1320,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/ByteCompareInt.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 8
+            "index" : 9
           },
           "region" : {
             "startLine" : 8,
@@ -1266,7 +1338,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -1288,7 +1360,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/ByteCompareInt.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 8
+            "index" : 9
           },
           "region" : {
             "startLine" : 9,
@@ -1306,7 +1378,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -1328,7 +1400,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/ByteCompareInt.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 8
+            "index" : 9
           },
           "region" : {
             "startLine" : 10,
@@ -1346,7 +1418,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -1368,7 +1440,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/ByteCompareInt.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 8
+            "index" : 9
           },
           "region" : {
             "startLine" : 11,
@@ -1386,7 +1458,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -1408,7 +1480,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/CollectionEmptyCheck.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 9
+            "index" : 10
           },
           "region" : {
             "startLine" : 7,
@@ -1426,7 +1498,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/util/ArrayList.class",
-            "index" : 10
+            "index" : 11
           }
         },
         "message" : {
@@ -1448,7 +1520,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/CollectionEmptyCheck.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 9
+            "index" : 10
           },
           "region" : {
             "startLine" : 8,
@@ -1466,7 +1538,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/util/ArrayList.class",
-            "index" : 10
+            "index" : 11
           }
         },
         "message" : {
@@ -1488,7 +1560,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/CollectionEmptyCheck.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 9
+            "index" : 10
           },
           "region" : {
             "startLine" : 9,
@@ -1506,7 +1578,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/util/ArrayList.class",
-            "index" : 10
+            "index" : 11
           }
         },
         "message" : {
@@ -1528,7 +1600,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/CollectionEmptyCheck.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 9
+            "index" : 10
           },
           "region" : {
             "startLine" : 10,
@@ -1546,7 +1618,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/util/ArrayList.class",
-            "index" : 10
+            "index" : 11
           }
         },
         "message" : {
@@ -1568,7 +1640,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/CollectionEmptyCheck.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 9
+            "index" : 10
           },
           "region" : {
             "startLine" : 11,
@@ -1586,7 +1658,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -1608,7 +1680,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/CollectionEmptyCheck.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 9
+            "index" : 10
           },
           "region" : {
             "startLine" : 13,
@@ -1626,7 +1698,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/util/ArrayList.class",
-            "index" : 10
+            "index" : 11
           }
         },
         "message" : {
@@ -1648,7 +1720,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/CollectionEmptyCheck.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 9
+            "index" : 10
           },
           "region" : {
             "startLine" : 14,
@@ -1666,7 +1738,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/util/ArrayList.class",
-            "index" : 10
+            "index" : 11
           }
         },
         "message" : {
@@ -1688,7 +1760,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/CollectionEmptyCheck.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 9
+            "index" : 10
           },
           "region" : {
             "startLine" : 15,
@@ -1706,7 +1778,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -1728,7 +1800,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/CollectionEmptyCheck.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 9
+            "index" : 10
           },
           "region" : {
             "startLine" : 17,
@@ -1746,7 +1818,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/util/ArrayList.class",
-            "index" : 10
+            "index" : 11
           }
         },
         "message" : {
@@ -1768,7 +1840,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/CollectionEmptyCheck.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 9
+            "index" : 10
           },
           "region" : {
             "startLine" : 18,
@@ -1786,7 +1858,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -1808,7 +1880,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/CollectionEmptyCheck.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 9
+            "index" : 10
           },
           "region" : {
             "startLine" : 20,
@@ -1826,7 +1898,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -1848,7 +1920,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/CollectionEmptyCheck.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 9
+            "index" : 10
           },
           "region" : {
             "startLine" : 20,
@@ -1866,7 +1938,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/util/ArrayList.class",
-            "index" : 10
+            "index" : 11
           }
         },
         "message" : {
@@ -1888,7 +1960,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/CollectionsEmptyConstantsProcessor.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 11
+            "index" : 12
           },
           "region" : {
             "startLine" : 11,
@@ -1906,7 +1978,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/util/Collections.class",
-            "index" : 12
+            "index" : 13
           }
         },
         "message" : {
@@ -1928,7 +2000,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/CollectionsEmptyConstantsProcessor.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 11
+            "index" : 12
           },
           "region" : {
             "startLine" : 12,
@@ -1946,7 +2018,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/util/Collections.class",
-            "index" : 12
+            "index" : 13
           }
         },
         "message" : {
@@ -1968,7 +2040,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/CollectionsEmptyConstantsProcessor.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 11
+            "index" : 12
           },
           "region" : {
             "startLine" : 13,
@@ -1986,7 +2058,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/util/Collections.class",
-            "index" : 12
+            "index" : 13
           }
         },
         "message" : {
@@ -2008,7 +2080,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/ComparizonModifier.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 13
+            "index" : 14
           },
           "region" : {
             "startLine" : 7,
@@ -2026,7 +2098,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -2048,7 +2120,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/ComparizonModifier.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 13
+            "index" : 14
           },
           "region" : {
             "startLine" : 10,
@@ -2066,7 +2138,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -2088,7 +2160,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/ComparizonModifier.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 13
+            "index" : 14
           },
           "region" : {
             "startLine" : 13,
@@ -2106,7 +2178,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -2128,7 +2200,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/ComparizonModifier.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 13
+            "index" : 14
           },
           "region" : {
             "startLine" : 17,
@@ -2146,7 +2218,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -2168,7 +2240,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/ComparizonModifier.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 13
+            "index" : 14
           },
           "region" : {
             "startLine" : 20,
@@ -2186,7 +2258,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -2208,7 +2280,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/ComparizonModifier.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 13
+            "index" : 14
           },
           "region" : {
             "startLine" : 23,
@@ -2226,7 +2298,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -2248,7 +2320,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/ComparizonModifier.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 13
+            "index" : 14
           },
           "region" : {
             "startLine" : 26,
@@ -2266,7 +2338,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -2288,7 +2360,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/ConvertVariableAccessName.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 14
+            "index" : 15
           },
           "region" : {
             "startLine" : 5,
@@ -2307,7 +2379,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/ConvertVariableAccessName.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 14
+            "index" : 15
           },
           "region" : {
             "startLine" : 5,
@@ -2334,7 +2406,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/ConvertVariableAccessName.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 14
+            "index" : 15
           },
           "region" : {
             "startLine" : 15,
@@ -2352,7 +2424,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/util/ArrayList.class",
-            "index" : 10
+            "index" : 11
           }
         },
         "message" : {
@@ -2374,7 +2446,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/DangerousFuncs.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 15
+            "index" : 16
           },
           "region" : {
             "startLine" : 6,
@@ -2392,7 +2464,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -2414,7 +2486,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/DangerousFuncs.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 15
+            "index" : 16
           },
           "region" : {
             "startLine" : 7,
@@ -2432,7 +2504,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/lang/Thread.class",
-            "index" : 16
+            "index" : 17
           }
         },
         "message" : {
@@ -2454,7 +2526,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/DangerousFuncs.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 15
+            "index" : 16
           },
           "region" : {
             "startLine" : 8,
@@ -2472,7 +2544,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -2494,7 +2566,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/DangerousFuncs.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 15
+            "index" : 16
           },
           "region" : {
             "startLine" : 9,
@@ -2512,7 +2584,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/lang/Thread.class",
-            "index" : 16
+            "index" : 17
           }
         },
         "message" : {
@@ -2534,7 +2606,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/DangerousFuncs.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 15
+            "index" : 16
           },
           "region" : {
             "startLine" : 9,
@@ -2552,7 +2624,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/lang/Thread.class",
-            "index" : 16
+            "index" : 17
           }
         },
         "message" : {
@@ -2574,7 +2646,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/DangerousFuncs.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 15
+            "index" : 16
           },
           "region" : {
             "startLine" : 11,
@@ -2592,7 +2664,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/lang/Throwable.class",
-            "index" : 17
+            "index" : 18
           }
         },
         "message" : {
@@ -2614,7 +2686,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/DangerousFuncs.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 15
+            "index" : 16
           },
           "region" : {
             "startLine" : 15,
@@ -2632,7 +2704,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/lang/Thread.class",
-            "index" : 16
+            "index" : 17
           }
         },
         "message" : {
@@ -2654,7 +2726,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/DangerousFuncs.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 15
+            "index" : 16
           },
           "region" : {
             "startLine" : 16,
@@ -2672,7 +2744,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/lang/Thread.class",
-            "index" : 16
+            "index" : 17
           }
         },
         "message" : {
@@ -2694,7 +2766,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/DangerousFuncs.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 15
+            "index" : 16
           },
           "region" : {
             "startLine" : 17,
@@ -2712,7 +2784,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/lang/Thread.class",
-            "index" : 16
+            "index" : 17
           }
         },
         "message" : {
@@ -2734,7 +2806,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/DeadStoreProcessor.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 18
+            "index" : 19
           },
           "region" : {
             "startLine" : 8,
@@ -2752,7 +2824,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -2774,7 +2846,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/EmptyStringCheck.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 19
+            "index" : 20
           },
           "region" : {
             "startLine" : 4,
@@ -2792,7 +2864,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/lang/String.class",
-            "index" : 20
+            "index" : 21
           }
         },
         "message" : {
@@ -2814,7 +2886,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/EmptyStringCheck.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 19
+            "index" : 20
           },
           "region" : {
             "startLine" : 5,
@@ -2832,7 +2904,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/lang/String.class",
-            "index" : 20
+            "index" : 21
           }
         },
         "message" : {
@@ -2854,7 +2926,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/EmptyStringCheck.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 19
+            "index" : 20
           },
           "region" : {
             "startLine" : 7,
@@ -2872,7 +2944,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/lang/String.class",
-            "index" : 20
+            "index" : 21
           }
         },
         "message" : {
@@ -2894,7 +2966,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/EqualsNotCheckingConversion.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 21
+            "index" : 22
           },
           "region" : {
             "startLine" : 13,
@@ -2934,7 +3006,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/EqualsNotCheckingConversion.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 21
+            "index" : 22
           },
           "region" : {
             "startLine" : 13,
@@ -2974,7 +3046,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/EqualsOnAtomicClassProcessor.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 22
+            "index" : 23
           },
           "region" : {
             "startLine" : 7,
@@ -3014,7 +3086,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/EqualsOnAtomicClassProcessor.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 22
+            "index" : 23
           },
           "region" : {
             "startLine" : 8,
@@ -3054,7 +3126,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/EqualsOnAtomicClassProcessor.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 22
+            "index" : 23
           },
           "region" : {
             "startLine" : 9,
@@ -3072,7 +3144,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/util/concurrent/atomic/AtomicInteger.class",
-            "index" : 23
+            "index" : 24
           }
         },
         "message" : {
@@ -3094,7 +3166,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/EqualsOnAtomicClassProcessor.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 22
+            "index" : 23
           },
           "region" : {
             "startLine" : 9,
@@ -3112,7 +3184,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/util/concurrent/atomic/AtomicInteger.class",
-            "index" : 23
+            "index" : 24
           }
         },
         "message" : {
@@ -3134,7 +3206,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/EqualsOnAtomicClassProcessor.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 22
+            "index" : 23
           },
           "region" : {
             "startLine" : 12,
@@ -3152,7 +3224,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/lang/Integer.class",
-            "index" : 24
+            "index" : 3
           }
         },
         "message" : {
@@ -3238,7 +3310,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -3278,7 +3350,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -3318,7 +3390,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -3358,7 +3430,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -3398,7 +3470,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -3438,7 +3510,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -3478,7 +3550,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -3518,7 +3590,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -3558,7 +3630,47 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MathOnFloatProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 29
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 9,
+            "endColumn" : 30
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "78899e5b6efefd36:1",
+        "primaryLocationStartColumnFingerprint" : "0"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 5
           }
         },
         "message" : {
@@ -3580,7 +3692,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/MissingOverride.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 29
+            "index" : 30
           },
           "region" : {
             "startLine" : 7,
@@ -3598,7 +3710,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -3620,7 +3732,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/MissingOverride.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 29
+            "index" : 30
           },
           "region" : {
             "startLine" : 14,
@@ -3638,7 +3750,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -3660,7 +3772,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/MutualRecursive.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 30
+            "index" : 31
           },
           "region" : {
             "startLine" : 3,
@@ -3678,7 +3790,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -3700,7 +3812,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/MutualRecursive.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 30
+            "index" : 31
           },
           "region" : {
             "startLine" : 3,
@@ -3719,7 +3831,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/MutualRecursive.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 30
+            "index" : 31
           },
           "region" : {
             "startLine" : 6,
@@ -3746,7 +3858,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/MutualRecursive.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 30
+            "index" : 31
           },
           "region" : {
             "startLine" : 10,
@@ -3765,7 +3877,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/MutualRecursive.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 30
+            "index" : 31
           },
           "region" : {
             "startLine" : 14,
@@ -3792,7 +3904,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/MutualRecursive.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 30
+            "index" : 31
           },
           "region" : {
             "startLine" : 18,
@@ -3811,7 +3923,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/MutualRecursive.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 30
+            "index" : 31
           },
           "region" : {
             "startLine" : 6,
@@ -3838,7 +3950,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/MutualRecursive.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 30
+            "index" : 31
           },
           "region" : {
             "startLine" : 24,
@@ -3857,7 +3969,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/MutualRecursive.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 30
+            "index" : 31
           },
           "region" : {
             "startLine" : 27,
@@ -3884,7 +3996,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/MutualRecursive.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 30
+            "index" : 31
           },
           "region" : {
             "startLine" : 29,
@@ -3903,7 +4015,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/MutualRecursive.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 30
+            "index" : 31
           },
           "region" : {
             "startLine" : 22,
@@ -3930,7 +4042,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/ObjectsEqualsInvocationFilter.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 31
+            "index" : 32
           },
           "region" : {
             "startLine" : 8,
@@ -3948,7 +4060,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/util/Objects.class",
-            "index" : 32
+            "index" : 33
           }
         },
         "message" : {
@@ -3970,7 +4082,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/ObjectsEqualsInvocationFilter.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 31
+            "index" : 32
           },
           "region" : {
             "startLine" : 9,
@@ -3988,7 +4100,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/util/Objects.class",
-            "index" : 32
+            "index" : 33
           }
         },
         "message" : {
@@ -4010,7 +4122,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/ObjectsEqualsInvocationFilter.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 31
+            "index" : 32
           },
           "region" : {
             "startLine" : 10,
@@ -4028,7 +4140,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -4050,7 +4162,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/ObjectsEqualsInvocationFilter.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 31
+            "index" : 32
           },
           "region" : {
             "startLine" : 10,
@@ -4068,7 +4180,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/util/Objects.class",
-            "index" : 32
+            "index" : 33
           }
         },
         "message" : {
@@ -4090,7 +4202,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/RedundantFieldInitialization.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 33
+            "index" : 34
           },
           "region" : {
             "startLine" : 1,
@@ -4109,7 +4221,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/RedundantFieldInitialization.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 33
+            "index" : 34
           },
           "region" : {
             "startLine" : 1,
@@ -4136,7 +4248,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/StaticAccessThroughInstance.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 34
+            "index" : 35
           },
           "region" : {
             "startLine" : 4,
@@ -4155,7 +4267,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/StaticAccessThroughInstance.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 34
+            "index" : 35
           },
           "region" : {
             "startLine" : 12,
@@ -4182,7 +4294,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/StaticAccessThroughInstance.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 34
+            "index" : 35
           },
           "region" : {
             "startLine" : 5,
@@ -4201,7 +4313,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/StaticAccessThroughInstance.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 34
+            "index" : 35
           },
           "region" : {
             "startLine" : 12,
@@ -4228,7 +4340,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/StaticAccessThroughInstance.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 34
+            "index" : 35
           },
           "region" : {
             "startLine" : 7,
@@ -4247,7 +4359,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/StaticAccessThroughInstance.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 34
+            "index" : 35
           },
           "region" : {
             "startLine" : 18,
@@ -4274,7 +4386,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/StaticAccessThroughInstance.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 34
+            "index" : 35
           },
           "region" : {
             "startLine" : 13,
@@ -4292,7 +4404,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -4314,7 +4426,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/StringBuilderDirectUse.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 35
+            "index" : 36
           },
           "region" : {
             "startLine" : 7,
@@ -4332,7 +4444,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/lang/String.class",
-            "index" : 20
+            "index" : 21
           }
         },
         "message" : {
@@ -4354,7 +4466,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/StringBuilderDirectUse.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 35
+            "index" : 36
           },
           "region" : {
             "startLine" : 7,
@@ -4372,7 +4484,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/lang/StringBuilder.class",
-            "index" : 36
+            "index" : 37
           }
         },
         "message" : {
@@ -4394,7 +4506,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/StringBuilderDirectUse.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 35
+            "index" : 36
           },
           "region" : {
             "startLine" : 8,
@@ -4412,7 +4524,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/lang/String.class",
-            "index" : 20
+            "index" : 21
           }
         },
         "message" : {
@@ -4434,7 +4546,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/StringBuilderDirectUse.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 35
+            "index" : 36
           },
           "region" : {
             "startLine" : 8,
@@ -4452,7 +4564,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/lang/StringBuilder.class",
-            "index" : 36
+            "index" : 37
           }
         },
         "message" : {
@@ -4474,7 +4586,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/StringBuilderDirectUse.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 35
+            "index" : 36
           },
           "region" : {
             "startLine" : 9,
@@ -4492,7 +4604,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/lang/String.class",
-            "index" : 20
+            "index" : 21
           }
         },
         "message" : {
@@ -4514,7 +4626,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/StringBuilderDirectUse.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 35
+            "index" : 36
           },
           "region" : {
             "startLine" : 9,
@@ -4532,7 +4644,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/lang/String.class",
-            "index" : 20
+            "index" : 21
           }
         },
         "message" : {
@@ -4554,7 +4666,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/StringBuilderDirectUse.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 35
+            "index" : 36
           },
           "region" : {
             "startLine" : 10,
@@ -4572,7 +4684,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/lang/String.class",
-            "index" : 20
+            "index" : 21
           }
         },
         "message" : {
@@ -4594,7 +4706,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/StringBuilderDirectUse.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 35
+            "index" : 36
           },
           "region" : {
             "startLine" : 10,
@@ -4612,7 +4724,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/lang/StringBuilder.class",
-            "index" : 36
+            "index" : 37
           }
         },
         "message" : {
@@ -4634,10 +4746,10 @@
           "artifactLocation" : {
             "uri" : "src/main/java/StringCompare.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 37
+            "index" : 38
           },
           "region" : {
-            "startLine" : 5,
+            "startLine" : 6,
             "startColumn" : 27,
             "endColumn" : 62
           }
@@ -4652,7 +4764,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -4674,17 +4786,17 @@
           "artifactLocation" : {
             "uri" : "src/main/java/StringCompare.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 37
+            "index" : 38
           },
           "region" : {
-            "startLine" : 6,
+            "startLine" : 7,
             "startColumn" : 27,
             "endColumn" : 61
           }
         }
       } ],
       "partialFingerprints" : {
-        "primaryLocationLineHash" : "1edd1da81a1b3e16:1",
+        "primaryLocationLineHash" : "8370f52ec2db64c3:1",
         "primaryLocationStartColumnFingerprint" : "18"
       },
       "relatedLocations" : [ {
@@ -4692,7 +4804,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -4714,10 +4826,50 @@
           "artifactLocation" : {
             "uri" : "src/main/java/StringCompare.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 37
+            "index" : 38
           },
           "region" : {
-            "startLine" : 7,
+            "startLine" : 8,
+            "startColumn" : 22,
+            "endColumn" : 51
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "8f4cf1e177ffcf6:1",
+        "primaryLocationStartColumnFingerprint" : "13"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:/modules/java.base/java/io/PrintStream.class",
+            "index" : 5
+          }
+        },
+        "message" : {
+          "text" : "println"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/invocation",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/invocation",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "calls [println](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 38
+          },
+          "region" : {
+            "startLine" : 9,
             "startColumn" : 27,
             "endColumn" : 61
           }
@@ -4732,7 +4884,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -4754,10 +4906,10 @@
           "artifactLocation" : {
             "uri" : "src/main/java/StringCompare.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 37
+            "index" : 38
           },
           "region" : {
-            "startLine" : 8,
+            "startLine" : 10,
             "startColumn" : 13,
             "endColumn" : 30
           }
@@ -4772,7 +4924,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/lang/String.class",
-            "index" : 20
+            "index" : 21
           }
         },
         "message" : {
@@ -4794,10 +4946,10 @@
           "artifactLocation" : {
             "uri" : "src/main/java/StringCompare.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 37
+            "index" : 38
           },
           "region" : {
-            "startLine" : 8,
+            "startLine" : 10,
             "startColumn" : 32,
             "endColumn" : 71
           }
@@ -4812,7 +4964,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -4834,10 +4986,10 @@
           "artifactLocation" : {
             "uri" : "src/main/java/StringCompare.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 37
+            "index" : 38
           },
           "region" : {
-            "startLine" : 9,
+            "startLine" : 11,
             "startColumn" : 21,
             "endColumn" : 41
           }
@@ -4852,7 +5004,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/lang/String.class",
-            "index" : 20
+            "index" : 21
           }
         },
         "message" : {
@@ -4874,10 +5026,10 @@
           "artifactLocation" : {
             "uri" : "src/main/java/StringCompare.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 37
+            "index" : 38
           },
           "region" : {
-            "startLine" : 9,
+            "startLine" : 11,
             "startColumn" : 43,
             "endColumn" : 93
           }
@@ -4892,7 +5044,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -4914,7 +5066,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/SuperEqualsMethodInvocationFilter.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 38
+            "index" : 39
           },
           "region" : {
             "startLine" : 4,
@@ -4954,7 +5106,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/SuperEqualsMethodInvocationFilter.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 38
+            "index" : 39
           },
           "region" : {
             "startLine" : 10,
@@ -4973,7 +5125,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/SuperEqualsMethodInvocationFilter.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 38
+            "index" : 39
           },
           "region" : {
             "startLine" : 2,
@@ -5000,7 +5152,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/SuperEqualsMethodInvocationFilter.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 38
+            "index" : 39
           },
           "region" : {
             "startLine" : 11,
@@ -5040,7 +5192,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/TestConstConditions.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 39
+            "index" : 40
           },
           "region" : {
             "startLine" : 4,
@@ -5058,7 +5210,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -5080,7 +5232,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/TestThreadStop.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 40
+            "index" : 41
           },
           "region" : {
             "startLine" : 10,
@@ -5098,7 +5250,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/lang/Thread.class",
-            "index" : 16
+            "index" : 17
           }
         },
         "message" : {
@@ -5120,7 +5272,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/TestThreadStop.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 40
+            "index" : 41
           },
           "region" : {
             "startLine" : 11,
@@ -5138,7 +5290,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -5160,7 +5312,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/TestThreadStop.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 40
+            "index" : 41
           },
           "region" : {
             "startLine" : 11,
@@ -5178,7 +5330,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/lang/Thread.class",
-            "index" : 16
+            "index" : 17
           }
         },
         "message" : {
@@ -5200,7 +5352,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/TestThreadStop.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 40
+            "index" : 41
           },
           "region" : {
             "startLine" : 11,
@@ -5218,7 +5370,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/lang/Thread.class",
-            "index" : 16
+            "index" : 17
           }
         },
         "message" : {
@@ -5240,7 +5392,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/TestThreadStop.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 40
+            "index" : 41
           },
           "region" : {
             "startLine" : 12,
@@ -5258,7 +5410,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -5280,7 +5432,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/TestThreadStop.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 40
+            "index" : 41
           },
           "region" : {
             "startLine" : 13,
@@ -5298,7 +5450,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -5320,7 +5472,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/TestThreadStop.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 40
+            "index" : 41
           },
           "region" : {
             "startLine" : 23,
@@ -5338,7 +5490,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/lang/Thread.class",
-            "index" : 16
+            "index" : 17
           }
         },
         "message" : {
@@ -5360,7 +5512,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/TestThreadStop.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 40
+            "index" : 41
           },
           "region" : {
             "startLine" : 24,
@@ -5378,7 +5530,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/lang/Thread.class",
-            "index" : 16
+            "index" : 17
           }
         },
         "message" : {
@@ -5400,7 +5552,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/TestThreadStop.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 40
+            "index" : 41
           },
           "region" : {
             "startLine" : 26,
@@ -5418,7 +5570,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/lang/Thread.class",
-            "index" : 16
+            "index" : 17
           }
         },
         "message" : {
@@ -5440,7 +5592,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/TestThreadStop.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 40
+            "index" : 41
           },
           "region" : {
             "startLine" : 27,
@@ -5458,7 +5610,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -5480,7 +5632,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/UnsafeCasts.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 41
+            "index" : 42
           },
           "region" : {
             "startLine" : 5,
@@ -5498,7 +5650,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -5520,7 +5672,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/UnusedLocals.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 42
+            "index" : 43
           },
           "region" : {
             "startLine" : 7,
@@ -5538,7 +5690,7 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "file:/modules/java.base/java/io/PrintStream.class",
-            "index" : 4
+            "index" : 5
           }
         },
         "message" : {
@@ -5560,7 +5712,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/UtilityClassWithPublicConstructorProcessor.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 43
+            "index" : 44
           },
           "region" : {
             "startLine" : 10,
@@ -5579,7 +5731,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/UtilityClassWithPublicConstructorProcessor.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 43
+            "index" : 44
           },
           "region" : {
             "startLine" : 7,
@@ -5606,7 +5758,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/VariableModifier.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 44
+            "index" : 45
           },
           "region" : {
             "startLine" : 1,
@@ -5625,7 +5777,7 @@
           "artifactLocation" : {
             "uri" : "src/main/java/VariableModifier.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 44
+            "index" : 45
           },
           "region" : {
             "startLine" : 1,

@@ -1,0 +1,5 @@
+target/
+temp/
+
+excalibur/codeql/.cache
+excalibur/benchmarks/ForCodeQL/target

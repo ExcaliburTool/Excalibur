@@ -6,7 +6,7 @@
       "driver" : {
         "name" : "CodeQL",
         "organization" : "GitHub",
-        "semanticVersion" : "2.12.5",
+        "semanticVersion" : "2.15.1",
         "rules" : [ {
           "id" : "java/example/taintflow",
           "name" : "java/example/taintflow",
@@ -26,22 +26,8 @@
         } ]
       },
       "extensions" : [ {
-        "name" : "legacy-upgrades",
-        "semanticVersion" : "0.0.0",
-        "locations" : [ {
-          "uri" : "file:///opt/homebrew/Caskroom/codeql/2.12.5/codeql/legacy-upgrades/",
-          "description" : {
-            "text" : "The QL pack root directory."
-          }
-        }, {
-          "uri" : "file:///opt/homebrew/Caskroom/codeql/2.12.5/codeql/legacy-upgrades/qlpack.yml",
-          "description" : {
-            "text" : "The QL pack definition file."
-          }
-        } ]
-      }, {
         "name" : "getting-started/codeql-extra-queries-java",
-        "semanticVersion" : "0.0.0+9688a33f8a7790e1160da629a5cf79ee7cd635f2",
+        "semanticVersion" : "0.0.0+4ea267541fa11baaeed75482d21273841ca54b9b",
         "locations" : [ {
           "uri" : "file:///Users/sissel/repository/JavaSyntaxTool/codeql/",
           "description" : {
@@ -1043,7 +1029,7 @@
         }
       } ],
       "partialFingerprints" : {
-        "primaryLocationLineHash" : "9b6a3ea53e13c1e3:1",
+        "primaryLocationLineHash" : "5d144a29768ca9ff:1",
         "primaryLocationStartColumnFingerprint" : "33"
       },
       "relatedLocations" : [ {
@@ -1062,6 +1048,149 @@
         },
         "message" : {
           "text" : "args"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/taintflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/taintflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "taints [toString(...)](1)\ntaints [i](2)\ntaints [i](3)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ArrayHashCodeAndToStringProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 10,
+            "startColumn" : 21,
+            "endColumn" : 23
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "36c6d14404d643ae:1",
+        "primaryLocationStartColumnFingerprint" : "12"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ArrayHashCodeAndToStringProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 11,
+            "startColumn" : 28,
+            "endColumn" : 40
+          }
+        },
+        "message" : {
+          "text" : "toString(...)"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ArrayHashCodeAndToStringProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 11,
+            "startColumn" : 28,
+            "endColumn" : 29
+          }
+        },
+        "message" : {
+          "text" : "i"
+        }
+      }, {
+        "id" : 3,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ArrayHashCodeAndToStringProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 12,
+            "startColumn" : 26,
+            "endColumn" : 27
+          }
+        },
+        "message" : {
+          "text" : "i"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/taintflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/taintflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "taints [toString(...)](1)\ntaints [i](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ArrayHashCodeAndToStringProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 11,
+            "startColumn" : 28,
+            "endColumn" : 29
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "5f93ba2a5f9b160f:1",
+        "primaryLocationStartColumnFingerprint" : "19"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ArrayHashCodeAndToStringProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 11,
+            "startColumn" : 28,
+            "endColumn" : 40
+          }
+        },
+        "message" : {
+          "text" : "toString(...)"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/ArrayHashCodeAndToStringProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 12,
+            "startColumn" : 26,
+            "endColumn" : 27
+          }
+        },
+        "message" : {
+          "text" : "i"
         }
       } ]
     }, {
@@ -1496,7 +1625,7 @@
         }
       } ],
       "partialFingerprints" : {
-        "primaryLocationLineHash" : "60c618cdfe0fbcbd:1",
+        "primaryLocationLineHash" : "83ffbcabef177799:1",
         "primaryLocationStartColumnFingerprint" : "4"
       },
       "relatedLocations" : [ {
@@ -1542,7 +1671,7 @@
         }
       } ],
       "partialFingerprints" : {
-        "primaryLocationLineHash" : "31c96333e77213ed:1",
+        "primaryLocationLineHash" : "96a1674a7d12e4f9:1",
         "primaryLocationStartColumnFingerprint" : "4"
       },
       "relatedLocations" : [ {
@@ -1588,7 +1717,7 @@
         }
       } ],
       "partialFingerprints" : {
-        "primaryLocationLineHash" : "d2e9a57426add17c:1",
+        "primaryLocationLineHash" : "9065ba10ee4ef878:1",
         "primaryLocationStartColumnFingerprint" : "4"
       },
       "relatedLocations" : [ {
@@ -1634,7 +1763,7 @@
         }
       } ],
       "partialFingerprints" : {
-        "primaryLocationLineHash" : "b2e1345493eef457:1",
+        "primaryLocationLineHash" : "4bf8a18c9df3efd3:1",
         "primaryLocationStartColumnFingerprint" : "4"
       },
       "relatedLocations" : [ {
@@ -1680,7 +1809,7 @@
         }
       } ],
       "partialFingerprints" : {
-        "primaryLocationLineHash" : "a9a0e1adb7486fd:1",
+        "primaryLocationLineHash" : "5063778562ef4669:1",
         "primaryLocationStartColumnFingerprint" : "4"
       },
       "relatedLocations" : [ {
@@ -1726,7 +1855,7 @@
         }
       } ],
       "partialFingerprints" : {
-        "primaryLocationLineHash" : "a9a0e1adb7486fd:1",
+        "primaryLocationLineHash" : "5063778562ef4669:1",
         "primaryLocationStartColumnFingerprint" : "14"
       },
       "relatedLocations" : [ {
@@ -1789,7 +1918,7 @@
         }
       } ],
       "partialFingerprints" : {
-        "primaryLocationLineHash" : "aba6c3378a08ccbc:1",
+        "primaryLocationLineHash" : "f5ada0a977f86858:1",
         "primaryLocationStartColumnFingerprint" : "4"
       },
       "relatedLocations" : [ {
@@ -1808,6 +1937,149 @@
         },
         "message" : {
           "text" : "...=..."
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/taintflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/taintflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "taints [...=...](1)\ntaints [new Object\\[\\]](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/AssignmentNull.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 2
+          },
+          "region" : {
+            "startLine" : 15,
+            "startColumn" : 14,
+            "endColumn" : 35
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "54207f00d5dbf763:1",
+        "primaryLocationStartColumnFingerprint" : "5"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/AssignmentNull.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 2
+          },
+          "region" : {
+            "startLine" : 15,
+            "startColumn" : 9,
+            "endColumn" : 35
+          }
+        },
+        "message" : {
+          "text" : "...=..."
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/AssignmentNull.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 2
+          },
+          "region" : {
+            "startLine" : 15,
+            "startColumn" : 14,
+            "endColumn" : 35
+          }
+        },
+        "message" : {
+          "text" : "new Object\\[\\]"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/taintflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/taintflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "taints [...=...](1)\ntaints [new Object\\[\\]](2)\ntaints [{{...}}](3)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/AssignmentNull.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 2
+          },
+          "region" : {
+            "startLine" : 15,
+            "startColumn" : 29,
+            "endColumn" : 33
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "54207f00d5dbf763:1",
+        "primaryLocationStartColumnFingerprint" : "20"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/AssignmentNull.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 2
+          },
+          "region" : {
+            "startLine" : 15,
+            "startColumn" : 9,
+            "endColumn" : 35
+          }
+        },
+        "message" : {
+          "text" : "...=..."
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/AssignmentNull.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 2
+          },
+          "region" : {
+            "startLine" : 15,
+            "startColumn" : 14,
+            "endColumn" : 35
+          }
+        },
+        "message" : {
+          "text" : "new Object\\[\\]"
+        }
+      }, {
+        "id" : 3,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/AssignmentNull.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 2
+          },
+          "region" : {
+            "startLine" : 15,
+            "startColumn" : 14,
+            "endColumn" : 35
+          }
+        },
+        "message" : {
+          "text" : "{{...}}"
         }
       } ]
     }, {
@@ -15108,7 +15380,7 @@
         "index" : 0
       },
       "message" : {
-        "text" : "taints [a](1)\ntaints [a](2)"
+        "text" : "taints [a](1)\ntaints [a](2)\ntaints [a](3)"
       },
       "locations" : [ {
         "physicalLocation" : {
@@ -15157,6 +15429,23 @@
             "startLine" : 8,
             "startColumn" : 19,
             "endColumn" : 20
+          }
+        },
+        "message" : {
+          "text" : "a"
+        }
+      }, {
+        "id" : 3,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MathOnFloatProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 22
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 28,
+            "endColumn" : 29
           }
         },
         "message" : {
@@ -15217,7 +15506,7 @@
         "index" : 0
       },
       "message" : {
-        "text" : "taints [a](1)"
+        "text" : "taints [a](1)\ntaints [a](2)"
       },
       "locations" : [ {
         "physicalLocation" : {
@@ -15254,6 +15543,23 @@
         "message" : {
           "text" : "a"
         }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MathOnFloatProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 22
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 28,
+            "endColumn" : 29
+          }
+        },
+        "message" : {
+          "text" : "a"
+        }
       } ]
     }, {
       "ruleId" : "java/example/taintflow",
@@ -15280,7 +15586,7 @@
         }
       } ],
       "partialFingerprints" : {
-        "primaryLocationLineHash" : "33949878832e4f24:1",
+        "primaryLocationLineHash" : "a7c4a0ca7d5f2197:1",
         "primaryLocationStartColumnFingerprint" : "11"
       },
       "relatedLocations" : [ {
@@ -15360,7 +15666,7 @@
         }
       } ],
       "partialFingerprints" : {
-        "primaryLocationLineHash" : "1004991e0e7aeb96:1",
+        "primaryLocationLineHash" : "50bfbcbe5066cf81:1",
         "primaryLocationStartColumnFingerprint" : "12"
       },
       "relatedLocations" : [ {
@@ -15406,6 +15712,52 @@
         "index" : 0
       },
       "message" : {
+        "text" : "taints [a](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MathOnFloatProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 22
+          },
+          "region" : {
+            "startLine" : 8,
+            "startColumn" : 19,
+            "endColumn" : 20
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "2c6a49e90648a140:1",
+        "primaryLocationStartColumnFingerprint" : "10"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/MathOnFloatProcessor.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 22
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 28,
+            "endColumn" : 29
+          }
+        },
+        "message" : {
+          "text" : "a"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/taintflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/taintflow",
+        "index" : 0
+      },
+      "message" : {
         "text" : "taints [(...)...](1)"
       },
       "locations" : [ {
@@ -15423,7 +15775,7 @@
         }
       } ],
       "partialFingerprints" : {
-        "primaryLocationLineHash" : "71bd06cd05306a15:1",
+        "primaryLocationLineHash" : "2c6a49e90648a140:1",
         "primaryLocationStartColumnFingerprint" : "22"
       },
       "relatedLocations" : [ {
@@ -19041,7 +19393,7 @@
         }
       } ],
       "partialFingerprints" : {
-        "primaryLocationLineHash" : "7c6b0a2efce95474:1",
+        "primaryLocationLineHash" : "cad9cd358a807821:1",
         "primaryLocationStartColumnFingerprint" : "14"
       },
       "relatedLocations" : [ {
@@ -19053,7 +19405,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 5,
+            "startLine" : 6,
             "startColumn" : 13,
             "endColumn" : 25
           }
@@ -19070,7 +19422,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 5,
+            "startLine" : 6,
             "startColumn" : 13,
             "endColumn" : 17
           }
@@ -19087,7 +19439,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 6,
+            "startLine" : 7,
             "startColumn" : 13,
             "endColumn" : 17
           }
@@ -19104,7 +19456,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 7,
+            "startLine" : 9,
             "startColumn" : 13,
             "endColumn" : 17
           }
@@ -19121,7 +19473,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 8,
+            "startLine" : 10,
             "startColumn" : 13,
             "endColumn" : 17
           }
@@ -19155,28 +19507,11 @@
         }
       } ],
       "partialFingerprints" : {
-        "primaryLocationLineHash" : "2377432c018dfcd8:1",
+        "primaryLocationLineHash" : "ada248634fbc6a0:1",
         "primaryLocationStartColumnFingerprint" : "14"
       },
       "relatedLocations" : [ {
         "id" : 1,
-        "physicalLocation" : {
-          "artifactLocation" : {
-            "uri" : "src/main/java/StringCompare.java",
-            "uriBaseId" : "%SRCROOT%",
-            "index" : 33
-          },
-          "region" : {
-            "startLine" : 6,
-            "startColumn" : 21,
-            "endColumn" : 25
-          }
-        },
-        "message" : {
-          "text" : "str2"
-        }
-      }, {
-        "id" : 2,
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "src/main/java/StringCompare.java",
@@ -19193,6 +19528,23 @@
           "text" : "str2"
         }
       }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 33
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 21,
+            "endColumn" : 25
+          }
+        },
+        "message" : {
+          "text" : "str2"
+        }
+      }, {
         "id" : 3,
         "physicalLocation" : {
           "artifactLocation" : {
@@ -19201,7 +19553,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 8,
+            "startLine" : 10,
             "startColumn" : 25,
             "endColumn" : 29
           }
@@ -19218,7 +19570,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 9,
+            "startLine" : 11,
             "startColumn" : 13,
             "endColumn" : 17
           }
@@ -19235,7 +19587,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 9,
+            "startLine" : 11,
             "startColumn" : 21,
             "endColumn" : 41
           }
@@ -19252,13 +19604,76 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 9,
+            "startLine" : 11,
             "startColumn" : 21,
             "endColumn" : 25
           }
         },
         "message" : {
           "text" : "str2"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/taintflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/taintflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "taints [... != ...](1)\ntaints [i](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 33
+          },
+          "region" : {
+            "startLine" : 5,
+            "startColumn" : 17,
+            "endColumn" : 19
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "35ae685ddc96393:1",
+        "primaryLocationStartColumnFingerprint" : "8"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 33
+          },
+          "region" : {
+            "startLine" : 8,
+            "startColumn" : 13,
+            "endColumn" : 20
+          }
+        },
+        "message" : {
+          "text" : "... != ..."
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 33
+          },
+          "region" : {
+            "startLine" : 8,
+            "startColumn" : 13,
+            "endColumn" : 14
+          }
+        },
+        "message" : {
+          "text" : "i"
         }
       } ]
     }, {
@@ -19279,7 +19694,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 5,
+            "startLine" : 6,
             "startColumn" : 13,
             "endColumn" : 17
           }
@@ -19298,7 +19713,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 5,
+            "startLine" : 6,
             "startColumn" : 13,
             "endColumn" : 25
           }
@@ -19315,7 +19730,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 6,
+            "startLine" : 7,
             "startColumn" : 13,
             "endColumn" : 17
           }
@@ -19332,7 +19747,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 7,
+            "startLine" : 9,
             "startColumn" : 13,
             "endColumn" : 17
           }
@@ -19349,7 +19764,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 8,
+            "startLine" : 10,
             "startColumn" : 13,
             "endColumn" : 17
           }
@@ -19366,7 +19781,7 @@
         "index" : 0
       },
       "message" : {
-        "text" : "taints [System.out](1)\ntaints [System.out](2)\ntaints [System.out](3)\ntaints [System.out](4)"
+        "text" : "taints [System.out](1)\ntaints [System.out](2)\ntaints [System.out](3)\ntaints [System.out](4)\ntaints [System.out](5)"
       },
       "locations" : [ {
         "physicalLocation" : {
@@ -19376,7 +19791,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 5,
+            "startLine" : 6,
             "startColumn" : 27,
             "endColumn" : 37
           }
@@ -19395,7 +19810,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 6,
+            "startLine" : 7,
             "startColumn" : 27,
             "endColumn" : 37
           }
@@ -19412,9 +19827,9 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 7,
-            "startColumn" : 27,
-            "endColumn" : 37
+            "startLine" : 8,
+            "startColumn" : 22,
+            "endColumn" : 32
           }
         },
         "message" : {
@@ -19429,9 +19844,9 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 8,
-            "startColumn" : 32,
-            "endColumn" : 42
+            "startLine" : 9,
+            "startColumn" : 27,
+            "endColumn" : 37
           }
         },
         "message" : {
@@ -19446,7 +19861,24 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 9,
+            "startLine" : 10,
+            "startColumn" : 32,
+            "endColumn" : 42
+          }
+        },
+        "message" : {
+          "text" : "System.out"
+        }
+      }, {
+        "id" : 5,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 33
+          },
+          "region" : {
+            "startLine" : 11,
             "startColumn" : 43,
             "endColumn" : 53
           }
@@ -19473,14 +19905,14 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 6,
+            "startLine" : 7,
             "startColumn" : 13,
             "endColumn" : 17
           }
         }
       } ],
       "partialFingerprints" : {
-        "primaryLocationLineHash" : "1edd1da81a1b3e16:1",
+        "primaryLocationLineHash" : "8370f52ec2db64c3:1",
         "primaryLocationStartColumnFingerprint" : "4"
       },
       "relatedLocations" : [ {
@@ -19492,7 +19924,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 7,
+            "startLine" : 9,
             "startColumn" : 13,
             "endColumn" : 17
           }
@@ -19509,7 +19941,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 8,
+            "startLine" : 10,
             "startColumn" : 13,
             "endColumn" : 17
           }
@@ -19536,14 +19968,14 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 6,
+            "startLine" : 7,
             "startColumn" : 21,
             "endColumn" : 25
           }
         }
       } ],
       "partialFingerprints" : {
-        "primaryLocationLineHash" : "1edd1da81a1b3e16:1",
+        "primaryLocationLineHash" : "8370f52ec2db64c3:1",
         "primaryLocationStartColumnFingerprint" : "12"
       },
       "relatedLocations" : [ {
@@ -19555,7 +19987,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 7,
+            "startLine" : 9,
             "startColumn" : 21,
             "endColumn" : 25
           }
@@ -19572,7 +20004,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 8,
+            "startLine" : 10,
             "startColumn" : 25,
             "endColumn" : 29
           }
@@ -19589,7 +20021,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 9,
+            "startLine" : 11,
             "startColumn" : 13,
             "endColumn" : 17
           }
@@ -19606,7 +20038,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 9,
+            "startLine" : 11,
             "startColumn" : 21,
             "endColumn" : 41
           }
@@ -19623,13 +20055,156 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 9,
+            "startLine" : 11,
             "startColumn" : 21,
             "endColumn" : 25
           }
         },
         "message" : {
           "text" : "str2"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/taintflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/taintflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "taints [System.out](1)\ntaints [System.out](2)\ntaints [System.out](3)\ntaints [System.out](4)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 33
+          },
+          "region" : {
+            "startLine" : 7,
+            "startColumn" : 27,
+            "endColumn" : 37
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "8370f52ec2db64c3:1",
+        "primaryLocationStartColumnFingerprint" : "18"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 33
+          },
+          "region" : {
+            "startLine" : 8,
+            "startColumn" : 22,
+            "endColumn" : 32
+          }
+        },
+        "message" : {
+          "text" : "System.out"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 33
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 27,
+            "endColumn" : 37
+          }
+        },
+        "message" : {
+          "text" : "System.out"
+        }
+      }, {
+        "id" : 3,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 33
+          },
+          "region" : {
+            "startLine" : 10,
+            "startColumn" : 32,
+            "endColumn" : 42
+          }
+        },
+        "message" : {
+          "text" : "System.out"
+        }
+      }, {
+        "id" : 4,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 33
+          },
+          "region" : {
+            "startLine" : 11,
+            "startColumn" : 43,
+            "endColumn" : 53
+          }
+        },
+        "message" : {
+          "text" : "System.out"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/taintflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/taintflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "taints [... != ...](1)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 33
+          },
+          "region" : {
+            "startLine" : 8,
+            "startColumn" : 13,
+            "endColumn" : 14
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "8f4cf1e177ffcf6:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 33
+          },
+          "region" : {
+            "startLine" : 8,
+            "startColumn" : 13,
+            "endColumn" : 20
+          }
+        },
+        "message" : {
+          "text" : "... != ..."
         }
       } ]
     }, {
@@ -19650,15 +20225,15 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 6,
-            "startColumn" : 27,
-            "endColumn" : 37
+            "startLine" : 8,
+            "startColumn" : 22,
+            "endColumn" : 32
           }
         }
       } ],
       "partialFingerprints" : {
-        "primaryLocationLineHash" : "1edd1da81a1b3e16:1",
-        "primaryLocationStartColumnFingerprint" : "18"
+        "primaryLocationLineHash" : "8f4cf1e177ffcf6:1",
+        "primaryLocationStartColumnFingerprint" : "13"
       },
       "relatedLocations" : [ {
         "id" : 1,
@@ -19669,7 +20244,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 7,
+            "startLine" : 9,
             "startColumn" : 27,
             "endColumn" : 37
           }
@@ -19686,7 +20261,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 8,
+            "startLine" : 10,
             "startColumn" : 32,
             "endColumn" : 42
           }
@@ -19703,7 +20278,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 9,
+            "startLine" : 11,
             "startColumn" : 43,
             "endColumn" : 53
           }
@@ -19730,7 +20305,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 7,
+            "startLine" : 9,
             "startColumn" : 13,
             "endColumn" : 17
           }
@@ -19749,7 +20324,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 8,
+            "startLine" : 10,
             "startColumn" : 13,
             "endColumn" : 17
           }
@@ -19776,7 +20351,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 7,
+            "startLine" : 9,
             "startColumn" : 21,
             "endColumn" : 25
           }
@@ -19795,7 +20370,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 8,
+            "startLine" : 10,
             "startColumn" : 25,
             "endColumn" : 29
           }
@@ -19812,7 +20387,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 9,
+            "startLine" : 11,
             "startColumn" : 13,
             "endColumn" : 17
           }
@@ -19829,7 +20404,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 9,
+            "startLine" : 11,
             "startColumn" : 21,
             "endColumn" : 41
           }
@@ -19846,7 +20421,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 9,
+            "startLine" : 11,
             "startColumn" : 21,
             "endColumn" : 25
           }
@@ -19873,7 +20448,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 7,
+            "startLine" : 9,
             "startColumn" : 27,
             "endColumn" : 37
           }
@@ -19892,7 +20467,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 8,
+            "startLine" : 10,
             "startColumn" : 32,
             "endColumn" : 42
           }
@@ -19909,7 +20484,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 9,
+            "startLine" : 11,
             "startColumn" : 43,
             "endColumn" : 53
           }
@@ -19936,7 +20511,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 8,
+            "startLine" : 10,
             "startColumn" : 25,
             "endColumn" : 29
           }
@@ -19955,7 +20530,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 9,
+            "startLine" : 11,
             "startColumn" : 13,
             "endColumn" : 17
           }
@@ -19972,7 +20547,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 9,
+            "startLine" : 11,
             "startColumn" : 21,
             "endColumn" : 41
           }
@@ -19989,7 +20564,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 9,
+            "startLine" : 11,
             "startColumn" : 21,
             "endColumn" : 25
           }
@@ -20016,7 +20591,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 8,
+            "startLine" : 10,
             "startColumn" : 32,
             "endColumn" : 42
           }
@@ -20035,7 +20610,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 9,
+            "startLine" : 11,
             "startColumn" : 43,
             "endColumn" : 53
           }
@@ -20062,7 +20637,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 9,
+            "startLine" : 11,
             "startColumn" : 13,
             "endColumn" : 17
           }
@@ -20081,7 +20656,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 9,
+            "startLine" : 11,
             "startColumn" : 21,
             "endColumn" : 41
           }
@@ -20098,7 +20673,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 9,
+            "startLine" : 11,
             "startColumn" : 21,
             "endColumn" : 25
           }
@@ -20125,7 +20700,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 9,
+            "startLine" : 11,
             "startColumn" : 21,
             "endColumn" : 25
           }
@@ -20144,7 +20719,7 @@
             "index" : 33
           },
           "region" : {
-            "startLine" : 9,
+            "startLine" : 11,
             "startColumn" : 21,
             "endColumn" : 41
           }
@@ -22712,7 +23287,7 @@
         }
       } ],
       "partialFingerprints" : {
-        "primaryLocationLineHash" : "65afa6125ac576d4:1",
+        "primaryLocationLineHash" : "65afa6125ac576d6:1",
         "primaryLocationStartColumnFingerprint" : "7"
       },
       "relatedLocations" : [ {
@@ -22758,7 +23333,7 @@
         }
       } ],
       "partialFingerprints" : {
-        "primaryLocationLineHash" : "65afa6125ac576d4:1",
+        "primaryLocationLineHash" : "65afa6125ac576d6:1",
         "primaryLocationStartColumnFingerprint" : "12"
       },
       "relatedLocations" : [ {

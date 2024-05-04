@@ -9,6 +9,9 @@ public class ArrayHashCodeAndToStringProcessor {
         int argHash1 = args.hashCode();// Noncompliant
         String argStr2 = Arrays.toString(args);
         int argHash2 = Arrays.hashCode(args);
+        Integer i = 42;
+        String nonArrStr = i.toString();
+        int nonArrHash = i.hashCode();
     }
 }
 

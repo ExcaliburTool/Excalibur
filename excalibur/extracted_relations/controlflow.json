@@ -6,7 +6,7 @@
       "driver" : {
         "name" : "CodeQL",
         "organization" : "GitHub",
-        "semanticVersion" : "2.12.5",
+        "semanticVersion" : "2.15.1",
         "rules" : [ {
           "id" : "java/example/controlflow",
           "name" : "java/example/controlflow",
@@ -26,22 +26,8 @@
         } ]
       },
       "extensions" : [ {
-        "name" : "legacy-upgrades",
-        "semanticVersion" : "0.0.0",
-        "locations" : [ {
-          "uri" : "file:///opt/homebrew/Caskroom/codeql/2.12.5/codeql/legacy-upgrades/",
-          "description" : {
-            "text" : "The QL pack root directory."
-          }
-        }, {
-          "uri" : "file:///opt/homebrew/Caskroom/codeql/2.12.5/codeql/legacy-upgrades/qlpack.yml",
-          "description" : {
-            "text" : "The QL pack definition file."
-          }
-        } ]
-      }, {
         "name" : "getting-started/codeql-extra-queries-java",
-        "semanticVersion" : "0.0.0+9688a33f8a7790e1160da629a5cf79ee7cd635f2",
+        "semanticVersion" : "0.0.0+4ea267541fa11baaeed75482d21273841ca54b9b",
         "locations" : [ {
           "uri" : "file:///Users/sissel/repository/JavaSyntaxTool/codeql/",
           "description" : {
@@ -2735,7 +2721,7 @@
             "index" : 10
           },
           "region" : {
-            "startLine" : 5,
+            "startLine" : 6,
             "startColumn" : 13,
             "endColumn" : 25
           }
@@ -2754,7 +2740,7 @@
             "index" : 10
           },
           "region" : {
-            "startLine" : 5,
+            "startLine" : 6,
             "startColumn" : 27,
             "endColumn" : 63
           }
@@ -2771,69 +2757,6 @@
             "index" : 10
           },
           "region" : {
-            "startLine" : 6,
-            "startColumn" : 9,
-            "endColumn" : 26
-          }
-        },
-        "message" : {
-          "text" : "if (...)"
-        }
-      } ]
-    }, {
-      "ruleId" : "java/example/controlflow",
-      "ruleIndex" : 0,
-      "rule" : {
-        "id" : "java/example/controlflow",
-        "index" : 0
-      },
-      "message" : {
-        "text" : "branches into [<Expr>;](1) and [if (...)](2)"
-      },
-      "locations" : [ {
-        "physicalLocation" : {
-          "artifactLocation" : {
-            "uri" : "src/main/java/StringCompare.java",
-            "uriBaseId" : "%SRCROOT%",
-            "index" : 10
-          },
-          "region" : {
-            "startLine" : 6,
-            "startColumn" : 13,
-            "endColumn" : 25
-          }
-        }
-      } ],
-      "partialFingerprints" : {
-        "primaryLocationLineHash" : "1edd1da81a1b3e16:1",
-        "primaryLocationStartColumnFingerprint" : "4"
-      },
-      "relatedLocations" : [ {
-        "id" : 1,
-        "physicalLocation" : {
-          "artifactLocation" : {
-            "uri" : "src/main/java/StringCompare.java",
-            "uriBaseId" : "%SRCROOT%",
-            "index" : 10
-          },
-          "region" : {
-            "startLine" : 6,
-            "startColumn" : 27,
-            "endColumn" : 62
-          }
-        },
-        "message" : {
-          "text" : "<Expr>;"
-        }
-      }, {
-        "id" : 2,
-        "physicalLocation" : {
-          "artifactLocation" : {
-            "uri" : "src/main/java/StringCompare.java",
-            "uriBaseId" : "%SRCROOT%",
-            "index" : 10
-          },
-          "region" : {
             "startLine" : 7,
             "startColumn" : 9,
             "endColumn" : 26
@@ -2868,7 +2791,7 @@
         }
       } ],
       "partialFingerprints" : {
-        "primaryLocationLineHash" : "6810f50dfe1b8470:1",
+        "primaryLocationLineHash" : "8370f52ec2db64c3:1",
         "primaryLocationStartColumnFingerprint" : "4"
       },
       "relatedLocations" : [ {
@@ -2898,6 +2821,132 @@
           },
           "region" : {
             "startLine" : 8,
+            "startColumn" : 9,
+            "endColumn" : 21
+          }
+        },
+        "message" : {
+          "text" : "if (...)"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [<Expr>;](1) and [if (...)](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 10
+          },
+          "region" : {
+            "startLine" : 8,
+            "startColumn" : 13,
+            "endColumn" : 20
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "8f4cf1e177ffcf6:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 10
+          },
+          "region" : {
+            "startLine" : 8,
+            "startColumn" : 22,
+            "endColumn" : 52
+          }
+        },
+        "message" : {
+          "text" : "<Expr>;"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 10
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 9,
+            "endColumn" : 26
+          }
+        },
+        "message" : {
+          "text" : "if (...)"
+        }
+      } ]
+    }, {
+      "ruleId" : "java/example/controlflow",
+      "ruleIndex" : 0,
+      "rule" : {
+        "id" : "java/example/controlflow",
+        "index" : 0
+      },
+      "message" : {
+        "text" : "branches into [<Expr>;](1) and [if (...)](2)"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 10
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 13,
+            "endColumn" : 25
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "6810f50dfe1b8470:1",
+        "primaryLocationStartColumnFingerprint" : "4"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 10
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 27,
+            "endColumn" : 62
+          }
+        },
+        "message" : {
+          "text" : "<Expr>;"
+        }
+      }, {
+        "id" : 2,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "src/main/java/StringCompare.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 10
+          },
+          "region" : {
+            "startLine" : 10,
             "startColumn" : 9,
             "endColumn" : 31
           }
@@ -2924,7 +2973,7 @@
             "index" : 10
           },
           "region" : {
-            "startLine" : 8,
+            "startLine" : 10,
             "startColumn" : 13,
             "endColumn" : 30
           }
@@ -2943,7 +2992,7 @@
             "index" : 10
           },
           "region" : {
-            "startLine" : 8,
+            "startLine" : 10,
             "startColumn" : 32,
             "endColumn" : 72
           }
@@ -2960,7 +3009,7 @@
             "index" : 10
           },
           "region" : {
-            "startLine" : 9,
+            "startLine" : 11,
             "startColumn" : 9,
             "endColumn" : 42
           }
@@ -2987,7 +3036,7 @@
             "index" : 10
           },
           "region" : {
-            "startLine" : 9,
+            "startLine" : 11,
             "startColumn" : 13,
             "endColumn" : 41
           }
@@ -3006,7 +3055,7 @@
             "index" : 10
           },
           "region" : {
-            "startLine" : 9,
+            "startLine" : 11,
             "startColumn" : 43,
             "endColumn" : 94
           }

@@ -1,0 +1,15 @@
+0.5, '}'
+0.5, typeDeclaration(classOrInterfaceModifier(classOrInterfaceModifier('public')),classDeclaration('class',identifier('RedundantFieldInitialization'),classBody('{',classBodyDeclaration(memberDeclaration(fieldDeclaration(typeType(primitiveType('boolean')),variableDeclarators(variableDeclarator(variableDeclaratorId(identifier('x')),'=',variableInitializer(expression(primary(literal('false')))))),';'))),'}')))
+0.5, '='
+0.5, 'public'
+0.5, ';'
+0.5, 'boolean'
+0.5, '{'
+0.5, fieldDeclaration(typeType(primitiveType('boolean')),variableDeclarators(variableDeclarator(variableDeclaratorId(identifier('x')),'=',variableInitializer(expression(primary(literal('false')))))),';')
+0.5, 'class'
+0.5, classDeclaration('class',identifier('RedundantFieldInitialization'),classBody('{',classBodyDeclaration(memberDeclaration(fieldDeclaration(typeType(primitiveType('boolean')),variableDeclarators(variableDeclarator(variableDeclaratorId(identifier('x')),'=',variableInitializer(expression(primary(literal('false')))))),';'))),'}'))
+0.5, classBody('{',classBodyDeclaration(memberDeclaration(fieldDeclaration(typeType(primitiveType('boolean')),variableDeclarators(variableDeclarator(variableDeclaratorId(identifier('x')),'=',variableInitializer(expression(primary(literal('false')))))),';'))),'}')
+0.5, 'false'
+0.5, 'x'
+0.5, variableDeclarator(variableDeclaratorId(identifier('x')),'=',variableInitializer(expression(primary(literal('false')))))
+0.5, 'RedundantFieldInitialization'

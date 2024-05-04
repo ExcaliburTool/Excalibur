@@ -11,5 +11,8 @@ public class AssignmentNull {
 
         w = (Boolean) null;
         z = null;
+        Object[] os;
+        os = new Object[] { null };
     }
 }
+

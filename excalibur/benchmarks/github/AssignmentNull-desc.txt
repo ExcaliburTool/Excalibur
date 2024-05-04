@@ -1,0 +1,1 @@
+assignment statement, where the assign value is "null"

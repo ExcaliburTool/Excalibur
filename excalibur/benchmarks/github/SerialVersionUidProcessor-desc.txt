@@ -1,0 +1,1 @@
+classes implementing `Serializable` without defining `serialVersionUID`

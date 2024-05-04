@@ -1,0 +1,1 @@
+`equals` methods that do not perform type checking (either `getClass` or `instanceof`)

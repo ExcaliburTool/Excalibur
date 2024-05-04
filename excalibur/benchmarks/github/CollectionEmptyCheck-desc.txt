@@ -1,0 +1,1 @@
+checking the collection object is empty or not with .size and 0

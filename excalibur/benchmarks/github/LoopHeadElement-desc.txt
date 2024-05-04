@@ -1,0 +1,1 @@
+condition of loops including for-each loop and while-loop, excluding normal for loop

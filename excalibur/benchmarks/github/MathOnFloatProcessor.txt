@@ -8,6 +8,7 @@ public class MathOnFloatProcessor {
         double c = 2.33;
         double c2 = c * 3.9;
         float e = a * (float) c;
+        System.out.println(a);
     }
 }
 
