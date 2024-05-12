@@ -6,7 +6,7 @@ The `appendix.pdf` includes:
 * Prompt
 
 ## Semantic Rules
-TODO
+See `semantic_rules`
 
 ## Benchmark
 See `excalibur/benchmarks/github` and `excalibur/benchmarks/sporq`
