@@ -2,9 +2,11 @@
 
 ## Appendix
 The `appendix.pdf` includes:
-* Wildcard patterns (updated)
-* Semantic relation rules (Todo)
-* Prompt (Todo)
+* Wildcard patterns
+* Prompt
+
+## Semantic Rules
+TODO
 
 ## Benchmark
 See `excalibur/benchmarks/github` and `excalibur/benchmarks/sporq`
