@@ -2,8 +2,11 @@
 
 ## Appendix
 The `appendix.pdf` includes:
+* The complete version spaces algorithms
+* Proof of soundness and bounded completeness
 * Wildcard patterns
-* Prompt
+* Additional experiment results
+* Prompts
 
 ## Semantic Rules
 See `semantic_rules`
@@ -16,6 +19,8 @@ Each task has a file describing the task and a file specifying the example.
 * The output examples are specified after `output` and separated by `~`.
 
 ## Reproduction
+
+**Outdated, to be updated**
 
 You may need `git lfs` to download the compiled jar file. See [this](https://git-lfs.com/).
 
@@ -37,4 +42,4 @@ For example, given `-m gpt-4 -t 2`, the files `*_gpt-4_2.txt` would be used.
 Other settings can be changed in `excalibur/config.json`.
 
 ## Source Code
-The source code would be released upon acceptance.
+The source code would be released soon.
